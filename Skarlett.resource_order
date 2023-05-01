@@ -17,6 +17,15 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
   ],
   "ResourceOrderSettings": [
-    {"name":"Room12","order":1,"path":"rooms/Room12/Room12.yy",},
+    {"name":"debug","order":1,"path":"rooms/debug/debug.yy",},
+    {"name":"spr_parede","order":1,"path":"sprites/spr_parede/spr_parede.yy",},
+    {"name":"obj_personagem","order":2,"path":"objects/obj_personagem/obj_personagem.yy",},
+    {"name":"obj_parede","order":1,"path":"objects/obj_parede/obj_parede.yy",},
+    {"name":"obj_inimigo","order":3,"path":"objects/obj_inimigo/obj_inimigo.yy",},
+    {"name":"spr_personagem","order":2,"path":"sprites/spr_personagem/spr_personagem.yy",},
+    {"name":"obj_camera","order":4,"path":"objects/obj_camera/obj_camera.yy",},
+    {"name":"scripts_inimigo","order":1,"path":"scripts/scripts_inimigo/scripts_inimigo.yy",},
+    {"name":"spr_inimigo","order":3,"path":"sprites/spr_inimigo/spr_inimigo.yy",},
+    {"name":"funcoes","order":2,"path":"scripts/funcoes/funcoes.yy",},
   ],
 }
