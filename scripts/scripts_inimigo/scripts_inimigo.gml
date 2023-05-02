@@ -15,7 +15,7 @@ function scr_inimigo_escolha(){
 	
 	// Escolha o estado.
 	proximo_estado = choose(scr_inimigo_parado, scr_inimigo_andando);
-	alarme_estado = irandom_range(120,240);
+	alarme_estado = irandom_range(duracao_estado-60,duracao_estado+60);
 	
 	if proximo_estado == scr_inimigo_andando {
 		estado = scr_inimigo_andando;

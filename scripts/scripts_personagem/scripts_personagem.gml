@@ -4,14 +4,14 @@
 function scr_personagem_andando(){
 	
 	#region Movimento.
-	up = keyboard_check(vk_up);
-	down = keyboard_check(vk_down);
-	right = keyboard_check(vk_right);
-	left = keyboard_check(vk_left);
+	cima = keyboard_check(vk_up);
+	baixo = keyboard_check(vk_down);
+	direita = keyboard_check(vk_right);
+	esquerda = keyboard_check(vk_left);
 
 	// Determine a direção do movimento.
-	hveloc = (right - left);
-	vveloc = (down - up);
+	hveloc = (direita - esquerda);
+	vveloc = (baixo - cima);
 	
 	// Aponte a direção da velocidade para a direção do movimento.
 	veloc_dir = point_direction(x,y,x+hveloc,y+vveloc);
@@ -28,12 +28,6 @@ function scr_personagem_andando(){
 	// Realize o movimento.
 	x += hveloc;
 	y += vveloc;
-	
-	// Arredonde a posição.
-	/*
-	x = floor(x);
-	y = floor(y);
-	*/
 	
 	#endregion
 	
