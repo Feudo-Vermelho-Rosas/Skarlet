@@ -32,3 +32,40 @@ function scr_personagem_andando(){
 	#endregion
 	
 }
+
+function scr_personagem_hit() {
+	
+	// Faça o efeito de knockback.
+	hveloc = lengthdir_x(kb_speed,veloc_dir);
+	vveloc = lengthdir_y(kb_speed,veloc_dir);
+	
+	scr_checar_colisao();
+	
+	x += hveloc;
+	y += vveloc;
+	
+	// Cheque o alarme de hit.
+	if hit_alarme <= 0 {
+		estado = scr_personagem_andando;
+	}
+	hit_alarme -= 1;
+	
+}
+
+function scr_efeito_invulneravel() {
+	// Controla a invulnerabilidade e seu efeito.
+	
+	// Faça o efeito de invulnerabilidade.
+	if image_alpha >= 1 {
+		alpha_add = -0.10;
+	} else if image_alpha <= 0 {
+		alpha_add = 0.10;
+	}	
+		
+	image_alpha += alpha_add;
+		
+	if invulneravel_alarme <= 0 {
+		invulneravel = false;
+	}
+	invulneravel_alarme -= 1;
+}
