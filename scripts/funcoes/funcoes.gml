@@ -20,3 +20,21 @@ function scr_checar_colisao(){
 		vveloc = 0;
 	}
 }
+	
+function scr_efeito_invulneravel() {
+	// Controla a invulnerabilidade e seu efeito.
+	
+	// Faça o efeito de invulnerabilidade.
+	if image_alpha >= 1 {
+		alpha_add = -0.10;
+	} else if image_alpha <= 0 {
+		alpha_add = 0.10;
+	}	
+		
+	image_alpha += alpha_add;
+		
+	if invulneravel_alarme <= 0 {
+		invulneravel = false;
+	}
+	invulneravel_alarme -= 1;
+}

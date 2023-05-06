@@ -87,3 +87,22 @@ function scr_inimigo_perseguindo() {
 	}
 	
 }
+	
+function scr_inimigo_hit() {
+	
+	// Faça o efeito de knockback.
+	hveloc = lengthdir_x(kb_speed,veloc_dir);
+	vveloc = lengthdir_y(kb_speed,veloc_dir);
+	
+	scr_checar_colisao();
+	
+	x += hveloc;
+	y += vveloc;
+	
+	// Cheque o alarme de hit.
+	if hit_alarme <= 0 {
+		estado = scr_personagem_andando;
+	}
+	hit_alarme -= 1;
+	
+}

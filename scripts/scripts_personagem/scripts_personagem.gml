@@ -1,6 +1,20 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
+function scr_controle_direcao() {
+	
+	if direita {
+		direcao = 0;
+	} else if cima {
+		direcao = 1;
+	} else if esquerda {
+		direcao = 2;
+	} else if baixo {
+		direcao = 3;
+	}
+	
+}
+
 function scr_personagem_andando(){
 	
 	#region Movimento.
@@ -31,6 +45,18 @@ function scr_personagem_andando(){
 	
 	#endregion
 	
+	scr_controle_direcao();
+	
+	#region Combate.
+	ataque = keyboard_check(vk_space);
+	
+	if ataque {
+		estado = scr_personagem_combate;
+		ataque_alarme = ataque_duracao;
+		scr_criar_hitbox_ataque();
+	}
+	#endregion
+	
 }
 
 function scr_personagem_hit() {
@@ -52,20 +78,31 @@ function scr_personagem_hit() {
 	
 }
 
-function scr_efeito_invulneravel() {
-	// Controla a invulnerabilidade e seu efeito.
+function scr_criar_hitbox_ataque() {
 	
-	// Faça o efeito de invulnerabilidade.
-	if image_alpha >= 1 {
-		alpha_add = -0.10;
-	} else if image_alpha <= 0 {
-		alpha_add = 0.10;
-	}	
-		
-	image_alpha += alpha_add;
-		
-	if invulneravel_alarme <= 0 {
-		invulneravel = false;
+	switch direcao {
+		case 0:
+			instance_create_layer(x+15,y,"Instances",obj_hitbox_ataque);
+			break;
+		case 1:
+			instance_create_layer(x,y-15,"Instances",obj_hitbox_ataque);
+			break;
+		case 2:
+			instance_create_layer(x-15,y,"Instances",obj_hitbox_ataque);
+			break;
+		case 3:
+			instance_create_layer(x,y+15,"Instances",obj_hitbox_ataque);
+			break;
 	}
-	invulneravel_alarme -= 1;
+	
 }
+
+function scr_personagem_combate() {
+	
+	if ataque_alarme <= 0 {
+		estado = scr_personagem_andando;
+	}
+	ataque_alarme -= 1;
+	
+}
+	

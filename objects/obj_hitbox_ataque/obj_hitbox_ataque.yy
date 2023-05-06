@@ -1,12 +1,9 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_inimigo",
+  "name": "obj_hitbox_ataque",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_hitbox_ataque","path":"objects/obj_hitbox_ataque/obj_hitbox_ataque.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -31,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_inimigo",
-    "path": "sprites/spr_inimigo/spr_inimigo.yy",
+    "name": "spr_hitbox_ataque",
+    "path": "sprites/spr_hitbox_ataque/spr_hitbox_ataque.yy",
   },
   "spriteMaskId": null,
   "visible": true,
