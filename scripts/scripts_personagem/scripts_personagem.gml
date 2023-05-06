@@ -3,16 +3,36 @@
 
 function scr_controle_direcao() {
 	
-	if direita {
-		direcao = 0;
-	} else if cima {
-		direcao = 1;
-	} else if esquerda {
-		direcao = 2;
-	} else if baixo {
-		direcao = 3;
+	switch direcao {
+		case 0:
+			sprite_index = spr_personagem_lado_direito;
+			break;
+		case 1:
+			sprite_index = spr_personagem_baixo;
+			break;
+		case 2:
+			sprite_index = spr_personagem_lado_esquerdo;
+			break;
+		case 3:
+			sprite_index = spr_personagem_baixo;
+			break;
 	}
 	
+	if vveloc < 0 {
+		direcao = 1;
+		sprite_index = spr_personagem_andando_baixo;
+	} else if vveloc > 0 {
+		direcao = 3;
+		sprite_index = spr_personagem_andando_baixo;
+	}
+	
+	if hveloc < 0 {
+		direcao = 2;
+		sprite_index = spr_personagem_andando_esquerda;
+	} else if hveloc > 0 {
+		direcao = 0;
+		sprite_index = spr_personagem_andando_direita;
+	}
 }
 
 function scr_personagem_andando(){
@@ -45,6 +65,7 @@ function scr_personagem_andando(){
 	
 	#endregion
 	
+	// Controle a direção;
 	scr_controle_direcao();
 	
 	#region Combate.
@@ -98,6 +119,12 @@ function scr_criar_hitbox_ataque() {
 }
 
 function scr_personagem_combate() {
+	
+	hveloc = 0;
+	vveloc = 0;
+	
+	// Controle a direção;
+	scr_controle_direcao();
 	
 	if ataque_alarme <= 0 {
 		estado = scr_personagem_andando;

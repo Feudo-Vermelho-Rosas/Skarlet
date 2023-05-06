@@ -1,6 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
+
+// Gerais.
 function scr_checar_personagem(){
 	// Persiga o personagem se ele estiver perto.
 	if distance_to_object(obj_personagem) <= dist_perseguir {
@@ -28,9 +30,10 @@ function scr_inimigo_escolha(){
 
 function scr_inimigo_parado() {
 	
-	/*
-	image_speed = 0.5;
-	*/
+	image_speed = 1;
+	
+	hveloc = 0;
+	vveloc = 0;
 	
 	if alarme_estado <= 0 {
 		estado = scr_inimigo_escolha;
@@ -41,9 +44,7 @@ function scr_inimigo_parado() {
 
 function scr_inimigo_andando() {
 	
-	/*
 	image_speed = 1;
-	*/
 	
 	// Defina a velocidade horizontal e vertical.
 	hveloc = lengthdir_x(veloc, veloc_dir);
@@ -63,9 +64,7 @@ function scr_inimigo_andando() {
 	
 function scr_inimigo_perseguindo() {
 	
-	/*
 	image_speed = 2;
-	*/
 	
 	// Aponte para a direção do personagem.
 	veloc_dir = point_direction(x,y,obj_personagem.x,obj_personagem.y);
@@ -105,4 +104,28 @@ function scr_inimigo_hit() {
 	}
 	hit_alarme -= 1;
 	
+}
+
+// Formiga.
+function scr_formiga_direcao() {
+	
+	if estado != scr_inimigo_hit {
+		switch direcao {
+			case 0:
+				sprite_index = spr_formiga_parada_direita;
+				break;
+			case 2:
+				sprite_index = spr_formiga_parada_esquerda;
+				break;
+		}
+	
+	
+		if hveloc < 0 {
+			direcao = 2;
+			sprite_index = spr_formiga_andando_esquerda;
+		} else if hveloc > 0 {
+			direcao = 0;
+			sprite_index = spr_formiga_andando_direita;
+		}
+	}
 }

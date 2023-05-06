@@ -25,7 +25,7 @@ max_hp = 100;
 hp = 100;
 defesa = 0;
 dano = 5;
-kb = 5;
+kb = 3;
 
 // Desenho;
 image_alpha = 1;
