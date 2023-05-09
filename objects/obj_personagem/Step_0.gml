@@ -7,3 +7,6 @@ if hit_alarme > 0 {
 
 // Execute o estado atual do personagem.
 script_execute(estado);
+
+// Controle de profundidade.
+depth = -y;

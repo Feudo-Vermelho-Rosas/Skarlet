@@ -106,26 +106,29 @@ function scr_inimigo_hit() {
 	
 }
 
-// Formiga.
-function scr_formiga_direcao() {
+function scr_controlar_direcao() {
 	
 	if estado != scr_inimigo_hit {
 		switch direcao {
 			case 0:
-				sprite_index = spr_formiga_parada_direita;
+				image_xscale = 1;
+				sprite_index = sprite_parado;
 				break;
 			case 2:
-				sprite_index = spr_formiga_parada_esquerda;
+				image_xscale = -1;
+				sprite_index = sprite_parado;
 				break;
 		}
 	
 	
 		if hveloc < 0 {
 			direcao = 2;
-			sprite_index = spr_formiga_andando_esquerda;
+			image_xscale = -1;
+			sprite_index = sprite_andando;
 		} else if hveloc > 0 {
 			direcao = 0;
-			sprite_index = spr_formiga_andando_direita;
+			image_xscale = 1;
+			sprite_index = sprite_andando;
 		}
 	}
 }

@@ -15,7 +15,7 @@ ataque = 0;
 direcao = 0;
 kb_speed = 0;
 
-veloc = 2; // Velocidade de movimentação.
+veloc = 1.5; // Velocidade de movimentação.
 hveloc = 0;
 vveloc = 0;
 veloc_dir = 0;

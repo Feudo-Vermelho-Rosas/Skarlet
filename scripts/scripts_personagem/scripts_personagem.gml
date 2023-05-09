@@ -3,39 +3,50 @@
 
 function scr_controle_direcao() {
 	
-	switch direcao {
-		case 0:
-			sprite_index = spr_personagem_lado_direito;
-			break;
-		case 1:
-			sprite_index = spr_personagem_baixo;
-			break;
-		case 2:
-			sprite_index = spr_personagem_lado_esquerdo;
-			break;
-		case 3:
-			sprite_index = spr_personagem_baixo;
-			break;
-	}
-	
-	if vveloc < 0 {
-		direcao = 1;
-		sprite_index = spr_personagem_andando_baixo;
-	} else if vveloc > 0 {
-		direcao = 3;
-		sprite_index = spr_personagem_andando_baixo;
+	if hveloc == 0 && vveloc == 0 {
+		switch direcao {
+			case 0:
+				image_xscale = 1;
+				sprite_index = spr_personagem_lado;
+				break;
+			case 1:
+				image_xscale = 1;
+				sprite_index = spr_personagem_costas;
+				break;
+			case 2:
+				image_xscale = -1;
+				sprite_index = spr_personagem_lado;
+				break;
+			case 3:
+				image_xscale = 1;
+				sprite_index = spr_personagem_baixo;
+				break;
+		}
 	}
 	
 	if hveloc < 0 {
 		direcao = 2;
-		sprite_index = spr_personagem_andando_esquerda;
+		image_xscale = -1;
+		sprite_index = spr_personagem_andando_lado;
 	} else if hveloc > 0 {
 		direcao = 0;
-		sprite_index = spr_personagem_andando_direita;
+		image_xscale = 1;
+		sprite_index = spr_personagem_andando_lado;
 	}
+	
+	if vveloc < 0 {
+		direcao = 1;
+		image_xscale = 1;
+		sprite_index = spr_personagem_andando_cima;
+	} else if vveloc > 0 {
+		direcao = 3;
+		image_xscale = 1;
+		sprite_index = spr_personagem_andando_baixo;
+	}
+	
 }
 
-function scr_personagem_andando(){
+function scr_personagem_andando() {
 	
 	#region Movimento.
 	cima = keyboard_check(vk_up);
@@ -75,6 +86,7 @@ function scr_personagem_andando(){
 		estado = scr_personagem_combate;
 		ataque_alarme = ataque_duracao;
 		scr_criar_hitbox_ataque();
+		image_index = 0;
 	}
 	#endregion
 	
@@ -120,11 +132,31 @@ function scr_criar_hitbox_ataque() {
 
 function scr_personagem_combate() {
 	
+	switch direcao {
+		case 0:
+			image_xscale = 1;
+			sprite_index = spr_personagem_ataque_lado;
+			break;
+		case 1:
+			image_xscale = 1;
+			break;
+		case 2:
+			image_xscale = -1;
+			sprite_index = spr_personagem_ataque_lado;
+			break;
+		case 3:
+			image_xscale = 1;
+			sprite_index = spr_personagem_ataque_baixo;
+			break;
+	}
+	
 	hveloc = 0;
 	vveloc = 0;
 	
-	// Controle a direção;
-	scr_controle_direcao();
+	if image_index >= 3 {
+		estado = scr_personagem_andando;
+		ataque_alarme = 0;
+	}
 	
 	if ataque_alarme <= 0 {
 		estado = scr_personagem_andando;
