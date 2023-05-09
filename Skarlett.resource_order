@@ -21,6 +21,7 @@
     {"name":"tiles","order":14,"path":"folders/Sprites/tiles.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"obj_musicInicio","order":8,"path":"objects/obj_musicInicio/obj_musicInicio.yy",},
     {"name":"ts_arbustos","order":1,"path":"tilesets/ts_arbustos/ts_arbustos.yy",},
     {"name":"obj_inimigo","order":6,"path":"objects/obj_inimigo/obj_inimigo.yy",},
     {"name":"debug","order":1,"path":"rooms/debug/debug.yy",},

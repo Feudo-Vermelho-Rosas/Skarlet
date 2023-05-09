@@ -38,6 +38,7 @@
     "IDEVersion": "2023.4.0.84",
   },
   "resources": [
+    {"id":{"name":"obj_musicInicio","path":"objects/obj_musicInicio/obj_musicInicio.yy",},},
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},},
     {"id":{"name":"ts_arbustos","path":"tilesets/ts_arbustos/ts_arbustos.yy",},},
     {"id":{"name":"obj_inimigo","path":"objects/obj_inimigo/obj_inimigo.yy",},},
@@ -61,6 +62,7 @@
     {"id":{"name":"spr_arbustos","path":"sprites/spr_arbustos/spr_arbustos.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"ts_grama","path":"tilesets/ts_grama/ts_grama.yy",},},
+    {"id":{"name":"som_Telainicio","path":"sounds/som_Telainicio/som_Telainicio.yy",},},
     {"id":{"name":"spr_personagem_lado","path":"sprites/spr_personagem_lado/spr_personagem_lado.yy",},},
     {"id":{"name":"obj_aranha","path":"objects/obj_aranha/obj_aranha.yy",},},
     {"id":{"name":"scripts_inimigo","path":"scripts/scripts_inimigo/scripts_inimigo.yy",},},
