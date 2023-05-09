@@ -139,6 +139,7 @@ function scr_personagem_combate() {
 			break;
 		case 1:
 			image_xscale = 1;
+			sprite_index = spr_personagem_ataque_cima;
 			break;
 		case 2:
 			image_xscale = -1;
