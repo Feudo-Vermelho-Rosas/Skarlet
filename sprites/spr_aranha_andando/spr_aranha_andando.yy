@@ -40,7 +40,7 @@
   "origin": 4,
   "parent": {
     "name": "aranha",
-    "path": "folders/Sprites/aranha.yy",
+    "path": "folders/Sprites/inimigos/aranha.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

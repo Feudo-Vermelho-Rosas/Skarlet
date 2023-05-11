@@ -4,13 +4,17 @@
 
 // Gerais.
 function scr_checar_personagem(){
-	// Persiga o personagem se ele estiver perto.
-	if distance_to_object(obj_personagem) <= dist_perseguir {
-		perseguindo = true;
-		estado = scr_inimigo_perseguindo;
+	// Cheque a distância para o personagem.
+	
+	perto = false;
+	
+	if distance_to_object(obj_personagem) <= dist_aggro {
+		perto = true;
 	} else {
-		perseguindo = false;
+		perto = false;
 	}
+	
+	return perto;
 }
 
 function scr_inimigo_escolha(){
@@ -35,6 +39,9 @@ function scr_inimigo_parado() {
 	hveloc = 0;
 	vveloc = 0;
 	
+	// Sempre controle a direção.
+	scr_controlar_direcao();
+	
 	if alarme_estado <= 0 {
 		estado = scr_inimigo_escolha;
 	}
@@ -55,6 +62,9 @@ function scr_inimigo_andando() {
 	
 	x += hveloc;
 	y += vveloc;
+	
+	// Sempre controle a direção.
+	scr_controlar_direcao();
 	
 	if alarme_estado <= 0 {
 		estado = scr_inimigo_escolha;
@@ -80,7 +90,6 @@ function scr_inimigo_perseguindo() {
 	y += vveloc;
 	
 	// Checar distância para o personagem.
-	scr_checar_personagem();
 	if perseguindo == false {
 		estado = scr_inimigo_escolha;
 	}
@@ -97,6 +106,9 @@ function scr_inimigo_hit() {
 	
 	x += hveloc;
 	y += vveloc;
+	
+	// Sempre controle a direção.
+	scr_controlar_direcao();
 	
 	// Cheque o alarme de hit.
 	if hit_alarme <= 0 {
@@ -131,4 +143,42 @@ function scr_controlar_direcao() {
 			sprite_index = sprite_andando;
 		}
 	}
+}
+	
+function scr_inimigo_projetil_combate() {
+	// Controla o combate de inimigos com ataques de projéteis.
+	
+	sprite_index = sprite_atacando;
+	
+	// Controlar direção.
+	var _direc_personagem = point_direction(x,y,obj_personagem.x,obj_personagem.y);
+	
+	if _direc_personagem < 90 || _direc_personagem > 270 {
+		direcao = 0;
+	} else if _direc_personagem > 90 && _direc_personagem < 270 {
+		direcao = 2;
+	}
+	
+	switch direcao {
+		case 0:
+			image_xscale = 1;
+			break;
+		case 2:
+			image_xscale = -1;
+			break;
+	}
+	
+	// Dispare o projétil no ponto certo de animação.
+	var _rounded_image_index = (round(image_index*10)/10); // Correção de bug. 
+	if _rounded_image_index == index_ataque {
+		var _projetil = instance_create_layer(x,y,"Instances",projetil);
+		_projetil.dano = dano;
+		_projetil.kb = kb;
+	}
+	
+	// Se não estiver mais em combate, mude o estado.
+	if combate == false {
+		estado = scr_inimigo_escolha;
+	}
+	
 }

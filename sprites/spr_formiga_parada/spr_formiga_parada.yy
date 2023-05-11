@@ -30,7 +30,7 @@
   "origin": 4,
   "parent": {
     "name": "formiga",
-    "path": "folders/Sprites/formiga.yy",
+    "path": "folders/Sprites/inimigos/formiga.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

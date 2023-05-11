@@ -1,7 +1,10 @@
 /// @description
 
 // Checar a distância do personagem.
-scr_checar_personagem();
+perseguindo = scr_checar_personagem();
+if perseguindo {
+	estado = scr_inimigo_perseguindo;
+}
 
 // Cheque o alarme de hit.
 if hit_alarme > 0 {
