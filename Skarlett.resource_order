@@ -9,6 +9,8 @@
     {"name":"Fontes","order":7,"path":"folders/Fontes.yy",},
     {"name":"Linhas do tempo","order":8,"path":"folders/Linhas do tempo.yy",},
     {"name":"Objetos","order":9,"path":"folders/Objetos.yy",},
+    {"name":"huds e menu","order":2,"path":"folders/Objetos/huds e menu.yy",},
+    {"name":"projéteis","order":1,"path":"folders/Objetos/projéteis.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
     {"name":"Scripts","order":5,"path":"folders/Scripts.yy",},
     {"name":"Sequências","order":11,"path":"folders/Sequências.yy",},
@@ -20,8 +22,6 @@
     {"name":"aranha","order":1,"path":"folders/Sprites/inimigos/aranha.yy",},
     {"name":"larva","order":2,"path":"folders/Sprites/inimigos/larva.yy",},
     {"name":"tiles","order":1,"path":"folders/Sprites/tiles.yy",},
-    {"name":"projéteis","order":1,"path":"folders/Objetos/projéteis.yy",},
-    {"name":"huds e menu","order":2,"path":"folders/Objetos/huds e menu.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_musicInicio","order":7,"path":"objects/obj_musicInicio/obj_musicInicio.yy",},
