@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_arbustos",
+  "name": "spr_arbusto",
   "bbox_bottom": 17,
-  "bbox_left": 19,
-  "bbox_right": 75,
+  "bbox_left": 0,
+  "bbox_right": 18,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ca33df11-6a3e-4bf6-ad33-9f2872c59572",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d741ec19-fa4a-44cd-a078-65646c68fd56",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 18,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1674bce1-8bdf-4ee0-a2ab-ec609818c4a7","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2f4ddbe2-3039-47b5-983a-7ce2c5bdb072","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_arbustos",
+    "name": "spr_arbusto",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ca33df11-6a3e-4bf6-ad33-9f2872c59572","path":"sprites/spr_arbustos/spr_arbustos.yy",},},},"Disabled":false,"id":"61f67f1d-efab-4464-a8f9-8a032163624f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d741ec19-fa4a-44cd-a078-65646c68fd56","path":"sprites/spr_arbusto/spr_arbusto.yy",},},},"Disabled":false,"id":"232d9f0c-7733-42cb-9b60-a68b2d5593b4","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 76,
+  "width": 19,
 }

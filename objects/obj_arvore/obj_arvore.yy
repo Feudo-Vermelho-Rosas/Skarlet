@@ -1,20 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_larva",
+  "name": "obj_arvore",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "entidades",
-    "path": "folders/Objetos/entidades.yy",
+    "name": "decorações",
+    "path": "folders/Objetos/decorações.yy",
   },
   "parentObjectId": {
-    "name": "obj_inimigo",
-    "path": "objects/obj_inimigo/obj_inimigo.yy",
+    "name": "obj_parede",
+    "path": "objects/obj_parede/obj_parede.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -32,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_larva_parada",
-    "path": "sprites/spr_larva_parada/spr_larva_parada.yy",
+    "name": "spr_arvore",
+    "path": "sprites/spr_arvore/spr_arvore.yy",
   },
   "spriteMaskId": null,
   "tags": [

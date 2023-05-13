@@ -7,7 +7,7 @@ var _right_held = keyboard_check_pressed(vk_right);
 var _left_held = keyboard_check_pressed(vk_left);
 var _select = keyboard_check_pressed(vk_enter) or keyboard_check_pressed(vk_space);
 
-//holdig key down
+//holding key down
 var _repeat_spd = 8;
 var _repeat_delay = 25;
 
@@ -61,7 +61,7 @@ if _select or (is_array(menu[sub_menu][index]) and (_hmove != 0)){
 				break;
 				case 2:
 					//Sair
-				game_end();
+					game_end();
 				break;
 		
 			}

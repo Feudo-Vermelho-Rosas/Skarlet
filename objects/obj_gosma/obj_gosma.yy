@@ -33,5 +33,8 @@
     "path": "sprites/spr_gosma/spr_gosma.yy",
   },
   "spriteMaskId": null,
+  "tags": [
+    "depthsort",
+  ],
   "visible": true,
 }
