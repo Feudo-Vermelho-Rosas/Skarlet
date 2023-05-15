@@ -15,10 +15,7 @@
     "name": "Conjuntos de tiles",
     "path": "folders/Conjuntos de tiles.yy",
   },
-  "spriteId": {
-    "name": "spr_arbustos",
-    "path": "sprites/spr_arbustos/spr_arbustos.yy",
-  },
+  "spriteId": null,
   "spriteNoExport": true,
   "textureGroupId": {
     "name": "Default",

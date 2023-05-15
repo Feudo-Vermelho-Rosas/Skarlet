@@ -1,4 +1,4 @@
-/*
+ /*
 Data structure de profundidade.
 	Coluna 0: id das instâncias.
 	Coluna 1: posição das instâncias.

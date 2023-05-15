@@ -22,7 +22,7 @@ depthsort = function() {
 			depth_grid[# 1, _grid_posicao] = _instancia.y;
 			_grid_posicao++;
 		}
-	}
+	} 
 	ds_grid_sort(depth_grid,1,true)
 	
 	// Desenhe as instâncias com a profundidade adequada.
@@ -33,7 +33,4 @@ depthsort = function() {
 		}
 	}
 }
-
-
-
-
+ 

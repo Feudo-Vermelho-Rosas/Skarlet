@@ -1,0 +1,1 @@
+global.musica_bg = snd_floresta_temporaria;
