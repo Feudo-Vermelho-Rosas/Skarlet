@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "rm_floresta_andar_boss",
-  "creationCodeFile": "",
+  "creationCodeFile": "rooms/rm_floresta_andar_boss/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
@@ -76,6 +76,7 @@
     {"name":"inst_2D3C2471","path":"rooms/rm_floresta_andar_boss/rm_floresta_andar_boss.yy",},
     {"name":"inst_5C2EE6D3","path":"rooms/rm_floresta_andar_boss/rm_floresta_andar_boss.yy",},
     {"name":"inst_59C9354C","path":"rooms/rm_floresta_andar_boss/rm_floresta_andar_boss.yy",},
+    {"name":"inst_2744BAE2","path":"rooms/rm_floresta_andar_boss/rm_floresta_andar_boss.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -149,6 +150,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2D3C2471","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_arbusto_3","path":"objects/obj_arbusto_3/obj_arbusto_3.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":15.0,"y":110.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5C2EE6D3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_arbusto_3","path":"objects/obj_arbusto_3/obj_arbusto_3.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":132.0,"y":518.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_59C9354C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_arbusto_3","path":"objects/obj_arbusto_3/obj_arbusto_3.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":472.0,"y":54.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2744BAE2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_aranha","path":"objects/obj_aranha/obj_aranha.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":160.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Paredes","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[

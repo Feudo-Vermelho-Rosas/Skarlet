@@ -1,4 +1,4 @@
-/// @description
+ /// @description
 
 // Estado do personagem.
 estado = scr_personagem_andando;
@@ -12,7 +12,7 @@ esquerda = 0;
 ataque = 0;
 
 // Movimento.
-direcao = 0;
+direcao = 3;
 kb_speed = 0;
 
 veloc = 1.5; // Velocidade de movimentação.

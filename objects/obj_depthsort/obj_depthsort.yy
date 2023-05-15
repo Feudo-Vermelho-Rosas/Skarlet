@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objetos",
-    "path": "folders/Objetos.yy",
+    "name": "controle",
+    "path": "folders/Objetos/controle.yy",
   },
   "parentObjectId": null,
   "persistent": true,
