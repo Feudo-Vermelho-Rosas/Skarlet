@@ -15,22 +15,18 @@
     "name": "Conjuntos de tiles",
     "path": "folders/Conjuntos de tiles.yy",
   },
-  "spriteId": {
-    "name": "spr_arbustos",
-    "path": "sprites/spr_arbustos/spr_arbustos.yy",
-  },
+  "spriteId": null,
   "spriteNoExport": true,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
   },
-  "tile_count": 4,
+  "tile_count": 3,
   "tileAnimation": {
     "FrameData": [
       0,
       1,
       2,
-      3,
     ],
     "SerialiseFrameCount": 1,
   },

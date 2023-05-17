@@ -1,4 +1,4 @@
-draw_set_font(ft_menu);
+/*draw_set_font(ft_menu);
 
 var dist = 50;
 var gui_largura = display_get_gui_width();
@@ -19,6 +19,5 @@ for(var i = 0; i< op_max; i++){
 	draw_text(x1,y1 + (dist * i),opcoes[i]);
 }
 
-
-
 draw_set_font(-1);
+*/
