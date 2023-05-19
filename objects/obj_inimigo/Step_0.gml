@@ -1,5 +1,12 @@
 /// @description
 
+if (global.pause) {
+	image_speed = 0
+	exit;
+}
+
+image_speed = 1;
+
 // Checar a distância do personagem.
 perseguindo = scr_checar_personagem();
 if perseguindo {

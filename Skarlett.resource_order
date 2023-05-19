@@ -69,6 +69,7 @@
     {"name":"scripts_inimigo","order":1,"path":"scripts/scripts_inimigo/scripts_inimigo.yy",},
     {"name":"obj_pedra_1","order":4,"path":"objects/obj_pedra_1/obj_pedra_1.yy",},
     {"name":"spr_pedra_3","order":6,"path":"sprites/spr_pedra_3/spr_pedra_3.yy",},
+    {"name":"obj_pause","order":9,"path":"objects/obj_pause/obj_pause.yy",},
     {"name":"rm_floresta_andar_boss","order":4,"path":"rooms/rm_floresta_andar_boss/rm_floresta_andar_boss.yy",},
     {"name":"obj_arbusto_1","order":1,"path":"objects/obj_arbusto_1/obj_arbusto_1.yy",},
     {"name":"spr_aranha_atacando","order":1,"path":"sprites/spr_aranha_atacando/spr_aranha_atacando.yy",},

@@ -97,6 +97,7 @@
     {"id":{"name":"scripts_inimigo","path":"scripts/scripts_inimigo/scripts_inimigo.yy",},},
     {"id":{"name":"obj_pedra_1","path":"objects/obj_pedra_1/obj_pedra_1.yy",},},
     {"id":{"name":"spr_pedra_3","path":"sprites/spr_pedra_3/spr_pedra_3.yy",},},
+    {"id":{"name":"obj_pause","path":"objects/obj_pause/obj_pause.yy",},},
     {"id":{"name":"rm_floresta_andar_boss","path":"rooms/rm_floresta_andar_boss/rm_floresta_andar_boss.yy",},},
     {"id":{"name":"rm_floresta_andar_1","path":"rooms/rm_floresta_andar_1/rm_floresta_andar_1.yy",},},
     {"id":{"name":"obj_arbusto_1","path":"objects/obj_arbusto_1/obj_arbusto_1.yy",},},

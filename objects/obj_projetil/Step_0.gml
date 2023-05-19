@@ -1,5 +1,11 @@
 /// @description
 
+if (global.pause) {
+	image_speed = 0
+	exit;
+}
+image_speed = 1;
+
 image_alpha -= 1/vida_tempo;
 
 x += hveloc;

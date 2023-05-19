@@ -77,6 +77,7 @@
     {"name":"inst_5C2EE6D3","path":"rooms/rm_floresta_andar_boss/rm_floresta_andar_boss.yy",},
     {"name":"inst_59C9354C","path":"rooms/rm_floresta_andar_boss/rm_floresta_andar_boss.yy",},
     {"name":"inst_2744BAE2","path":"rooms/rm_floresta_andar_boss/rm_floresta_andar_boss.yy",},
+    {"name":"inst_76972986","path":"rooms/rm_floresta_andar_boss/rm_floresta_andar_boss.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -103,6 +104,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7B6860E0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_arvore","path":"objects/obj_arvore/obj_arvore.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":609.0,"y":102.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_266DAD72","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_arvore","path":"objects/obj_arvore/obj_arvore.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":630.0,"y":169.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_D50B8A4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_arvore","path":"objects/obj_arvore/obj_arvore.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":339.0,"y":314.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_76972986","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_pause","path":"objects/obj_pause/obj_pause.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":704.0,"y":32.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Pedras","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_783F34CB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_pedra_1","path":"objects/obj_pedra_1/obj_pedra_1.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":207.0,"y":432.0,},

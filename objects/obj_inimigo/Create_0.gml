@@ -1,5 +1,6 @@
 /// @description
 
+
 // Estado
 estado = scr_inimigo_escolha;
 proximo_estado = 0;
