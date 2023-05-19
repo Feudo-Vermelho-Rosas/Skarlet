@@ -1,4 +1,4 @@
-///main menu
+ ///main menu
 
 #macro MAIN			0
 #macro SETTINGS		1
