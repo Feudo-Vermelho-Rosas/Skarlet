@@ -115,6 +115,7 @@
     {"id":{"name":"ts_flores","path":"tilesets/ts_flores/ts_flores.yy",},},
     {"id":{"name":"spr_pedra_4","path":"sprites/spr_pedra_4/spr_pedra_4.yy",},},
     {"id":{"name":"spr_formiga_parada","path":"sprites/spr_formiga_parada/spr_formiga_parada.yy",},},
+    {"id":{"name":"ft_menupause","path":"fonts/ft_menupause/ft_menupause.yy",},},
     {"id":{"name":"snd_floresta_temporaria","path":"sounds/snd_floresta_temporaria/snd_floresta_temporaria.yy",},},
     {"id":{"name":"spr_hud_vida","path":"sprites/spr_hud_vida/spr_hud_vida.yy",},},
     {"id":{"name":"obj_larva","path":"objects/obj_larva/obj_larva.yy",},},

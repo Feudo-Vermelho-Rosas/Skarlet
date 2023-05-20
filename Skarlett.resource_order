@@ -82,6 +82,7 @@
     {"name":"ts_flores","order":2,"path":"tilesets/ts_flores/ts_flores.yy",},
     {"name":"spr_pedra_4","order":7,"path":"sprites/spr_pedra_4/spr_pedra_4.yy",},
     {"name":"spr_formiga_parada","order":1,"path":"sprites/spr_formiga_parada/spr_formiga_parada.yy",},
+    {"name":"ft_menupause","order":1,"path":"fonts/ft_menupause/ft_menupause.yy",},
     {"name":"snd_floresta_temporaria","order":1,"path":"sounds/snd_floresta_temporaria/snd_floresta_temporaria.yy",},
     {"name":"obj_larva","order":3,"path":"objects/obj_larva/obj_larva.yy",},
     {"name":"spr_pedra_1","order":4,"path":"sprites/spr_pedra_1/spr_pedra_1.yy",},

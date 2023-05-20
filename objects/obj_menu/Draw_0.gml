@@ -33,7 +33,7 @@ for (var i = 0; i < array_length(menu[sub_menu]); ++i) {
 		//draw string
 		var _str = menu[sub_menu][i];
 	}
-		
+	
 	
     draw_text(room_width/15, room_height/2 + _gap *i, _str);
 }
