@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "controle",
-    "path": "folders/Objetos/controle.yy",
+    "name": "efeitos",
+    "path": "folders/Objetos/efeitos.yy",
   },
   "parentObjectId": null,
   "persistent": true,

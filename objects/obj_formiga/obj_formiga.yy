@@ -35,8 +35,5 @@
     "path": "sprites/spr_formiga_parada/spr_formiga_parada.yy",
   },
   "spriteMaskId": null,
-  "tags": [
-    "depthsort",
-  ],
   "visible": true,
 }

@@ -29,11 +29,13 @@ kb = 3;
 sprite_andando = 0;
 sprite_parado = 0;
 
-#region Timers e duração.
+#region Timers e du ração.
 duracao_estado = 180; // Representa a duração média de cada estado.
 alarme_estado = 0;
 hit_alarme = 0;
 hit_duracao = 10;
 invulneravel_alarme = 0;
 invulneravel_duracao = 60; // 1 segundos.
+alarme_barra_vida = 0;
+duracao_barra_vida = 180; // 3 segundos.
 #endregion

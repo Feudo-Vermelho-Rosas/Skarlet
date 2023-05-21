@@ -35,8 +35,5 @@
     "path": "sprites/spr_aranha_parada/spr_aranha_parada.yy",
   },
   "spriteMaskId": null,
-  "tags": [
-    "depthsort",
-  ],
   "visible": true,
 }

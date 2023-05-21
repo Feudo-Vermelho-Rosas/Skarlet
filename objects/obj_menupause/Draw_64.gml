@@ -46,3 +46,9 @@ for (var i = 0; i < array_length(menu[sub_menu]); ++i) {
 	
     draw_text(_x/2, ((_y/2)- 100) + _gap *i, _str);
 }
+
+// Resete as configurações de draw.
+draw_set_halign(-1);
+draw_set_valign(-1);
+draw_set_font(-1);
+draw_set_color(-1);

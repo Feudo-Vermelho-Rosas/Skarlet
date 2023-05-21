@@ -4,7 +4,7 @@
   "name": "spr_barra_vida",
   "bbox_bottom": 5,
   "bbox_left": 0,
-  "bbox_right": 34,
+  "bbox_right": 52,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 35,
+  "width": 53,
 }

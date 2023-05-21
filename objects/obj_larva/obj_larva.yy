@@ -36,8 +36,5 @@
     "path": "sprites/spr_larva_parada/spr_larva_parada.yy",
   },
   "spriteMaskId": null,
-  "tags": [
-    "depthsort",
-  ],
   "visible": true,
 }

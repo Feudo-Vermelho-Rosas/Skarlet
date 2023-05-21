@@ -38,3 +38,25 @@ function scr_efeito_invulneravel() {
 	}
 	invulneravel_alarme -= 1;
 }
+	
+function scr_calcular_dano_1(dano) {
+	/// Decide se o dano é crítico e calcula ele. 
+	
+	// Dano crítico duplica o dano.
+	if random(1) <= 0.05 {
+		// Crítico (5% de chance)
+		dano = dano * 2;
+	}
+	
+	dano_calculado = irandom_range(dano+2,dano-2);
+	
+	return dano_calculado;
+}
+
+function scr_calcular_dano_2(dano) {
+	/// Calcula o dano sem chance de crítico. 
+	
+	dano_calculado = irandom_range(dano+2,dano-2);
+	
+	return dano_calculado;
+}
