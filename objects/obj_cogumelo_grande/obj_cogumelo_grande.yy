@@ -1,18 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_huds",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,},
-  ],
+  "name": "obj_cogumelo_grande",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "huds e menu",
-    "path": "folders/Objetos/huds e menu.yy",
+    "name": "decorações",
+    "path": "folders/Objetos/decorações.yy",
   },
-  "parentObjectId": null,
-  "persistent": true,
+  "parentObjectId": {
+    "name": "obj_parede",
+    "path": "objects/obj_parede/obj_parede.yy",
+  },
+  "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
   "physicsFriction": 0.2,
@@ -27,7 +28,13 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_cogumelo_grande",
+    "path": "sprites/spr_cogumelo_grande/spr_cogumelo_grande.yy",
+  },
   "spriteMaskId": null,
+  "tags": [
+    "depthsort",
+  ],
   "visible": true,
 }

@@ -1,17 +1,17 @@
 // Desenhe a sprite do menu de pause. 
-var _x = display_get_width();
-var _y = display_get_height(); 
+var _x = display_get_gui_width();
+var _y = display_get_gui_height(); 
 var _escala = 4;
+
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
 
 draw_sprite_ext(spr_menupause, 0, _x/2, _y/2, _escala, _escala, 0, c_white, 1);
 
-draw_set_halign(fa_center);
-draw_set_valign(fa_center);
 draw_set_font(ft_menupause);
 
 ///linha de espaços
 var _gap = 100;
-
 
 //draw items
 for (var i = 0; i < array_length(menu[sub_menu]); ++i) {

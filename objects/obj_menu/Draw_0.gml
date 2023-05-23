@@ -34,6 +34,10 @@ for (var i = 0; i < array_length(menu[sub_menu]); ++i) {
 		var _str = menu[sub_menu][i];
 	}
 	
+	// Desenhe o texto com outline.
+	var _x = room_width/15;
+	var _y = room_height/2 - (_gap*array_length(menu[sub_menu])/2) + _gap*i
 	
-    draw_text(room_width/15, room_height/2 + _gap *i, _str);
+    //draw_text(room_width/15, room_height/2 + _gap *i, _str);
+	draw_text_outline(_x, _y, _str, 4, c_black, 16, 10, 10000)
 }

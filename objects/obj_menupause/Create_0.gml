@@ -6,8 +6,8 @@
 global.dsm_settings = ds_map_create();
 #macro setpause		global.dsm_settings
 
-ds_map_add(setpause, "som", [10, [0, 10]]);
-ds_map_add(setpause, "musica", [10, [0, 10]]);
+ds_map_add(setpause, "som", [global.volume_geral, [0, 10]]);
+ds_map_add(setpause, "musica", [global.volume_musica, [0, 10]]);
 
 time_held_right = 0;
 time_held_left = 0;

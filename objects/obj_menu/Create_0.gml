@@ -6,9 +6,9 @@
 global.dsm_settings = ds_map_create();
 #macro set		global.dsm_settings
 
-ds_map_add(set, "som", [10, [0, 10]]);
-ds_map_add(set, "musica", [10, [0, 10]]);
-ds_map_add(set, "controles", [0, ["Joystick", "Teclado"]]);
+ds_map_add(set, "som", [global.volume_geral, [0, 10]]);
+ds_map_add(set, "musica", [global.volume_musica, [0, 10]]);
+ds_map_add(set, "controles", [0, ["Teclado", "Joystick"]]);
 
 time_held_right = 0;
 time_held_left = 0;
@@ -23,5 +23,5 @@ menu[SETTINGS][1] = ["Musica: ", "musica"];
 menu[SETTINGS][2] = ["Controle: ", "controles"];
 menu[SETTINGS][3] = "Voltar";
 
-index = 0;   //Menu index position
+index = 0;    //Menu index position
 sub_menu = 0; //current menu
