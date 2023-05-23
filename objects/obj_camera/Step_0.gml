@@ -1,4 +1,4 @@
-/// @description
+ /// @description
 
 // Aproxime da posição do personagem.
 x = lerp(x,obj_personagem.x,0.05);

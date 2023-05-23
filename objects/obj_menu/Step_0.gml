@@ -70,13 +70,13 @@ if _select or (is_array(menu[sub_menu][index]) and (_hmove != 0)){
 				case 0:
 					//Som
 					change_menu(_hmove, "som");
-					var _som = ds_map_find_value(set, "som")[0]/10;
+					var _som = ds_map_find_value(set, "som")[0];
 					global.volume_geral = _som;
 				break;
 				case 1:
 					//Musica
 					change_menu(_hmove, "musica");
-					var _musica = ds_map_find_value(set, "musica")[0]/10;
+					var _musica = ds_map_find_value(set, "musica")[0];
 					global.volume_musica = _musica;
 				break;
 				case 2:
