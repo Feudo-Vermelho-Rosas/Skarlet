@@ -24,7 +24,7 @@ veloc_dir = 0;
 max_hp = 100;
 hp = 100;
 defesa = 0;
-dano = 5;
+dano = 20;
 kb = 3;
 
 // Desenho;

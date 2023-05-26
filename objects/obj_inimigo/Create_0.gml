@@ -1,5 +1,4 @@
-/// @description
-
+/// @description Inimigo base
 
 // Estado
 estado = scr_inimigo_escolha;

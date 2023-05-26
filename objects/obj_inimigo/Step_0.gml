@@ -26,8 +26,8 @@ scr_controlar_direcao();
 
 // Delete a instância se o HP chegar a 0.
 if hp <= 0 {
+	// Crie o efeito de partícula.
+	instance_create_layer(x,y,"Instances",obj_particula_morte);
+	
 	instance_destroy();
 }
-
-// Controle de profundidade.
-depth = -y;
