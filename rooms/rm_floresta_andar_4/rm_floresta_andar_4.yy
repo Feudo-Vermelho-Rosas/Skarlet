@@ -149,6 +149,7 @@
     {"name":"inst_30682605","path":"rooms/rm_floresta_andar_4/rm_floresta_andar_4.yy",},
     {"name":"inst_62E018B2","path":"rooms/rm_floresta_andar_4/rm_floresta_andar_4.yy",},
     {"name":"inst_15EEEC1F","path":"rooms/rm_floresta_andar_4/rm_floresta_andar_4.yy",},
+    {"name":"inst_370CD7B5","path":"rooms/rm_floresta_andar_4/rm_floresta_andar_4.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -217,6 +218,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_30682605","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_cogumelo_grande","path":"objects/obj_cogumelo_grande/obj_cogumelo_grande.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":87.0,"y":276.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_62E018B2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_cogumelo_grande","path":"objects/obj_cogumelo_grande/obj_cogumelo_grande.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":638.0,"y":626.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_15EEEC1F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_cogumelo_grande","path":"objects/obj_cogumelo_grande/obj_cogumelo_grande.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":569.0,"y":141.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_370CD7B5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_inventario","path":"objects/obj_inventario/obj_inventario.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":704.0,"y":64.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Obstaculos","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_527182B3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_pedra_1","path":"objects/obj_pedra_1/obj_pedra_1.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":467.0,"y":413.0,},

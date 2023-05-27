@@ -181,6 +181,7 @@
     {"name":"inst_58F8C815","path":"rooms/rm_floresta_andar_1/rm_floresta_andar_1.yy",},
     {"name":"inst_306F8B76","path":"rooms/rm_floresta_andar_1/rm_floresta_andar_1.yy",},
     {"name":"inst_6FF39292","path":"rooms/rm_floresta_andar_1/rm_floresta_andar_1.yy",},
+    {"name":"inst_36F65A30","path":"rooms/rm_floresta_andar_1/rm_floresta_andar_1.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -248,6 +249,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_F0F270E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_arvore","path":"objects/obj_arvore/obj_arvore.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":139.0,"y":650.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_634D76E2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_arvore","path":"objects/obj_arvore/obj_arvore.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":255.0,"y":635.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7F39740D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_pause","path":"objects/obj_pause/obj_pause.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":704.0,"y":0.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_36F65A30","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_inventario","path":"objects/obj_inventario/obj_inventario.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":704.0,"y":32.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Decoracoes","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1FACC81E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_cogumelo_pequeno","path":"objects/obj_cogumelo_pequeno/obj_cogumelo_pequeno.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":288.0,},
