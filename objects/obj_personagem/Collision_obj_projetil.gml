@@ -1,4 +1,4 @@
-/// @description
+ /// @description
 
 // Tome hit se não estiver invulnerável.
 if !invulneravel {

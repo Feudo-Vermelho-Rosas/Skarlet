@@ -1,4 +1,4 @@
-/// @description
+ /// @description
 
 // Checar a distância do personagem.
 combate = scr_checar_personagem();

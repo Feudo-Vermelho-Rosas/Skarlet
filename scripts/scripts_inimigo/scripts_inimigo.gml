@@ -77,7 +77,9 @@ function scr_inimigo_perseguindo() {
 	image_speed = 2;
 	
 	// Aponte para a direção do personagem.
-	veloc_dir = point_direction(x,y,obj_personagem.x,obj_personagem.y);
+	var _x = obj_personagem.x
+	var _y = obj_personagem.y
+	veloc_dir = point_direction(x,y,_x,_y);
 	
 	// Mova para a direção do personagem.
 	hveloc = lengthdir_x(veloc_perseguir, veloc_dir);
@@ -119,6 +121,7 @@ function scr_inimigo_hit() {
 }
 
 function scr_controlar_direcao() {
+	// Controla os sprites e direção.
 	
 	if estado != scr_inimigo_hit {
 		switch direcao {
@@ -132,15 +135,26 @@ function scr_controlar_direcao() {
 				break;
 		}
 	
-	
-		if hveloc < 0 {
-			direcao = 2;
-			image_xscale = -1;
-			sprite_index = sprite_andando;
-		} else if hveloc > 0 {
-			direcao = 0;
-			image_xscale = 1;
-			sprite_index = sprite_andando;
+		if !perseguindo {
+			if hveloc < 0 {
+				direcao = 2;
+				image_xscale = -1;
+				sprite_index = sprite_andando;
+			} else if hveloc > 0 {
+				direcao = 0;
+				image_xscale = 1;
+				sprite_index = sprite_andando;
+			}
+		} else {
+			if hveloc < 0 {
+				direcao = 2;
+				image_xscale = -1;
+				sprite_index = sprite_perseguindo;
+			} else if hveloc > 0 {
+				direcao = 0;
+				image_xscale = 1;
+				sprite_index = sprite_perseguindo;
+			}	
 		}
 	}
 }
@@ -180,5 +194,9 @@ function scr_inimigo_projetil_combate() {
 	if combate == false {
 		estado = scr_inimigo_escolha;
 	}
+	
+}
+	
+function scr_inimigo_abelha_perseguindo() {
 	
 }

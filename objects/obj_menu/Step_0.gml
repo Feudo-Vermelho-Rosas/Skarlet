@@ -51,7 +51,7 @@ if _select or (is_array(menu[sub_menu][index]) and (_hmove != 0)){
 			switch(index) {
 				case 0:
 					//Novo Jogo
-					room_goto_next();
+					room_goto(global.room_inicial);
 				break;
 				case 1:
 					//Opcões

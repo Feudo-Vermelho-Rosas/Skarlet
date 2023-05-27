@@ -1,5 +1,4 @@
-/// @description
-
+// Sistema de pause.
 if (global.pause) {
 	image_speed = 0
 	exit;
