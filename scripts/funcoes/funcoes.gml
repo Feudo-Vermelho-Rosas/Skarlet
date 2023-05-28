@@ -104,6 +104,7 @@ function draw_text_outline(x,y,str,outwidth,outcol,outfidelity,_separation,width
 	draw_text(argument0,argument1,argument2);
 	*/
 }
+	
 function ds_grid_add_item(){
 	///@arg Item
 	///@arg Quantidade

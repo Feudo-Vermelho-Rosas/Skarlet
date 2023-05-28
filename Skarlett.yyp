@@ -50,6 +50,7 @@
   },
   "resources": [
     {"id":{"name":"ts_pedra_terra","path":"tilesets/ts_pedra_terra/ts_pedra_terra.yy",},},
+    {"id":{"name":"obj_placa","path":"objects/obj_placa/obj_placa.yy",},},
     {"id":{"name":"obj_music","path":"objects/obj_music/obj_music.yy",},},
     {"id":{"name":"snd_boss_temporario","path":"sounds/snd_boss_temporario/snd_boss_temporario.yy",},},
     {"id":{"name":"obj_barravida","path":"objects/obj_barravida/obj_barravida.yy",},},
@@ -126,6 +127,7 @@
     {"id":{"name":"rm_floresta_andar_boss","path":"rooms/rm_floresta_andar_boss/rm_floresta_andar_boss.yy",},},
     {"id":{"name":"rm_floresta_andar_1","path":"rooms/rm_floresta_andar_1/rm_floresta_andar_1.yy",},},
     {"id":{"name":"obj_inventario","path":"objects/obj_inventario/obj_inventario.yy",},},
+    {"id":{"name":"spr_placa","path":"sprites/spr_placa/spr_placa.yy",},},
     {"id":{"name":"obj_arbusto_1","path":"objects/obj_arbusto_1/obj_arbusto_1.yy",},},
     {"id":{"name":"spr_cerejeira","path":"sprites/spr_cerejeira/spr_cerejeira.yy",},},
     {"id":{"name":"spr_pedra_terra","path":"sprites/spr_pedra_terra/spr_pedra_terra.yy",},},

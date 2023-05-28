@@ -1,6 +1,6 @@
 //Verificar se o inventario esta ativo
 inventario = false;
-escala = 5;
+escala = 4;
 
 ///Pixel aonde que começa o inventario 
 comeco_x = 19 * escala;

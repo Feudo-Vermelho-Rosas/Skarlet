@@ -25,9 +25,9 @@ dano = 7;
 kb = 2; 
 
 // Desenho.
-sprite_andando = spr_formiga_andando;
-sprite_parado = spr_formiga_parada;
-sprite_perseguindo = spr_formiga_andando; 
+sprite_andando = spr_formiga_armadura_andando;
+sprite_parado = spr_formiga_armadura_parada;
+sprite_perseguindo = spr_formiga_armadura_andando; 
 
 #region Timers e duração.
 duracao_estado = 180; // Representa a duração média de cada estado.

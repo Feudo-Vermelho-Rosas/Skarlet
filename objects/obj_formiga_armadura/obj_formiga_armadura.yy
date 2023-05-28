@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_formiga_parada",
-    "path": "sprites/spr_formiga_parada/spr_formiga_parada.yy",
+    "name": "spr_formiga_armadura_parada",
+    "path": "sprites/spr_formiga_armadura_parada/spr_formiga_armadura_parada.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -34,5 +34,5 @@
     "path": "sprites/spr_altar/spr_altar.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

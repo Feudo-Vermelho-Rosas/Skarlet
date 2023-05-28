@@ -15,6 +15,11 @@ draw_sprite_ext(spr_barra_vida,0,_x+92,_y,(_hp/_max_hp)*_escala,_escala,0,c_whit
 // Desenhe o texto.
 var _escala_texto = 0.7;
 
+draw_set_halign(fa_left);
 draw_set_font(ft_menupause);
 var _string = string(_hp) + "/" + string(_max_hp) + " HP";
 draw_text_transformed(_x+100,_y-17,_string,_escala_texto,_escala_texto,0);
+
+// Resete o draw.
+draw_set_halign(-1);
+draw_set_font(-1);

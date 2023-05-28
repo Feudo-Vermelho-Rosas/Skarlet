@@ -29,6 +29,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"ts_pedra_terra","order":6,"path":"tilesets/ts_pedra_terra/ts_pedra_terra.yy",},
+    {"name":"obj_placa","order":13,"path":"objects/obj_placa/obj_placa.yy",},
     {"name":"obj_music","order":2,"path":"objects/obj_music/obj_music.yy",},
     {"name":"snd_boss_temporario","order":2,"path":"sounds/snd_boss_temporario/snd_boss_temporario.yy",},
     {"name":"obj_barravida","order":4,"path":"objects/obj_barravida/obj_barravida.yy",},
@@ -97,6 +98,7 @@
     {"name":"obj_pause","order":4,"path":"objects/obj_pause/obj_pause.yy",},
     {"name":"rm_floresta_andar_boss","order":4,"path":"rooms/rm_floresta_andar_boss/rm_floresta_andar_boss.yy",},
     {"name":"obj_inventario","order":10,"path":"objects/obj_inventario/obj_inventario.yy",},
+    {"name":"spr_placa","order":13,"path":"sprites/spr_placa/spr_placa.yy",},
     {"name":"obj_arbusto_1","order":6,"path":"objects/obj_arbusto_1/obj_arbusto_1.yy",},
     {"name":"spr_cerejeira","order":1,"path":"sprites/spr_cerejeira/spr_cerejeira.yy",},
     {"name":"spr_pedra_terra","order":4,"path":"sprites/spr_pedra_terra/spr_pedra_terra.yy",},

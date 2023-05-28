@@ -35,7 +35,7 @@ alarme_estado = 0;
 hit_alarme = 0;
 hit_duracao = 10;
 invulneravel_alarme = 0;
-invulneravel_duracao = 60; // 1 segundos.
+invulneravel_duracao = 120; // 2 segundos.
 alarme_barra_vida = 0;
 duracao_barra_vida = 180; // 3 segundos.
 #endregion

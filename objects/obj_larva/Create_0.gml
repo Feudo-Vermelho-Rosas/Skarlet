@@ -5,6 +5,7 @@ estado = scr_inimigo_escolha;
 proximo_estado = 0;
 dist_aggro = 80;
 invulneravel = false;
+perseguindo = false;
 combate = false;
 
 // Movimento
