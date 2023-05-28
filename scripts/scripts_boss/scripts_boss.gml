@@ -42,9 +42,22 @@ function scr_abelha_escolha() {
 			estado = scr_boss_abelha_avanco;
 			repeticao_rush = 0;
 		} else if proximo_estado == scr_boss_abelha_abelhas {
-			repeat(3){
-				var _x = x + irandom_range(-20,20);
-				var _y = y + irandom_range(-20,20);
+			// Spawne 3 abelhas pequenas.
+			repeat(qntd_spawn_abelhas){
+				var _x;
+				var _y;
+				
+				while true {
+					_x = x + irandom_range(-20,20);
+					_y = y + irandom_range(-20,20);
+					
+					// Evite spawn em alguma hitbox.
+					var _colisao = place_meeting(_x,_y,obj_parede);
+					if _colisao == false {
+						break;
+					}
+				}
+				
 				instance_create_layer(_x,_y,"Instances",obj_abelhaboss);
 				instance_create_layer(_x,_y,"Instances",obj_particula_morte);
 			}
@@ -145,9 +158,9 @@ function scr_boss_abelha_controle_sprite() {
 	}
 	
 	if estado == scr_boss_abelha_rush {
-		sprite_index = spr_boss_abelha_avanco;
+		sprite_index = sprite_avancando;
 	} else {
-		sprite_index = spr_boss_abelha_parada;
+		sprite_index = sprite_parado;
 	}
 }
 	

@@ -6,6 +6,7 @@ proximo_estado = -1;
 rage = false;
 repeticao_rush = 0;
 invulneravel = false;
+qntd_spawn_abelhas = 3;
 
 alpha_add = 0;
 
@@ -28,6 +29,10 @@ hp = max_hp;
 defesa = 10;
 dano = 12;
 kb = 3;
+
+// Desenho
+sprite_avancando = spr_boss_abelha_avanco;
+sprite_parado = spr_boss_abelha_parada;
 
 #region Alarmes e timers.
 duracao_spawn = 120 // 2 segundos.

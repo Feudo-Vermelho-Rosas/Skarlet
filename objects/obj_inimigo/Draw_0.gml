@@ -17,7 +17,7 @@ if hit_alarme > 0 {
 draw_self();
 
 // Desenhe a barra de vida
-if alarme_barra_vida > 0 {
+if alarme_barra_vida > 0 and hp > 0 {
 	draw_sprite(spr_hud_inimigo,0,x,y-7);
 	draw_sprite_ext(spr_barra_inimigo,0,x-5,y-5,hp/max_hp,1,0,c_white,1);
 	alarme_barra_vida -= 1;
