@@ -2,6 +2,7 @@
 if (global.pause = false){
 	instance_destroy();
 }
+
 //get input
 var _up = keyboard_check_pressed(vk_up);
 var _down = keyboard_check_pressed(vk_down);

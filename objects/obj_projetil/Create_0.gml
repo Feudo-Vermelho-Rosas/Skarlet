@@ -6,6 +6,7 @@ y_destino = obj_personagem.y;
 
 veloc = 1.5;
 veloc_dir = point_direction(x,y,x_destino,y_destino);
+direcao = veloc_dir; 
 hveloc = lengthdir_x(veloc, veloc_dir);
 vveloc = lengthdir_y(veloc, veloc_dir);
 
@@ -14,4 +15,4 @@ dano = 0;
 kb = 0;
 
 // Alarmes.
-vida_tempo = 60; // 1 segundo
+vida_tempo = 300; // 6 segundos.

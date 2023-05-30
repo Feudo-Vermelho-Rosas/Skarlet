@@ -1,11 +1,10 @@
-/// @description
-
+/// @description Inimigo base
 
 // Estado
 estado = scr_inimigo_escolha;
 proximo_estado = 0;
 perseguindo = false;
-dist_perseguir = 80;
+dist_aggro = 80;
 invulneravel = false;
 
 // Movimento
@@ -29,7 +28,7 @@ kb = 3;
 sprite_andando = 0;
 sprite_parado = 0;
 
-#region Timers e du ração.
+#region Timers e duração.
 duracao_estado = 180; // Representa a duração média de cada estado.
 alarme_estado = 0;
 hit_alarme = 0;

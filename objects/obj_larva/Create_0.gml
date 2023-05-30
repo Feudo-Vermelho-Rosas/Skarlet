@@ -5,6 +5,7 @@ estado = scr_inimigo_escolha;
 proximo_estado = 0;
 dist_aggro = 80;
 invulneravel = false;
+perseguindo = false;
 combate = false;
 
 // Movimento
@@ -21,7 +22,7 @@ veloc_dir = 0;
 max_hp = 20;
 hp = 20;
 defesa = 0;
-dano = 5;
+dano = 7;
 kb = 3;
 
 // Desenho.

@@ -27,6 +27,7 @@ kb = 3;
 // Desenho.
 sprite_andando = spr_formiga_andando;
 sprite_parado = spr_formiga_parada;
+sprite_perseguindo = spr_formiga_andando; 
 
 #region Timers e duração.
 duracao_estado = 180; // Representa a duração média de cada estado.

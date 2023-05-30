@@ -30,6 +30,7 @@ depthsort = function() {
 		var _instancia = depth_grid[# 0, i];
 		with (_instancia) {
 			event_perform(ev_draw,0);
+			event_perform(ev_draw,ev_gui);
 		}
 	}
 }

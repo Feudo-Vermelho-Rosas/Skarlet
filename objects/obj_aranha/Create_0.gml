@@ -18,15 +18,16 @@ vveloc = 0;
 veloc_dir = 0;
 
 // Stats
-max_hp = 20;
-hp = 20;
+max_hp = 25;
+hp = 25;
 defesa = 0;
-dano = 5;
+dano = 7;
 kb = 3;
 
 // Desenho.
 sprite_andando = spr_aranha_andando;
 sprite_parado = spr_aranha_parada;
+sprite_perseguindo = spr_aranha_andando;
 
 #region Timers e duração.
 duracao_estado = 180; // Representa a duração média de cada estado.
@@ -34,7 +35,7 @@ alarme_estado = 0;
 hit_alarme = 0;
 hit_duracao = 10;
 invulneravel_alarme = 0;
-invulneravel_duracao = 120; // 1 segundos.
+invulneravel_duracao = 120; // 2 segundos.
 alarme_barra_vida = 0;
 duracao_barra_vida = 180; // 3 segundos.
 #endregion

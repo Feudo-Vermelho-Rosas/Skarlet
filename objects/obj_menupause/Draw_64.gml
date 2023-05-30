@@ -10,7 +10,7 @@ draw_sprite_ext(spr_menupause, 0, _x/2, _y/2, _escala, _escala, 0, c_white, 1);
 
 draw_set_font(ft_menupause);
 
-///linha de espaços
+// linha de espaços
 var _gap = 100;
 
 //draw items
