@@ -25,7 +25,7 @@ tempo = 0;
 
 // Stats
 max_hp = 200;
-hp = 200;
+hp = 50;
 defesa = 10;
 dano = 12;
 kb = 3;

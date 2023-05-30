@@ -1,10 +1,12 @@
 // Esse objeto serve simplemente para debug ingame.
 
 if active {
-
+	
 	// Room debug.
 	if room == rm_floresta_andar_1 {
-		room_goto(room_debug);
+		if room_debug != rm_floresta_andar_1 {
+			room_goto(room_debug);
+		}
 	}
 	
 	// Noclip.
