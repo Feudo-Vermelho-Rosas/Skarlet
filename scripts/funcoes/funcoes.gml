@@ -105,19 +105,3 @@ function draw_text_outline(x,y,str,outwidth,outcol,outfidelity,_separation,width
 	*/
 }
 	
-function ds_grid_add_item(){
-	///@arg Item
-	///@arg Quantidade
-	///@arg Sprite
-	
-	var _grid = obj_inventario.grid_items;
-	
-	var _checagem = 0;
-	while _grid[# Infos.Item, _checagem] != -1{
-		_checagem++;
-	}
-	
-	_grid[# 0, _checagem] = argument[0];
-	_grid[# 1, _checagem] = argument[1];
-	_grid[# 2, _checagem] = argument[2];
-}

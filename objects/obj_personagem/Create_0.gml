@@ -23,7 +23,7 @@ veloc_dir = 0;
 // Stats
 max_hp = 100;
 hp = 100;
-defesa = 0;
+defesa = 3;
 dano = 5;
 kb = 3;
 
