@@ -1,5 +1,8 @@
 #region Inventário.
 
+// Profundidade.
+depth = -5000;
+
 //Verificar se o inventario esta ativo
 inventario = false;
 escala = 4;
@@ -44,10 +47,7 @@ enum Infos{
 grid_items = ds_grid_create(Infos.Altura, total_slots);
 ds_grid_set_region(grid_items, 0, 0, Infos.Altura - 1, total_slots - 1, -1);
 
-ds_grid_add_item(Itens.EspadaPadrao, 1, spr_items_armas);
-ds_grid_add_item(Itens.EspadaDebug, 1, spr_items_armas);
-ds_grid_add_item(Itens.ArmaduraDebug, 1, spr_items_armas);
-ds_grid_add_item(Itens.PocaoRegen, 6, spr_items_armas);
+ds_grid_add_item(Itens.PocaoRegen, 10, spr_items_armas);
 
 #endregion
 
@@ -72,5 +72,11 @@ ds_grid_add_item(Itens.PocaoRegen, 6, spr_items_armas);
 	comeco_dados_x = 177 * escala ;
 	comeco_dados_y = 88 * escala;
 	espacamento = 15 * escala;
+
+#endregion
+
+#region Timers.
+alarme_cura_delay = 0;
+duracao_cura_delay = 1800;
 
 #endregion

@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objetos",
-    "path": "folders/Objetos.yy",
+    "name": "huds e menu",
+    "path": "folders/Objetos/huds e menu.yy",
   },
   "parentObjectId": null,
   "persistent": false,

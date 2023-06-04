@@ -22,4 +22,7 @@ if !invulneravel {
 	_indicador.y1 = y;
 	_indicador.dano = _dano;
 	
+	// Som de hit.
+	audio_play_sound(som_hit,100,false);
+	
 }

@@ -13,4 +13,7 @@ if !invulneravel {
 	// Set os alarmes.
 	hit_alarme = hit_duracao;
 	invulneravel_alarme = invulneravel_duracao;
+	
+	// Som de hit.
+	audio_play_sound(snd_hit_jogador,100,false);
 }

@@ -46,6 +46,9 @@ function equipar_arma(posicao_inv) {
 	grid_equips[# Infos.Quantidade, 0] = _quantidade;
 	grid_equips[# Infos.Sprite, 0] = _spr;
 	
+	// Efeito sonoro.
+	audio_play_sound(snd_equipar_espada,100,false);
+	
 }
 
 function equipar_defesa(posicao_inv) {
@@ -62,4 +65,41 @@ function equipar_defesa(posicao_inv) {
 	grid_items[# Infos.Quantidade, posicao_inv] = _quantidade;
 	grid_items[# Infos.Sprite, posicao_inv] = _spr;
 	
+	// Efeito sonoro.
+	audio_play_sound(snd_equipar_armadura,100,false);
+	
+}
+	
+function remover_um_item(posicao_inv) {
+	// Use somente um item, subtraia a quantidade por 1;
+	grid_items[# Infos.Quantidade, posicao_inv] -= 1;
+	if grid_items[# Infos.Quantidade, posicao_inv] <= 0 {
+		// Esvazia o slot se tiver menos que 1 item.
+		grid_items[# Infos.Item, posicao_inv] = -1;
+		grid_items[# Infos.Quantidade, posicao_inv] = -1;
+		grid_items[# Infos.Sprite, posicao_inv] = -1;
+	}
+}
+
+function curar(inv_posicao, cura) {
+	if alarme_cura_delay <= 0 {
+		obj_personagem.hp += cura;
+		if obj_personagem.hp > obj_personagem.max_hp {
+			obj_personagem.hp = obj_personagem.max_hp;
+		}
+	
+		remover_um_item(inv_posicao);
+				
+		// Crie o indicador de cura.
+		var _indicador = instance_create_layer(x,y,"Instances",obj_indicador_cura);
+		_indicador.x1 = obj_personagem.x;
+		_indicador.y1 = obj_personagem.y;
+		_indicador.cura = cura;
+		
+		// Efeito sonoro.
+		audio_play_sound(snd_pocao,100,false);
+		
+		// Resete o alarme de cura.
+		alarme_cura_delay = duracao_cura_delay;
+	}
 }

@@ -28,16 +28,19 @@ if hp < max_hp/3 and rage == false {
 	veloc_avanco *= 1.5;
 	veloc *= 2;
 	
-	qntd_spawn_abelhas = 4;
+	qntd_spawn_abelhas = 5;
 	
 	duracao_cooldown /= 2;
 	duracao_ferroes /= 2;
 	duracao_spawn_ferroes /= 2;
 	
-} else if hp <= 0 {
+} else if hp <= 0 { // Delete a instância se o HP chegar a 0.
+	// Adicione o xp ao jogador.
+	obj_personagem.xp += xp;
 	
 	audio_sound_gain(global.musica_bg,0,2000);
 	
+	// Crie as partículas.
 	repeat(30) {
 		var _x = x + irandom_range(-30, 30);
 		var _y = y + irandom_range(-25, 5);

@@ -183,16 +183,24 @@ function scr_inimigo_projetil_combate() {
 	}
 	
 	// Dispare o projétil no ponto certo de animação.
-	var _rounded_image_index = (round(image_index*10)/10); // Correção de bug. 
-	if _rounded_image_index == index_ataque {
-		var _projetil = instance_create_layer(x,y,"Instances",projetil);
-		_projetil.dano = dano;
-		_projetil.kb = kb;
+	if image_index < index_ataque {
+		projetil_atirado = false;
+	}
+	
+	if image_index > index_ataque {
+		
+		if projetil_atirado == false {
+			var _projetil = instance_create_layer(x,y,"Instances",projetil);
+			_projetil.dano = dano;
+			_projetil.kb = kb;
+		}
+		projetil_atirado = true;
 	}
 	
 	// Se não estiver mais em combate, mude o estado.
 	if combate == false {
 		estado = scr_inimigo_escolha;
+		projetil_atirado = false;
 	}
 	
 }

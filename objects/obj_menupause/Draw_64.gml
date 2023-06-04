@@ -2,16 +2,18 @@
 var _x = display_get_gui_width();
 var _y = display_get_gui_height(); 
 var _escala = 4;
+var _cor = #683E0E;
 
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
 draw_sprite_ext(spr_menupause, 0, _x/2, _y/2, _escala, _escala, 0, c_white, 1);
 
-draw_set_font(ft_menupause);
+draw_set_font(ft_menu);
+
 
 // linha de espaços
-var _gap = 100;
+var _gap = 70;
 
 //draw items
 for (var i = 0; i < array_length(menu[sub_menu]); ++i) {
@@ -44,7 +46,8 @@ for (var i = 0; i < array_length(menu[sub_menu]); ++i) {
 	}
 		
 	
-    draw_text(_x/2, ((_y/2)- 100) + _gap *i, _str);
+    draw_text_outline(_x/2, ((_y/2)- 70) + _gap *i, _str, 4, c_black, 16, 1000, 1000);
+
 }
 
 // Resete as configurações de draw.

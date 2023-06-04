@@ -18,16 +18,20 @@ vveloc = 0;
 veloc_dir = 0;
 
 // Stats
-max_hp = 20;
-hp = 20;
+max_hp = 15;
+hp = max_hp;
 defesa = 0;
-dano = 5;
+dano = 8;
 kb = 3;
+drop = -1;
+xp = 5;
 
 // Desenho.
 sprite_andando = spr_formiga_andando;
 sprite_parado = spr_formiga_parada;
 sprite_perseguindo = spr_formiga_andando; 
+
+som_hit = snd_anthit;
 
 #region Timers e duração.
 duracao_estado = 180; // Representa a duração média de cada estado.
@@ -35,7 +39,7 @@ alarme_estado = 0;
 hit_alarme = 0;
 hit_duracao = 10;
 invulneravel_alarme = 0;
-invulneravel_duracao = 120; // 2 segundos.
+invulneravel_duracao = 60; // 1 segundos.
 alarme_barra_vida = 0;
 duracao_barra_vida = 180; // 3 segundos.
 #endregion

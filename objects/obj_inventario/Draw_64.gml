@@ -113,44 +113,33 @@ if inventario == true{
 				
 				var _id = grid_items[# Infos.Item, i];
 				
+				var _dano_base = obj_personagem.dano_base;
+				var _defesa_base = obj_personagem.defesa_base;
+				
 				#region Utilizações por IDs.
 				switch _id {
 					case 0: // Poção de cura.
-						
-						obj_personagem.hp += 50;
-						if obj_personagem.hp > obj_personagem.max_hp {
-							obj_personagem.hp = obj_personagem.max_hp;
-						}
-						
-						// Use somente um item, subtraia a quantidade por 1;
-						grid_items[# Infos.Quantidade, i] -= 1;
-						if grid_items[# Infos.Quantidade, i] <= 0 {
-							// Esvazia o slot se tiver menos que 1 item.
-							grid_items[# Infos.Item, i] = -1;
-							grid_items[# Infos.Quantidade, i] = -1;
-							grid_items[# Infos.Sprite, i] = -1;
-						}
-						
+						curar(i,25);
 					break;
 					
 					case 1: // Armadura Padrão.
 						equipar_defesa(i);
-						obj_personagem.defesa = 3;
+						obj_personagem.defesa = 2 + _defesa_base;
 					break;
 					
 					case 2: // Espada Padrão.
 						equipar_arma(i);
-						obj_personagem.dano = 5;
+						obj_personagem.dano = 4 + _dano_base;
 					break;
 						
 					case 3: // Armadura Debug.
 						equipar_defesa(i);
-						obj_personagem.defesa = 7;
+						obj_personagem.defesa = 7 + _defesa_base;
 					break;
 					
 					case 4: // Espada Debug.
 						equipar_arma(i);
-						obj_personagem.dano = 10;
+						obj_personagem.dano = 10 + _dano_base;
 					break;
 					
 				}

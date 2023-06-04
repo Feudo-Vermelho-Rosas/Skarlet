@@ -23,10 +23,13 @@ hp = 20;
 defesa = 0;
 dano = 5;
 kb = 3;
+drop = -1;
 
 // Desenho.
 sprite_andando = 0;
 sprite_parado = 0;
+
+som_hit = snd_anthit;
 
 #region Timers e duração.
 duracao_estado = 180; // Representa a duração média de cada estado.

@@ -1,6 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-
 function scr_controle_direcao() {
 	
 	if hveloc == 0 && vveloc == 0 {
@@ -83,6 +80,7 @@ function scr_personagem_andando() {
 	ataque = keyboard_check(vk_space);
 	
 	if ataque {
+		//audio_play_sound(snd_sword,100,false);
 		estado = scr_personagem_combate;
 		ataque_alarme = ataque_duracao;
 		scr_criar_hitbox_ataque();
@@ -163,6 +161,23 @@ function scr_personagem_combate() {
 		estado = scr_personagem_andando;
 	}
 	ataque_alarme -= 1;
+	
+}
+	
+function scr_levelup() {
+	
+	level_max_hp = [100,104,109,115,122,130,139,149,160,172,185,199,214,230,247,265,284,300];
+	level_max_xp = [100,110,125,145,170,200,235,275,320,370,425,485,550,620,695,775,860,950];
+	level_dano_base = [1,1,1,2,2,3,4,5,7,9,11,14,17,20,23,26,29,32];
+	level_defesa_base = [1,1,1,2,2,2,3,3,4,5,6,8,10,13,16,19,21,24];
+	
+	xp -= level_max_xp[level-1];
+	level += 1;
+	
+	max_hp = level_max_hp[level-1];
+	max_xp = level_max_xp[level-1];
+	dano_base = level_dano_base[level-1];
+	defesa_base = level_defesa_base[level-1];
 	
 }
 	

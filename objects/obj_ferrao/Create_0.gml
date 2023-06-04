@@ -12,7 +12,7 @@ hveloc = lengthdir_x(veloc, veloc_dir);
 vveloc = lengthdir_y(veloc, veloc_dir);
 
 // Stats.
-dano = 5;
+dano = 20;
 kb = 3 ;
 
 // Alarmes.

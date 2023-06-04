@@ -18,16 +18,20 @@ vveloc = 0;
 veloc_dir = 0;
 
 // Stats
-max_hp = 15;
-hp = 15;
+max_hp = 12;
+hp = max_hp;
 defesa = 0;
-dano = 2;
+dano = 5;
 kb = 3;
+drop = -1;
+xp = 1;
 
 // Desenho.
 sprite_andando = spr_abelha_normal;
 sprite_parado = spr_abelha_normal;
 sprite_perseguindo = spr_abelha_perseguindo; 
+
+som_hit = snd_beehit;
 
 #region Timers e duração.
 duracao_estado = 180; // Representa a duração média de cada estado.

@@ -48,7 +48,10 @@ function scr_calcular_dano_1(dano) {
 		dano = dano * 2;
 	}
 	
-	dano_calculado = irandom_range(dano+2,dano-2);
+	dano_calculado = irandom_range(dano+1,dano-1) - defesa;
+	if dano_calculado < 1 {
+		dano_calculado = 1;
+	}
 	
 	return dano_calculado;
 }
@@ -56,7 +59,7 @@ function scr_calcular_dano_1(dano) {
 function scr_calcular_dano_2(dano) {
 	/// Calcula o dano sem chance de crítico. 
 	
-	dano_calculado = irandom_range(dano+2,dano-2);
+	dano_calculado = irandom_range(dano+1,dano-1) - defesa;
 	
 	return dano_calculado;
 }

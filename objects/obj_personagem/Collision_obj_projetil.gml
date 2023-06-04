@@ -16,4 +16,7 @@ if !invulneravel {
 	// Destrua o projétil.
 	instance_destroy(other);
 	
+	// Som de hit.
+	audio_play_sound(snd_hit_jogador,100,false);
+	
 }

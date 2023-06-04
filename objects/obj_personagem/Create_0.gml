@@ -1,4 +1,4 @@
- /// @description
+ /// @description Personagem principal.
 
 // Estado do personagem.
 estado = scr_personagem_andando;
@@ -23,9 +23,15 @@ veloc_dir = 0;
 // Stats
 max_hp = 100;
 hp = 100;
+dano_base = 1;
+defesa_base = 1;
 defesa = 3;
 dano = 5;
 kb = 3;
+
+level = 1;
+max_xp = 100;
+xp = 0;
 
 // Desenho;
 image_alpha = 1;

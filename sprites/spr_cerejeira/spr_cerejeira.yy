@@ -23,7 +23,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2dc49a89-6570-4611-a5fa-852880125483","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 9,
   "parent": {
     "name": "decorações",
     "path": "folders/Sprites/decorações.yy",
@@ -60,7 +60,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 32,
-    "yorigin": 35,
+    "yorigin": 49,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

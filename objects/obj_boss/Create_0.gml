@@ -25,10 +25,11 @@ tempo = 0;
 
 // Stats
 max_hp = 200;
-hp = 50;
-defesa = 10;
+hp = 200;
+defesa = 0;
 dano = 12;
-kb = 3;
+kb = 6;
+xp = 100;
 
 // Desenho
 sprite_avancando = spr_boss_abelha_avanco;

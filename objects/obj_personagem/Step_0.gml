@@ -1,9 +1,9 @@
-/// @description
-
+// Sistema de pause.
 if (global.pause) {
 	image_speed = 0
 	exit;
 }
+
 image_speed = 1;
 
 // Cheque o alarme de hit.
@@ -13,6 +13,11 @@ if hit_alarme > 0 {
 
 // Execute o estado atual do personagem.
 script_execute(estado);
+
+// Controle o level up de níveis.
+if xp >= max_xp {
+	scr_levelup();
+}
 
 // Pegar um item.
 if instance_exists(obj_item) and obj_inventario.inventario == false{
@@ -24,4 +29,11 @@ if instance_exists(obj_item) and obj_inventario.inventario == false{
 			instance_destroy(_inst);
 		}
 	}
+}
+
+// Game over.
+if hp <= 0 {
+	hp = 0;
+	global.pause = true;
+	instance_create_depth(0,0,-5000,obj_gameover);
 }
