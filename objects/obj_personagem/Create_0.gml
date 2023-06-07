@@ -22,7 +22,7 @@ veloc_dir = 0;
 
 // Stats
 max_hp = 100;
-hp = 1;
+hp = 100;
 dano_base = 1;
 defesa_base = 1;
 defesa = 3;

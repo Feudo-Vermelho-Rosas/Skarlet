@@ -26,6 +26,7 @@
     {"name":"inimigos","order":4,"path":"folders/Sprites/inimigos.yy",},
     {"name":"sombras","order":5,"path":"folders/Sprites/sombras.yy",},
     {"name":"tiles","order":1,"path":"folders/Sprites/tiles.yy",},
+    {"name":"deserto","order":5,"path":"folders/Cenas/deserto.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"snd_sword","order":10,"path":"sounds/snd_sword/snd_sword.yy",},
@@ -43,7 +44,6 @@
     {"name":"obj_gosma","order":1,"path":"objects/obj_gosma/obj_gosma.yy",},
     {"name":"obj_inimigo","order":8,"path":"objects/obj_inimigo/obj_inimigo.yy",},
     {"name":"snd_pocao","order":12,"path":"sounds/snd_pocao/snd_pocao.yy",},
-    {"name":"rm_debug","order":2,"path":"rooms/rm_debug/rm_debug.yy",},
     {"name":"spr_menupause","order":3,"path":"sprites/spr_menupause/spr_menupause.yy",},
     {"name":"spr_arvore_cortada","order":2,"path":"sprites/spr_arvore_cortada/spr_arvore_cortada.yy",},
     {"name":"ts_mato","order":7,"path":"tilesets/ts_mato/ts_mato.yy",},
