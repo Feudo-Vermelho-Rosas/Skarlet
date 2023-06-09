@@ -30,6 +30,7 @@ xp = 5;
 sprite_andando = spr_formiga_andando;
 sprite_parado = spr_formiga_parada;
 sprite_perseguindo = spr_formiga_andando; 
+y_sombra = 8;
 
 som_hit = snd_anthit;
 

@@ -36,6 +36,7 @@ xp = 0;
 // Desenho;
 image_alpha = 1;
 alpha_add = 0;
+y_sombra = 8;
 
 #region Timers e durações.
 hit_alarme = 0;

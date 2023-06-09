@@ -31,6 +31,7 @@ xp = 6;
 sprite_andando = spr_larva_andando;
 sprite_parado = spr_larva_parada;
 sprite_atacando = spr_larva_atacando;
+y_sombra = 6;
 
 // Combate
 index_ataque = 5;

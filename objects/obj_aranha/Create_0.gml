@@ -30,6 +30,7 @@ xp = 7;
 sprite_andando = spr_aranha_andando;
 sprite_parado = spr_aranha_parada;
 sprite_perseguindo = spr_aranha_andando;
+y_sombra = 8;
 
 som_hit = snd_spiderhit;
 

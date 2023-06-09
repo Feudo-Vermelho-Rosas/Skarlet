@@ -29,7 +29,8 @@ xp = 1;
 // Desenho.
 sprite_andando = spr_abelha_normal;
 sprite_parado = spr_abelha_normal;
-sprite_perseguindo = spr_abelha_perseguindo; 
+sprite_perseguindo = spr_abelha_perseguindo;
+y_sombra = 8;
 
 som_hit = snd_beehit;
 

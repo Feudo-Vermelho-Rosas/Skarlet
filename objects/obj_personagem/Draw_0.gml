@@ -1,5 +1,5 @@
 // Desenhe a sombra
-draw_sprite(spr_sombra_media,0,x,y+8); 
+draw_sprite(spr_sombra_media,0,x,y+y_sombra); 
 
 // Efeito de invulnerabilidade.
 if invulneravel {
@@ -18,3 +18,4 @@ draw_self();
 
 // Resete as configurações de desenho.
 gpu_set_fog(false,c_red,0,0);
+

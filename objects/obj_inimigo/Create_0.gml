@@ -24,10 +24,14 @@ defesa = 0;
 dano = 5;
 kb = 3;
 drop = -1;
+xp = 5;
 
 // Desenho.
 sprite_andando = 0;
 sprite_parado = 0;
+sprite_perseguindo = 0;
+sprite_atacando = 0;
+y_sombra = 8;
 
 som_hit = snd_anthit;
 

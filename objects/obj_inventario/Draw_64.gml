@@ -23,6 +23,7 @@ if inventario == true{
 		if point_in_rectangle(_mx, _my, _slotsx, _slotsy, _slotsx + tamanho_slot, _slotsy + tamanho_slot){
 			draw_sprite_ext(spr_inventario_seletor, 0, _slotsx, _slotsy, escala, escala, 0, c_white, 1);
 			
+			// Drop de item.
 			if keyboard_check_pressed(ord("F")) and grid_items[# Infos.Item, i] != -1{
 				var _inst = instance_create_layer(obj_personagem.x, obj_personagem.y, "Instances", obj_item);
 				_inst.sprite_index = grid_items[# Infos.Sprite, i];
