@@ -165,7 +165,7 @@ function scr_personagem_combate() {
 }
 	
 function scr_levelup() {
-	
+	// Controle o sistema de level e as stats do personagem.
 	level_max_hp = [100,104,109,115,122,130,139,149,160,172,185,199,214,230,247,265,284,300];
 	level_max_xp = [100,110,125,145,170,200,235,275,320,370,425,485,550,620,695,775,860,950];
 	level_dano_base = [1,1,1,2,2,3,4,5,7,9,11,14,17,20,23,26,29,32];

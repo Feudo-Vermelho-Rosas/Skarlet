@@ -142,6 +142,7 @@
     {"id":{"name":"obj_abelha","path":"objects/obj_abelha/obj_abelha.yy",},},
     {"id":{"name":"obj_arbusto_3","path":"objects/obj_arbusto_3/obj_arbusto_3.yy",},},
     {"id":{"name":"obj_bau","path":"objects/obj_bau/obj_bau.yy",},},
+    {"id":{"name":"obj_boss_abelha","path":"objects/obj_boss_abelha/obj_boss_abelha.yy",},},
     {"id":{"name":"snd_hit_boss","path":"sounds/snd_hit_boss/snd_hit_boss.yy",},},
     {"id":{"name":"spr_cacto_3","path":"sprites/spr_cacto_3/spr_cacto_3.yy",},},
     {"id":{"name":"obj_projetil","path":"objects/obj_projetil/obj_projetil.yy",},},

@@ -1,4 +1,5 @@
 /// @description
+randomize();
 
 // Estado
 estado = scr_inimigo_escolha;
@@ -25,6 +26,11 @@ dano = 10;
 kb = 3;
 drop = -1;
 xp = 7;
+
+// Drop.
+id_drop = 0;
+chance_drop = 0.25;
+quantidade = irandom_range(1,2);
 
 // Desenho.
 sprite_andando = spr_aranha_andando;

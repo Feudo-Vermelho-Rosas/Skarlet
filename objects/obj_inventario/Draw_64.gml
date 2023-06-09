@@ -49,7 +49,7 @@ if inventario == true{
 					// 1- Caso o item selecionado seja igual do slot que iremos colocar.
 					if item_selecionado == grid_items[# Infos.Item, i] and pos_selecionado != i and grid_items[# Infos.Sprite, i] == grid_items[# Infos.Sprite, pos_selecionado]{
 						// Itens agrupáveis
-						if grid_items[# Infos.Item, pos_selecionado] <= 1{
+						if grid_items[# Infos.Item, pos_selecionado] <= id_nao_agrupaveis-1{
 							grid_items[# Infos.Quantidade, i] += grid_items[# Infos.Quantidade , pos_selecionado];
 						
 							grid_items[# Infos.Item, pos_selecionado] = -1;
@@ -119,28 +119,42 @@ if inventario == true{
 				
 				#region Utilizações por IDs.
 				switch _id {
-					case 0: // Poção de cura.
-						curar(i,25);
+					case Itens.PocaoRegen: // Poção de cura.
+						curar(i,25,snd_pocao);
 					break;
 					
-					case 1: // Armadura Padrão.
+					case Itens.FavoMel: // Favo de cura.
+						curar(i,50,snd_pocao);
+					break;
+					
+					case Itens.ArmaduraPadrao: // Armadura Padrão.
 						equipar_defesa(i);
 						obj_personagem.defesa = 2 + _defesa_base;
 					break;
 					
-					case 2: // Espada Padrão.
+					case Itens.ArmaduraMadeira: // Armadura de Madeira Encantada.
+						equipar_defesa(i);
+						obj_personagem.defesa = 4 + _defesa_base;
+					break;
+					
+					case Itens.ArmaduraFavo: // Armadura de Favo de Mel.
+						equipar_defesa(i);
+						obj_personagem.defesa = 6 + _defesa_base;
+					break;
+					
+					case Itens.EspadaPadrao: // Espada Padrão.
 						equipar_arma(i);
 						obj_personagem.dano = 4 + _dano_base;
 					break;
-						
-					case 3: // Armadura Debug.
-						equipar_defesa(i);
-						obj_personagem.defesa = 7 + _defesa_base;
+					
+					case Itens.EspadaMadeira: // Espada de Madeira Encantada.
+						equipar_arma(i);
+						obj_personagem.dano = 7 + _dano_base;
 					break;
 					
-					case 4: // Espada Debug.
+					case Itens.EspadaFavo: // Espada de Favo de Mel.
 						equipar_arma(i);
-						obj_personagem.dano = 10 + _dano_base;
+						obj_personagem.dano = 9 + _dano_base;
 					break;
 					
 				}
@@ -160,7 +174,7 @@ if inventario == true{
 							_slotsx, _slotsy, escala, escala, 0, c_white, 1);
 			
 			// Quantidade
-			if grid_items[# Infos.Item, i] <= 0 { // Itens agrupáveis
+			if grid_items[# Infos.Item, i] <= id_nao_agrupaveis-1 { // Itens agrupáveis
 				draw_set_font(ft_Inv);
 				draw_set_halign(fa_center);
 				draw_text_outline(_slotsx + tamanho_slot, _slotsy + tamanho_slot - 8,

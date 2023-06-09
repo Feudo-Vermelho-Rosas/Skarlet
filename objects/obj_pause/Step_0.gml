@@ -2,6 +2,7 @@
 
 var _esc = keyboard_check_pressed(vk_escape);
 var _gameover = instance_exists(obj_gameover);
+
 if instance_exists(obj_inventario) {
 	var _inventario = obj_inventario.inventario;
 } else {

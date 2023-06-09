@@ -25,13 +25,23 @@ inventario_a = sprite_get_height(spr_inventario) * escala;
 item_selecionado = -1;
 pos_selecionado = -1;
 
+// Começo não agrupáveis.
+id_nao_agrupaveis = 6; 
+
 //Tudo que está aqui vai enumerar.
 enum Itens{
 	PocaoRegen,
-	ArmaduraPadrao,
+	PocaoForca,
+	PocaoMana,
+	PocaoVelocidade,
+	FavoMel,
+	RosaLaranja,
 	EspadaPadrao,
-	ArmaduraDebug,
-	EspadaDebug,
+	EspadaMadeira,
+	EspadaFavo,
+	ArmaduraPadrao,
+	ArmaduraFavo,
+	ArmaduraMadeira,
 	Altura // altura so para saber quantos item tem
 }
 

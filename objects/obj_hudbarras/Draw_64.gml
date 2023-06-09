@@ -37,7 +37,7 @@ if instance_exists(obj_personagem) {
 	var _y = _telaaltura - _altura_barra;
 	var _x = _telacomprimento/2 - _comp_barra/2;
 	
-	var _escala_x = (obj_personagem.xp / obj_personagem.max_hp) * _escala;
+	var _escala_x = (obj_personagem.xp / obj_personagem.max_xp) * _escala;
 	
 	// Desenhe o hud e a barra
 	draw_sprite_ext(spr_hud_xp,0,_x,_y,_escala,_escala,0,c_white,1);

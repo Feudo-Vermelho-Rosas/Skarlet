@@ -1,3 +1,3 @@
 // Setar o drop.
-id_drop = 3;
+id_drop = 11;
 quantidade = 1;

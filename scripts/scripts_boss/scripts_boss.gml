@@ -19,7 +19,7 @@ function scr_boss_criacao(){
 	if alarme_spawn > 0 {
 		alarme_spawn -= 1;
 	} else {
-		estado = scr_abelha_escolha;
+		estado = escolha;
 	}
 }
 
@@ -174,4 +174,27 @@ function scr_boss_abelha_hit() {
 		alarme_cooldown = duracao_cooldown;
 	}
 	
+}
+	
+function scr_boss_controle_hp() {
+	// Cheque o HP.
+	if hp < max_hp/3 and rage == false {
+	
+		// Modo de rage.
+		rage = true;
+		sprite_avancando = spr_boss_abelha_rage_avanco;
+		sprite_parado = spr_boss_abelha_rage_parada;
+	
+		veloc_avanco *= 1.5;
+		veloc *= 2;
+	
+		qntd_spawn_abelhas = 5;
+	
+		duracao_cooldown /= 2;
+		duracao_ferroes /= 2;
+		duracao_spawn_ferroes /= 2;
+	
+	} else if hp <= 0 { // Delete a instância se o HP chegar a 0.
+		instance_destroy();
+	}
 }

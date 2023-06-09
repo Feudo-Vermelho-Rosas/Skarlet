@@ -12,9 +12,15 @@
  var _x = _x - _sprite_comp*_escala/2 + 80;
  var _y = _y - _sprite_lar*_escala/2 + 36;
  
- draw_set_font(ft_menu);
- draw_set_halign(fa_left);
- draw_set_valign(fa_top);
- draw_set_color(c_black);
- draw_text_ext(_x,_y,_string,64,750);
+draw_set_font(ft_menu);
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
+draw_set_color(c_black);
+draw_text_ext(_x,_y,_string,64,750);
+
+// Resete os draws.
+draw_set_font(-1);
+draw_set_halign(-1);
+draw_set_valign(-1);
+draw_set_color(-1);
  

@@ -60,6 +60,9 @@ function scr_calcular_dano_2(dano) {
 	/// Calcula o dano sem chance de crítico. 
 	
 	dano_calculado = irandom_range(dano+1,dano-1) - defesa;
+	if dano_calculado < 1 {
+		dano_calculado = 1;
+	}
 	
 	return dano_calculado;
 }

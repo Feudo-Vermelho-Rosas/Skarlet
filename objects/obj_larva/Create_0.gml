@@ -1,4 +1,5 @@
 /// @description
+randomize();
 
 // Estado
 estado = scr_inimigo_escolha;
@@ -26,6 +27,11 @@ dano = 8;
 kb = 3;
 drop = -1;
 xp = 6;
+
+// Drop.
+id_drop = 1;
+chance_drop = 0.05;
+quantidade = 1;
 
 // Desenho.
 sprite_andando = spr_larva_andando;

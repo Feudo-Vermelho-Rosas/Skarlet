@@ -30,10 +30,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_boss_abelha_parada",
-    "path": "sprites/spr_boss_abelha_parada/spr_boss_abelha_parada.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "tags": [
     "depthsort",

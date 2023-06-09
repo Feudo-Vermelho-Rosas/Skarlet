@@ -81,7 +81,7 @@ function remover_um_item(posicao_inv) {
 	}
 }
 
-function curar(inv_posicao, cura) {
+function curar(inv_posicao, cura, som) {
 	if alarme_cura_delay <= 0 {
 		obj_personagem.hp += cura;
 		if obj_personagem.hp > obj_personagem.max_hp {
@@ -97,7 +97,7 @@ function curar(inv_posicao, cura) {
 		_indicador.cura = cura;
 		
 		// Efeito sonoro.
-		audio_play_sound(snd_pocao,100,false);
+		audio_play_sound(som,100,false);
 		
 		// Resete o alarme de cura.
 		alarme_cura_delay = duracao_cura_delay;

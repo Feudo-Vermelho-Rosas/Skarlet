@@ -1,4 +1,5 @@
 /// @description
+randomize();
 
 // Estado
 estado = scr_inimigo_escolha;
@@ -25,6 +26,11 @@ dano = 8;
 kb = 2;
 drop = -1;
 xp = 10;
+
+// Drop.
+id_drop = -1;
+chance_drop = -1;
+quantidade = -1;
 
 // Desenho.
 sprite_andando = spr_formiga_armadura_andando;

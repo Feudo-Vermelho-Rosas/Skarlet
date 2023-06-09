@@ -1,4 +1,5 @@
 /// @description Inimigo abelha do boss.
+randomize();
 
 // Estado
 estado = scr_inimigo_escolha;
@@ -25,6 +26,11 @@ dano = 5;
 kb = 3;
 drop = -1;
 xp = 1;
+
+// Drop.
+id_drop = -1;
+chance_drop = -1;
+quantidade = -1;
 
 // Desenho.
 sprite_andando = spr_abelha_normal;
