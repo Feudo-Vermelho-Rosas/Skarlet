@@ -198,6 +198,7 @@
     {"name":"spr_mato","order":5,"path":"sprites/spr_mato/spr_mato.yy",},
     {"name":"obj_abutre","order":11,"path":"objects/obj_abutre/obj_abutre.yy",},
     {"name":"obj_dialogo","order":7,"path":"objects/obj_dialogo/obj_dialogo.yy",},
+    {"name":"snd_abrir_bau","order":12,"path":"sounds/snd_abrir_bau/snd_abrir_bau.yy",},
     {"name":"spr_vaso_1","order":27,"path":"sprites/spr_vaso_1/spr_vaso_1.yy",},
     {"name":"spr_abutre_parado","order":25,"path":"sprites/spr_abutre_parado/spr_abutre_parado.yy",},
     {"name":"spr_areia","order":6,"path":"sprites/spr_areia/spr_areia.yy",},

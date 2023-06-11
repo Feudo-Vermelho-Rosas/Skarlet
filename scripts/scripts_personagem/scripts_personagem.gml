@@ -46,10 +46,10 @@ function scr_controle_direcao() {
 function scr_personagem_andando() {
 	
 	#region Movimento.
-	cima = keyboard_check(vk_up);
-	baixo = keyboard_check(vk_down);
-	direita = keyboard_check(vk_right);
-	esquerda = keyboard_check(vk_left);
+	cima = keyboard_check(vk_up) or keyboard_check_pressed(ord("W"));
+	baixo = keyboard_check(vk_down) or keyboard_check_pressed(ord("S"));
+	direita = keyboard_check(vk_right) or keyboard_check_pressed(ord("D"));
+	esquerda = keyboard_check(vk_left) or keyboard_check_pressed(ord("A"));
 
 	// Determine a direção do movimento.
 	hveloc = (direita - esquerda);

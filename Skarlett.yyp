@@ -44,7 +44,9 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"sombras","folderPath":"folders/Sprites/sombras.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"tiles","folderPath":"folders/Sprites/tiles.yy",},
   ],
-  "IncludedFiles": [],
+  "IncludedFiles": [
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"676426__leongameryt__open-chest.m4a","CopyToMask":-1,"filePath":"datafiles",},
+  ],
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
@@ -235,6 +237,7 @@
     {"id":{"name":"spr_mato","path":"sprites/spr_mato/spr_mato.yy",},},
     {"id":{"name":"obj_abutre","path":"objects/obj_abutre/obj_abutre.yy",},},
     {"id":{"name":"obj_dialogo","path":"objects/obj_dialogo/obj_dialogo.yy",},},
+    {"id":{"name":"snd_abrir_bau","path":"sounds/snd_abrir_bau/snd_abrir_bau.yy",},},
     {"id":{"name":"spr_vaso_1","path":"sprites/spr_vaso_1/spr_vaso_1.yy",},},
     {"id":{"name":"spr_abutre_parado","path":"sprites/spr_abutre_parado/spr_abutre_parado.yy",},},
     {"id":{"name":"spr_areia","path":"sprites/spr_areia/spr_areia.yy",},},

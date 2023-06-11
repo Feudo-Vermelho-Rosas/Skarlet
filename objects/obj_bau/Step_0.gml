@@ -9,6 +9,8 @@ if distance_to_object(obj_personagem) < distancia_ativar {
 		_drop.image_index = id_drop;
 		_drop.quantidade = quantidade;
 		
+		audio_play_sound(snd_abrir_bau,100,false);
+		
 		looteado = true;
 	}
 }
