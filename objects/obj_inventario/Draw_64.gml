@@ -34,6 +34,10 @@ if inventario == true{
 				grid_items[# Infos.Item, i] = -1;
 				grid_items[# Infos.Quantidade, i] = -1;
 				grid_items[# Infos.Sprite, i] = -1;
+				
+				// Solte o item selecionado.
+				item_selecionado = -1;
+				pos_selecionado = -1;
 			}
 			
 			// Controle de seleção do mouse.
