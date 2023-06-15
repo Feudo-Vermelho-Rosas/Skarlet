@@ -1,5 +1,5 @@
 // Música.
-global.musica_bg = snd_deserto;
+global.musica_bg = snd_boss_temporario;
 
 // Posição inicial do personagem.
 obj_personagem.x = 400;

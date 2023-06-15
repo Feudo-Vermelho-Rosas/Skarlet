@@ -23,6 +23,7 @@ function scr_boss_criacao(){
 	}
 }
 
+// Abelha.
 function scr_abelha_escolha() {
 	// Estado de escolha da abelha.
 	
@@ -147,7 +148,7 @@ function scr_boss_abelha_ferroes(){
 }
 	
 function scr_boss_abelha_controle_sprite() {
-	// Faz o controle de sprites do boss da abelha
+	// Faz o controle de sprites do boss da abelha.
 	
 	direcao = point_direction(x,y,obj_personagem.x,obj_personagem.y);
 	
@@ -196,5 +197,75 @@ function scr_boss_controle_hp() {
 	
 	} else if hp <= 0 { // Delete a instância se o HP chegar a 0.
 		instance_destroy();
+	}
+}
+
+// Faraó.
+function scr_boss_farao_escolha() {
+	// Estado de escolha do faraó.
+	if alarme_cooldown > 0 {
+		
+	} else {
+		// Escolha o próximo.
+		proximo_estado = choose(scr_boss_farao_mumias);
+		
+		if proximo_estado == scr_boss_farao_mumias {
+			// Spawne 4 múmias.
+			repeat(qntd_spawn_mumias) {
+				var _x;
+				var _y;
+				
+				while (true) {
+					_x = x + irandom_range(-40,40);
+					_y = y + irandom_range(-40,40);
+					
+					// Evite o spawn em hitbox.
+					var _colisao = place_meeting(_x,_y,obj_parede);
+					if _colisao == false {
+						break;
+					}
+				}
+				
+				estado = scr_boss_farao_mumias;
+				alarme_mumias = duracao_mumias;
+			}
+		}
+		
+		
+		
+	}
+	
+}
+
+function scr_boss_farao_mumias() {
+	// Estado que o faraó spawna mumias.
+	
+	if alarme_mumias > 0 {
+		alarme_mumias -= 1;
+	} else {
+		estado = scr_boss_farao_escolha;
+		alarme_cooldown = duracao_cooldown;
+	}
+}
+	
+function scr_boss_farao_controle_sprite() {
+	// Faz o controle de sprites do boss faraó.
+	
+	direcao = point_direction(x,y,obj_personagem.x,obj_personagem.y);
+	
+	if direcao >= 0 and direcao <= 180 {
+		sprite_index = sprite_parado_costas;
+	} else {
+		sprite_index = sprite_parado;
+	}
+}
+
+function scr_boss_farao_hit() {
+	// Cheque o alarme de hit.
+	if alarme_hit > 0 {
+		alarme_hit -= 1;
+	} else {
+		estado = scr_boss_farao_escolha;
+		alarme_cooldown = duracao_cooldown;
 	}
 }

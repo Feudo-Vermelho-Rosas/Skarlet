@@ -8,7 +8,7 @@ image_speed = 1;
 
 // Cheque o alarme de hit.
 if alarme_hit > 0 {
-	estado = scr_boss_abelha_hit;
+	estado = hit;
 }
 
 // Execute o estado atual.

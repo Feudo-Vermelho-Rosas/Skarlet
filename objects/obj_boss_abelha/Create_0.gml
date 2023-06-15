@@ -9,6 +9,7 @@ repeticao_rush = 0;
 qntd_spawn_abelhas = 3;
 controle_direcao = scr_boss_abelha_controle_sprite;
 controle_hp = scr_boss_controle_hp;
+hit = scr_boss_abelha_hit;
 
 // Movimento.
 veloc_avanco = 6;
