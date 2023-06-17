@@ -1,7 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-
-
 // Gerais.
 function scr_checar_personagem(){
 	// Cheque a distância para o personagem.
@@ -205,6 +201,71 @@ function scr_inimigo_projetil_combate() {
 	
 }
 	
-function scr_inimigo_abelha_perseguindo() {
+function scr_controlar_direcao_4_lados() {
+// Controla os sprites e direção.
 	
+	if estado != scr_inimigo_hit {
+		switch direcao {
+			case 0:
+				image_xscale = 1;
+				sprite_index = sprite_parado_lado;
+				break;
+				
+			case 1:
+				image_xscale = 1;
+				sprite_index = sprite_parado_costas;
+				break;
+				
+			case 2:
+				image_xscale = -1;
+				sprite_index = sprite_parado_lado;
+				break;
+				
+			case 3:
+				image_xscale = 1;
+				sprite_index = sprite_parado_frente;
+				break;
+		}
+	
+		if estado == scr_inimigo_andando {
+			
+			if veloc_dir > 315 or veloc_dir <= 45 {
+				direcao = 0;
+				image_xscale = 1;
+				sprite_index = sprite_andando_lado;
+			} else if veloc_dir > 45 and veloc_dir <= 135 {
+				direcao = 1;
+				image_xscale = 1;
+				sprite_index = sprite_andando_costas;
+			} else if veloc_dir > 135 and veloc_dir <= 225 {
+				direcao = 2;
+				image_xscale = -1;
+				sprite_index = sprite_andando_lado;
+			} else {
+				direcao = 3;
+				image_xscale = 1;
+				sprite_index = sprite_andando_frente;
+			}
+			
+		} else if perseguindo {
+			
+			if veloc_dir > 315 or veloc_dir <= 45 {
+				direcao = 0;
+				image_xscale = 1;
+				sprite_index = sprite_perseguindo_lado;
+			} else if veloc_dir > 45 and veloc_dir <= 135 {
+				direcao = 1;
+				image_xscale = 1;
+				sprite_index = sprite_perseguindo_costas;
+			} else if veloc_dir > 135 and veloc_dir <= 225 {
+				direcao = 2;
+				image_xscale = -1;
+				sprite_index = sprite_perseguindo_lado;
+			} else {
+				direcao = 3;
+				image_xscale = 1;
+				sprite_index = sprite_perseguindo_frente;
+			}	
+		}
+	}
 }

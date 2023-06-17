@@ -1,5 +1,5 @@
 
-function scr_boss_criacao(){
+function scr_boss_criacao() {
 	// Estado de criação do boss.
 	
 	if image_alpha >= 1 {
@@ -119,7 +119,7 @@ function scr_boss_abelha_abelhas() {
 	}
 }
 
-function scr_boss_abelha_ferroes(){
+function scr_boss_abelha_ferroes() {
 	// Estado de ataque de ferrões da abelha.
 	
 	// Movimento.
@@ -204,10 +204,13 @@ function scr_boss_controle_hp() {
 function scr_boss_farao_escolha() {
 	// Estado de escolha do faraó.
 	if alarme_cooldown > 0 {
-		
+		alarme_cooldown -= 1;
 	} else {
 		// Escolha o próximo.
 		proximo_estado = choose(scr_boss_farao_mumias);
+		atacando = true;
+		audio_play_sound(snd_farao_spell,10,0);
+		image_index = 0;
 		
 		if proximo_estado == scr_boss_farao_mumias {
 			// Spawne 4 múmias.
@@ -216,25 +219,42 @@ function scr_boss_farao_escolha() {
 				var _y;
 				
 				while (true) {
-					_x = x + irandom_range(-40,40);
-					_y = y + irandom_range(-40,40);
+					_x = x + irandom_range(-80,80);
+					_y = y + irandom_range(-80,80);
 					
 					// Evite o spawn em hitbox.
 					var _colisao = place_meeting(_x,_y,obj_parede);
 					if _colisao == false {
 						break;
 					}
+					
 				}
+				
+				//instance_create_layer(_x,_y,"Instances",obj_mumia);
+				//instance_create_layer(_x,_y,"Instances",obj_particula_morte);
 				
 				estado = scr_boss_farao_mumias;
 				alarme_mumias = duracao_mumias;
 			}
+			
+		} else if proximo_estado == scr_boss_farao_head {
+			// Spawne a head.
+			instance_create_layer(x,y,"Instances",obj_farao_head);
 		}
-		
-		
 		
 	}
 	
+}
+
+function scr_boss_farao_head() {
+	// O Faraó solta um projétil no formato da parte de cima de seu cajado.
+	
+	if alarme_head > 0 {
+		alarme_head -= 1;
+	} else {
+		estado = scr_boss_farao_escolha;
+		alarme_cooldown = duracao_cooldown;
+	}
 }
 
 function scr_boss_farao_mumias() {
@@ -251,16 +271,41 @@ function scr_boss_farao_mumias() {
 function scr_boss_farao_controle_sprite() {
 	// Faz o controle de sprites do boss faraó.
 	
+	var _sprite_lado = sprite_parado_lado;
+	var _sprite_frente = sprite_parado_frente;
+	var _sprite_costas = sprite_parado_costas;
+	
+	// Se ele estiver em estado de ataque, mude os sprites.
+	if atacando {
+	
+		var _sprite_lado = sprite_atacando_lado;
+		var _sprite_frente = sprite_atacando_frente;
+		var _sprite_costas = sprite_atacando_costas;
+		
+	}
+	
 	direcao = point_direction(x,y,obj_personagem.x,obj_personagem.y);
 	
-	if direcao >= 0 and direcao <= 180 {
-		sprite_index = sprite_parado_costas;
+	if direcao >= 315 or direcao < 45 {
+		image_xscale = 1;
+		sprite_index = _sprite_lado;
+	} else if direcao >= 45 and direcao < 135 {
+		image_xscale = 1;
+		sprite_index = _sprite_costas;
+	} else if direcao >= 135 and direcao < 225 {
+		image_xscale = -1;
+		sprite_index = _sprite_lado;
 	} else {
-		sprite_index = sprite_parado;
+		image_xscale = 1;
+		sprite_index = _sprite_frente;
 	}
+	
+	if (image_index >= image_number-1) atacando = false;
+	
 }
 
 function scr_boss_farao_hit() {
+	
 	// Cheque o alarme de hit.
 	if alarme_hit > 0 {
 		alarme_hit -= 1;

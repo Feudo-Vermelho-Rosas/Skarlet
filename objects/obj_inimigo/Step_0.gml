@@ -21,7 +21,7 @@ if hit_alarme > 0 {
 script_execute(estado);
 
 // Sempre controle a direção.
-scr_controlar_direcao();
+script_execute(controle_direcao);
 
 // Delete a instância se o HP chegar a 0.
 if hp <= 0 {

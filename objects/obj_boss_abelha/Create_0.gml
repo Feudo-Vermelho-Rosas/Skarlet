@@ -1,4 +1,4 @@
-/// @description Boss abelha.
+ /// @description Boss abelha.
 
 // Inherit the parent event
 event_inherited();

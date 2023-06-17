@@ -106,7 +106,8 @@ if instance_exists(obj_boss_abelha) {
 	draw_set_valign(-1);
 	draw_set_halign(-1);
 	draw_set_font(-1);
-} else instance_exists(obj_farao) {
+	
+} else if instance_exists(obj_farao) {
 	// Hud e barra de vida.
 	var _escala = 4;
 

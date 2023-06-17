@@ -7,6 +7,7 @@ proximo_estado = 0;
 perseguindo = false;
 dist_aggro = 80;
 invulneravel = false;
+controle_direcao = scr_controlar_direcao;
 
 // Movimento 
 direcao = 0;
