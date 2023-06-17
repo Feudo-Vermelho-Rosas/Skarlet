@@ -1,3 +1,9 @@
+// Sistema de pause.
+if (global.pause) {
+	image_speed = 0
+	exit;
+}
+
 // Tome hit se não estiver invulnerável.
 if !invulneravel {
 	

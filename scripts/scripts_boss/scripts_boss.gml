@@ -207,7 +207,7 @@ function scr_boss_farao_escolha() {
 		alarme_cooldown -= 1;
 	} else {
 		// Escolha o próximo.
-		proximo_estado = choose(scr_boss_farao_mumias);
+		proximo_estado = choose(scr_boss_farao_mumias, scr_boss_farao_head, scr_boss_farao_tijolos);
 		atacando = true;
 		audio_play_sound(snd_farao_spell,10,0);
 		image_index = 0;
@@ -219,19 +219,18 @@ function scr_boss_farao_escolha() {
 				var _y;
 				
 				while (true) {
-					_x = x + irandom_range(-80,80);
-					_y = y + irandom_range(-80,80);
+					_x = x + irandom_range(-200,200);
+					_y = y + irandom_range(-200,200);
 					
-					// Evite o spawn em hitbox.
-					var _colisao = place_meeting(_x,_y,obj_parede);
-					if _colisao == false {
-						break;
-					}
+					// Evite o spawn em hitbox e fora da tela.
+					var _colisao = place_meeting(_x-8,_y-8,obj_parede) or place_meeting(_x+8,_y+8,obj_parede);
+					var _na_tela = x > 74 and x < room_width-74 and y > 74 and y < room_height-74;
+					if (!_colisao and _na_tela) break;
 					
 				}
 				
-				//instance_create_layer(_x,_y,"Instances",obj_mumia);
-				//instance_create_layer(_x,_y,"Instances",obj_particula_morte);
+				instance_create_layer(_x,_y,"Instances",obj_mumia);
+				instance_create_layer(_x,_y,"Instances",obj_particula_morte);
 				
 				estado = scr_boss_farao_mumias;
 				alarme_mumias = duracao_mumias;
@@ -239,7 +238,21 @@ function scr_boss_farao_escolha() {
 			
 		} else if proximo_estado == scr_boss_farao_head {
 			// Spawne a head.
-			instance_create_layer(x,y,"Instances",obj_farao_head);
+			instance_create_layer(x,y-50,"Instances",obj_farao_head);
+			
+			estado = scr_boss_farao_head;
+			alarme_head = duracao_head;
+			
+		} else if proximo_estado == scr_boss_farao_tijolos {
+			// Spawne tijolos em cima do personagem.
+			repeat(qntd_tijolos) {
+				var _tijolo = instance_create_layer(0,0,"Instances",obj_tijolo);
+				_tijolo.x += irandom_range(32,-32);
+				_tijolo.y += irandom_range(16,-16);
+				
+				estado = scr_boss_farao_tijolos;
+				alarme_tijolos = duracao_tijolos;
+			}
 		}
 		
 	}
@@ -266,6 +279,18 @@ function scr_boss_farao_mumias() {
 		estado = scr_boss_farao_escolha;
 		alarme_cooldown = duracao_cooldown;
 	}
+}
+	
+function scr_boss_farao_tijolos() {
+	// Estado do ataque de tijolos.
+	
+	if alarme_tijolos > 0 {
+		alarme_tijolos -= 1;
+	} else {
+		estado = scr_boss_farao_escolha;
+		alarme_cooldown = duracao_cooldown;
+	}
+	
 }
 	
 function scr_boss_farao_controle_sprite() {

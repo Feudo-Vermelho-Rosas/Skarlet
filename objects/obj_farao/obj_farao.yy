@@ -36,5 +36,8 @@
     "path": "sprites/spr_boss_farao_parado_frente/spr_boss_farao_parado_frente.yy",
   },
   "spriteMaskId": null,
+  "tags": [
+    "depthsort",
+  ],
   "visible": true,
 }

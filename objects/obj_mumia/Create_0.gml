@@ -9,6 +9,14 @@ controle_direcao = scr_controlar_direcao_4_lados;
 // Movimento.
 veloc = 0.3;
 
+// Stats
+max_hp = 40;
+hp = 40;
+defesa = 0;
+dano = 15;
+kb = 3;
+xp = 5;
+
 // Drop.
 id_drop = -1;
 chance_drop = -1;

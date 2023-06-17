@@ -2,14 +2,21 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_farao_head",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
     "name": "projéteis",
     "path": "folders/Objetos/projéteis.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_projetil",
+    "path": "objects/obj_projetil/obj_projetil.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -30,5 +37,8 @@
     "path": "sprites/spr_farao_head/spr_farao_head.yy",
   },
   "spriteMaskId": null,
+  "tags": [
+    "depthsort",
+  ],
   "visible": true,
 }

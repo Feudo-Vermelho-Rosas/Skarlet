@@ -58,6 +58,8 @@ grid_items = ds_grid_create(Infos.Altura, total_slots);
 ds_grid_set_region(grid_items, 0, 0, Infos.Altura - 1, total_slots - 1, -1);
 
 ds_grid_add_item(Itens.PocaoRegen, 10, spr_items_armas);
+ds_grid_add_item(Itens.EspadaFavo, 1, spr_items_armas);
+ds_grid_add_item(Itens.ArmaduraFavo, 1, spr_items_armas);
 
 #endregion
 

@@ -27,6 +27,6 @@ if !invulneravel {
 	_efeito.image_index = image_index;
 	_efeito.image_xscale = image_xscale;
 	
-	x = irandom_range(0,room_width);
-	y = irandom_range(0,room_height);
+	x = irandom_range(74,room_width-74);
+	y = irandom_range(74,room_height-74);
 }

@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "bosses",
-    "path": "folders/Sprites/inimigos/bosses.yy",
+    "path": "folders/Sprites/bosses.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

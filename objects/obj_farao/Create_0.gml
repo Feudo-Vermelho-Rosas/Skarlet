@@ -7,7 +7,8 @@ event_inherited();
 estado = scr_boss_criacao;
 escolha = scr_boss_farao_escolha;
 hit = scr_boss_farao_hit;
-qntd_spawn_mumias = 3;
+qntd_spawn_mumias = 2;
+qntd_tijolos = 3;
 atacando = false;
 controle_direcao = scr_boss_farao_controle_sprite;
 controle_hp = scr_boss_controle_hp;
@@ -35,6 +36,10 @@ sprite_atacando_lado = spr_boss_farao_ataque_lado;
 #region Alarmes e timers.
 duracao_mumias = 240;
 alarme_mumias = 0;
+duracao_head = 240;
+alarme_head = 0;
+duracao_tijolos = 240;
+alarme_tijolos = 0;
 #endregion
 
 
