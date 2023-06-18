@@ -133,32 +133,32 @@ if inventario == true{
 					
 					case Itens.ArmaduraPadrao: // Armadura Padrão.
 						equipar_defesa(i);
-						obj_personagem.defesa = 2 + _defesa_base;
+						obj_personagem.defesa_equip = 2;
 					break;
 					
 					case Itens.ArmaduraMadeira: // Armadura de Madeira Encantada.
 						equipar_defesa(i);
-						obj_personagem.defesa = 4 + _defesa_base;
+						obj_personagem.defesa_equip = 4;
 					break;
 					
 					case Itens.ArmaduraFavo: // Armadura de Favo de Mel.
 						equipar_defesa(i);
-						obj_personagem.defesa = 6 + _defesa_base;
+						obj_personagem.defesa_equip = 6;
 					break;
 					
 					case Itens.EspadaPadrao: // Espada Padrão.
 						equipar_arma(i);
-						obj_personagem.dano = 4 + _dano_base;
+						obj_personagem.dano_equip = 4;
 					break;
 					
 					case Itens.EspadaMadeira: // Espada de Madeira Encantada.
 						equipar_arma(i);
-						obj_personagem.dano = 7 + _dano_base;
+						obj_personagem.dano_equip = 7;
 					break;
 					
 					case Itens.EspadaFavo: // Espada de Favo de Mel.
 						equipar_arma(i);
-						obj_personagem.dano = 9 + _dano_base;
+						obj_personagem.dano_equip = 9;
 					break;
 					
 				}

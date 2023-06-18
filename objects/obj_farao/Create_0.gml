@@ -8,10 +8,11 @@ estado = scr_boss_criacao;
 escolha = scr_boss_farao_escolha;
 hit = scr_boss_farao_hit;
 qntd_spawn_mumias = 2;
-qntd_tijolos = 3;
+qntd_tijolos = 5;
+qntd_maldicao = 10;
 atacando = false;
 controle_direcao = scr_boss_farao_controle_sprite;
-controle_hp = scr_boss_controle_hp;
+controle_hp = scr_boss_farao_controle_hp;
 
 // Movimento.
 dest_x = 0;
@@ -19,9 +20,9 @@ dest_y = 0;
 
 // Stats
 max_hp = 600;
-hp = 600;
+hp = 180;
 defesa = 0;
-dano = 24;
+dano = 30;
 kb = 6;
 xp = 100;
 
@@ -40,6 +41,8 @@ duracao_head = 240;
 alarme_head = 0;
 duracao_tijolos = 240;
 alarme_tijolos = 0;
+duracao_maldicao = 240;
+alarme_maldicao = 0;
 #endregion
 
 

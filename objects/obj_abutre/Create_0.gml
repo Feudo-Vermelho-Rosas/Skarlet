@@ -3,6 +3,15 @@
 // Inherit the parent event
 event_inherited();
 
+// Stats
+max_hp = 40;
+hp = max_hp;
+defesa = 7;
+dano = 20;
+kb = 3;
+drop = -1;
+xp = 20;
+
 // Movimento.
 veloc = 0.6;
 

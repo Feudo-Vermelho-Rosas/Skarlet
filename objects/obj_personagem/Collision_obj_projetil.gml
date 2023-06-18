@@ -8,8 +8,11 @@ if (global.pause) {
 if !invulneravel {
 	
 	// Mude as stats.
-	hp -= other.dano;
-	kb_speed = other.kb;
+	var _dano = scr_calcular_dano_2(other.dano);
+	var _kb = other.kb;
+	
+	hp -= _dano;
+	kb_speed = _kb;
 	invulneravel = true;
 	veloc_dir = point_direction(x,y,other.x,other.y)-180;
 	

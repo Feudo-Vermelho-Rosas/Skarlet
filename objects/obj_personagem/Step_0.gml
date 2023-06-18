@@ -1,3 +1,7 @@
+// Att os stats;
+dano = dano_base + dano_equip;
+defesa = defesa_base + defesa_equip;
+
 // Sistema de pause.
 if (global.pause) {
 	image_speed = 0

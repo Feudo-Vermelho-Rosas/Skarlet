@@ -1,4 +1,4 @@
-
+// Geral.
 function scr_boss_criacao() {
 	// Estado de criação do boss.
 	
@@ -207,7 +207,9 @@ function scr_boss_farao_escolha() {
 		alarme_cooldown -= 1;
 	} else {
 		// Escolha o próximo.
-		proximo_estado = choose(scr_boss_farao_mumias, scr_boss_farao_head, scr_boss_farao_tijolos);
+		proximo_estado = choose(scr_boss_farao_mumias, scr_boss_farao_head, 
+								scr_boss_farao_tijolos, scr_boss_farao_maldicao,
+								);
 		atacando = true;
 		audio_play_sound(snd_farao_spell,10,0);
 		image_index = 0;
@@ -224,8 +226,10 @@ function scr_boss_farao_escolha() {
 					
 					// Evite o spawn em hitbox e fora da tela.
 					var _colisao = place_meeting(_x-8,_y-8,obj_parede) or place_meeting(_x+8,_y+8,obj_parede);
-					var _na_tela = x > 74 and x < room_width-74 and y > 74 and y < room_height-74;
-					if (!_colisao and _na_tela) break;
+					var _na_tela_x = ((_x > 74) and (_x < room_width-74));
+					var _na_tela_y = ((_y > 74) and (_y < room_height-74));
+					
+					if (!_colisao and _na_tela_x and _na_tela_y) break;
 					
 				}
 				
@@ -252,6 +256,29 @@ function scr_boss_farao_escolha() {
 				
 				estado = scr_boss_farao_tijolos;
 				alarme_tijolos = duracao_tijolos;
+			}
+		} else if proximo_estado == scr_boss_farao_maldicao {
+			// Spawne uma região de maldição
+			
+			repeat(qntd_maldicao) {
+				// Pegue uma posição válida.
+				while (true) {
+					_x = x + irandom_range(-64,64);
+					_y = y + irandom_range(-64,64);
+					
+					// Evite o spawn em hitbox e fora da tela.
+					var _colisao = place_meeting(_x-8,_y-8,obj_parede) or place_meeting(_x+8,_y+8,obj_parede);
+					var _na_tela_x = ((_x > 74) and (_x < room_width-74));
+					var _na_tela_y = ((_y > 74) and (_y < room_height-74));
+					
+					if (!_colisao and _na_tela_x and _na_tela_y) break;
+					
+				}
+				
+				instance_create_layer(_x,_y,"Instances",obj_maldicao);
+				
+				estado = scr_boss_farao_maldicao;
+				alarme_maldicao = duracao_maldicao;
 			}
 		}
 		
@@ -291,6 +318,17 @@ function scr_boss_farao_tijolos() {
 		alarme_cooldown = duracao_cooldown;
 	}
 	
+}
+	
+function scr_boss_farao_maldicao() {
+	// Estado de ataque de maldição.
+	
+	if alarme_maldicao > 0 {
+		alarme_maldicao -= 1;
+	} else {
+		estado = scr_boss_farao_escolha;
+		alarme_cooldown = duracao_cooldown;
+	}
 }
 	
 function scr_boss_farao_controle_sprite() {
@@ -339,3 +377,32 @@ function scr_boss_farao_hit() {
 		alarme_cooldown = duracao_cooldown;
 	}
 }
+	
+function scr_boss_farao_controle_hp() {
+	// Cheque o HP.
+	if hp < max_hp/3 and rage == false {
+	
+		// Modo de rage.
+		rage = true;
+		sprite_parado_frente = spr_boss_farao_rage_parado_frente;
+		sprite_parado_costas = spr_boss_farao_rage_costas_parado;
+		sprite_parado_lado = spr_boss_farao_rage_parado_lado;
+		sprite_atacando_frente = spr_boss_farao_rage_ataque_frente;
+		sprite_atacando_costas = spr_boss_farao_rage_ataque_costas;
+		sprite_atacando_lado = spr_boss_farao_rage_ataque_lado;
+	
+	
+		qntd_spawn_mumias = 3;
+		qntd_tijolos = 8;
+		qntd_maldicao = 15;
+		
+		duracao_cooldown /= 2;
+		duracao_mumias /= 2;
+		duracao_head /= 2;
+		duracao_tijolos /= 2;
+	
+	} else if hp <= 0 { // Delete a instância se o HP chegar a 0.
+		instance_destroy();
+	}
+}
+	

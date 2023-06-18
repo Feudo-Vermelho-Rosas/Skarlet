@@ -25,7 +25,10 @@ if active {
 		}
 	}
 	
-	if keyboard_check_pressed(ord("P")) {
-		instance_create_layer(0,0,"Instances",obj_tijolo);
+	if keyboard_check_pressed(ord("L")) {
+		obj_personagem.level = 10;
+		with (obj_personagem) {
+			script_execute(scr_levelup);
+		}
 	}
 }

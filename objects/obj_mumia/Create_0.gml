@@ -12,8 +12,8 @@ veloc = 0.3;
 // Stats
 max_hp = 40;
 hp = 40;
-defesa = 0;
-dano = 15;
+defesa = 10;
+dano = 24;
 kb = 3;
 xp = 5;
 
