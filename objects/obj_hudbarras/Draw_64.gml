@@ -40,8 +40,8 @@ if instance_exists(obj_personagem) {
 	var _escala_x = (obj_personagem.xp / obj_personagem.max_xp) * _escala;
 	
 	// Desenhe o hud e a barra
-	draw_sprite_ext(spr_hud_xp,0,_x,_y,_escala,_escala,0,c_white,1);
 	draw_sprite_ext(spr_barra_xp,0,_x+8,_y,_escala_x,_escala,0,c_white,1);
+	draw_sprite_ext(spr_hud_xp,0,_x,_y,_escala,_escala,0,c_white,1);
 	
 	// Desenhe o texto
 	draw_set_halign(fa_center);

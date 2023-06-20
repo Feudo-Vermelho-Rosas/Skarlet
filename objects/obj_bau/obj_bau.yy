@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bau",
-    "path": "sprites/spr_bau/spr_bau.yy",
+    "name": "spr_bau_floresta",
+    "path": "sprites/spr_bau_floresta/spr_bau_floresta.yy",
   },
   "spriteMaskId": null,
   "tags": [

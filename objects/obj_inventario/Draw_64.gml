@@ -146,6 +146,16 @@ if inventario == true{
 						obj_personagem.defesa_equip = 6;
 					break;
 					
+					case Itens.ArmaduraCacto: // Armadura de cacto.
+						equipar_defesa(i);
+						obj_personagem.defesa_equip = 9;
+					break;
+					
+					case Itens.ArmaduraFarao: // Armadura de faraó.
+						equipar_defesa(i);
+						obj_personagem.defesa_equip = 12;
+					break;
+					
 					case Itens.EspadaPadrao: // Espada Padrão.
 						equipar_arma(i);
 						obj_personagem.dano_equip = 4;
@@ -159,6 +169,16 @@ if inventario == true{
 					case Itens.EspadaFavo: // Espada de Favo de Mel.
 						equipar_arma(i);
 						obj_personagem.dano_equip = 9;
+					break;
+					
+					case Itens.EspadaCacto: // Espada de cacto.
+						equipar_arma(i);
+						obj_personagem.dano_equip = 11;
+					break;
+					
+					case Itens.Khopesh: // Espada de faraó.
+						equipar_arma(i);
+						obj_personagem.dano_equip = 14;
 					break;
 					
 				}

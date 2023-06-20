@@ -90,7 +90,6 @@
     {"name":"inst_7B51E322","path":"rooms/rm_floresta_andar_boss/rm_floresta_andar_boss.yy",},
     {"name":"inst_3EFEF7C8","path":"rooms/rm_floresta_andar_boss/rm_floresta_andar_boss.yy",},
     {"name":"inst_2E1AAEE8","path":"rooms/rm_floresta_andar_boss/rm_floresta_andar_boss.yy",},
-    {"name":"inst_3D6F9512","path":"rooms/rm_floresta_andar_boss/rm_floresta_andar_boss.yy",},
     {"name":"inst_28B83D1E","path":"rooms/rm_floresta_andar_boss/rm_floresta_andar_boss.yy",},
   ],
   "isDnd": false,
@@ -181,7 +180,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_59C9354C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_arbusto_3","path":"objects/obj_arbusto_3/obj_arbusto_3.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":472.0,"y":54.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3D6F9512","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_trocasala","path":"objects/obj_trocasala/obj_trocasala.yy",},"properties":[],"rotation":0.0,"scaleX":6.0625,"scaleY":1.0,"x":288.0,"y":-8.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_28B83D1E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_boss_abelha","path":"objects/obj_boss_abelha/obj_boss_abelha.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":336.0,"y":448.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Paredes","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
