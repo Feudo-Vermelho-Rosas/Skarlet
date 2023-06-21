@@ -48,7 +48,10 @@ function scr_calcular_dano_1(dano) {
 		dano = dano * 2;
 	}
 	
-	dano_calculado = irandom_range(dano+2,dano-2);
+	dano_calculado = irandom_range(dano+1,dano-1) - defesa;
+	if dano_calculado < 1 {
+		dano_calculado = 1;
+	}
 	
 	return dano_calculado;
 }
@@ -56,7 +59,10 @@ function scr_calcular_dano_1(dano) {
 function scr_calcular_dano_2(dano) {
 	/// Calcula o dano sem chance de crítico. 
 	
-	dano_calculado = irandom_range(dano+2,dano-2);
+	dano_calculado = irandom_range(dano+1,dano-1) - defesa;
+	if dano_calculado < 1 {
+		dano_calculado = 1;
+	}
 	
 	return dano_calculado;
 }
@@ -105,19 +111,3 @@ function draw_text_outline(x,y,str,outwidth,outcol,outfidelity,_separation,width
 	*/
 }
 	
-function ds_grid_add_item(){
-	///@arg Item
-	///@arg Quantidade
-	///@arg Sprite
-	
-	var _grid = obj_inventario.grid_items;
-	
-	var _checagem = 0;
-	while _grid[# Infos.Item, _checagem] != -1{
-		_checagem++;
-	}
-	
-	_grid[# 0, _checagem] = argument[0];
-	_grid[# 1, _checagem] = argument[1];
-	_grid[# 2, _checagem] = argument[2];
-}

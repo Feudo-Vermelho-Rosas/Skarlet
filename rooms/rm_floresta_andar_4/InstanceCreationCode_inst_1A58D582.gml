@@ -1,0 +1,1 @@
+dialogo = "AVISO!!\nComeia a seguir,\nNÃO se aproxime!"

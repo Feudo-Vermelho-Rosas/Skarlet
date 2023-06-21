@@ -1,1 +1,1 @@
-global.musica_bg = snd_floresta_temporaria;
+global.musica_bg = snd_floresta;

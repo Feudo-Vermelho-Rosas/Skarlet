@@ -9,25 +9,26 @@ if active {
 		}
 	}
 	
-	// Noclip.
-	if keyboard_check_pressed(ord("N")) {
-		noclip = !noclip;
-	}
-	
-	if noclip {
-		if instance_exists(obj_personagem) {
-			obj_personagem.mask_index = -1;
-		}
-	} else {
-		if instance_exists(obj_personagem) {
-			obj_personagem.mask_index = obj_personagem.sprite_index;
-		}
-	}
-	
 	// Matar inimigos.
 	if keyboard_check_pressed(ord("K")) {
 		if instance_number(obj_inimigo) > 0 {
-			instance_destroy(obj_inimigo);
+			for (var i = 0; i < instance_number(obj_inimigo); i++) {
+				var _inst = instance_find(obj_inimigo,i);
+				_inst.hp = 0;
+			}
+		}
+		if instance_number(obj_boss) > 0 {
+			for (var i = 0; i < instance_number(obj_boss); i++) {
+				var _inst = instance_find(obj_boss,i);
+				_inst.hp = 0;
+			}
+		}
+	}
+	
+	if keyboard_check_pressed(ord("L")) {
+		obj_personagem.level = 10;
+		with (obj_personagem) {
+			script_execute(scr_levelup);
 		}
 	}
 }

@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_altar",
-    "path": "sprites/spr_altar/spr_altar.yy",
+    "name": "spr_trocasala",
+    "path": "sprites/spr_trocasala/spr_trocasala.yy",
   },
   "spriteMaskId": null,
   "visible": false,

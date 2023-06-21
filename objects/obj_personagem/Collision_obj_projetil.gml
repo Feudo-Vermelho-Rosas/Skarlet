@@ -1,11 +1,18 @@
- /// @description
+// Sistema de pause.
+if (global.pause) {
+	image_speed = 0
+	exit;
+}
 
 // Tome hit se não estiver invulnerável.
 if !invulneravel {
 	
 	// Mude as stats.
-	hp -= other.dano;
-	kb_speed = other.kb;
+	var _dano = scr_calcular_dano_2(other.dano);
+	var _kb = other.kb;
+	
+	hp -= _dano;
+	kb_speed = _kb;
 	invulneravel = true;
 	veloc_dir = point_direction(x,y,other.x,other.y)-180;
 	
@@ -15,5 +22,8 @@ if !invulneravel {
 	
 	// Destrua o projétil.
 	instance_destroy(other);
+	
+	// Som de hit.
+	audio_play_sound(snd_hit_jogador,100,false);
 	
 }

@@ -4,12 +4,13 @@
   "name": "obj_item",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objetos",
-    "path": "folders/Objetos.yy",
+    "name": "huds e menu",
+    "path": "folders/Objetos/huds e menu.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -29,5 +30,8 @@
   "solid": false,
   "spriteId": null,
   "spriteMaskId": null,
+  "tags": [
+    "depthsort",
+  ],
   "visible": true,
 }

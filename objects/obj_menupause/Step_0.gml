@@ -4,12 +4,12 @@ if (global.pause = false){
 }
 
 //get input
-var _up = keyboard_check_pressed(vk_up);
-var _down = keyboard_check_pressed(vk_down);
-var _left = keyboard_check_pressed(vk_left);
-var _right = keyboard_check_pressed(vk_right);
-var _right_held = keyboard_check_pressed(vk_right);
-var _left_held = keyboard_check_pressed(vk_left);
+var _up = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
+var _down = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
+var _left = keyboard_check_pressed(vk_left) or keyboard_check_pressed(ord("A"));
+var _right = keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D"));
+var _right_held = keyboard_check(vk_right) or keyboard_check(ord("D"));
+var _left_held = keyboard_check(vk_left) or keyboard_check(ord("A"));
 var _select = keyboard_check_pressed(vk_enter) or keyboard_check_pressed(vk_space);
 
 //holding key down

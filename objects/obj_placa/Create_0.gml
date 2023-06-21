@@ -1,4 +1,5 @@
 /// @description Placa de diálogo
 
-diagolo = 0;
+dialogo = "";
 distancia_ativar = 10;
+placa_de_report = false;

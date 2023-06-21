@@ -1,6 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-
 function scr_controle_direcao() {
 	
 	if hveloc == 0 && vveloc == 0 {
@@ -49,10 +46,10 @@ function scr_controle_direcao() {
 function scr_personagem_andando() {
 	
 	#region Movimento.
-	cima = keyboard_check(vk_up);
-	baixo = keyboard_check(vk_down);
-	direita = keyboard_check(vk_right);
-	esquerda = keyboard_check(vk_left);
+	cima = keyboard_check(vk_up) or keyboard_check(ord("W"));
+	baixo = keyboard_check(vk_down) or keyboard_check(ord("S"));
+	direita = keyboard_check(vk_right) or keyboard_check(ord("D"));
+	esquerda = keyboard_check(vk_left) or keyboard_check(ord("A"));
 
 	// Determine a direção do movimento.
 	hveloc = (direita - esquerda);
@@ -80,9 +77,10 @@ function scr_personagem_andando() {
 	scr_controle_direcao();
 	
 	#region Combate.
-	ataque = keyboard_check(vk_space);
+	ataque = keyboard_check_pressed(vk_space);
 	
 	if ataque {
+		//audio_play_sound(snd_sword,100,false);
 		estado = scr_personagem_combate;
 		ataque_alarme = ataque_duracao;
 		scr_criar_hitbox_ataque();
@@ -163,6 +161,23 @@ function scr_personagem_combate() {
 		estado = scr_personagem_andando;
 	}
 	ataque_alarme -= 1;
+	
+}
+	
+function scr_levelup() {
+	// Controle o sistema de level e as stats do personagem.
+	level_max_hp = [100,104,109,115,122,130,139,149,160,172,185,199,214,230,247,265,284,300];
+	level_max_xp = [100,110,125,145,170,200,235,275,320,370,425,485,550,620,695,775,860,950];
+	level_dano_base = [1,1,1,2,2,3,4,5,7,9,11,14,17,20,23,26,29,32];
+	level_defesa_base = [1,1,1,2,2,2,3,3,4,5,6,8,10,13,16,19,21,24];
+	
+	xp -= level_max_xp[level-1];
+	level += 1;
+	
+	max_hp = level_max_hp[level-1];
+	max_xp = level_max_xp[level-1];
+	dano_base = level_dano_base[level-1];
+	defesa_base = level_defesa_base[level-1];
 	
 }
 	
