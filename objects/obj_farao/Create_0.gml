@@ -23,8 +23,10 @@ max_hp = 600;
 hp = 180;
 defesa = 0;
 dano = 30;
+dano_head = 25
+dano_plataformas = 30; 
 kb = 6;
-xp = 100;
+xp = 200;
 
 // Desenho.
 sprite_parado_frente = spr_boss_farao_parado_frente;

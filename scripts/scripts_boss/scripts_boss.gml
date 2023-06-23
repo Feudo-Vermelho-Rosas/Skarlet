@@ -242,7 +242,8 @@ function scr_boss_farao_escolha() {
 			
 		} else if proximo_estado == scr_boss_farao_head {
 			// Spawne a head.
-			instance_create_layer(x,y-50,"Instances",obj_farao_head);
+			var _projetil = instance_create_layer(x,y-50,"Instances",obj_farao_head);
+			_projetil.dano = dano_head;
 			
 			estado = scr_boss_farao_head;
 			alarme_head = duracao_head;
@@ -253,6 +254,7 @@ function scr_boss_farao_escolha() {
 				var _tijolo = instance_create_layer(0,0,"Instances",obj_tijolo);
 				_tijolo.x += irandom_range(32,-32);
 				_tijolo.y += irandom_range(16,-16);
+				_tijolo.dano = dano_plataformas;
 				
 				estado = scr_boss_farao_tijolos;
 				alarme_tijolos = duracao_tijolos;
