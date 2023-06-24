@@ -42,13 +42,14 @@ function scr_efeito_invulneravel() {
 function scr_calcular_dano_1(dano) {
 	/// Decide se o dano é crítico e calcula ele. 
 	
+	dano_calculado = irandom_range(dano+1,dano-1) - defesa;
+	
 	// Dano crítico duplica o dano.
 	if random(1) <= 0.05 {
 		// Crítico (5% de chance)
-		dano = dano * 2;
+		dano_calculado = dano_calculado * 2;
 	}
 	
-	dano_calculado = irandom_range(dano+1,dano-1) - defesa;
 	if dano_calculado < 1 {
 		dano_calculado = 1;
 	}

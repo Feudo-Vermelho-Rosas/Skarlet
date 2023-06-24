@@ -26,9 +26,10 @@ if active {
 	}
 	
 	if keyboard_check_pressed(ord("L")) {
-		obj_personagem.level = 10;
+		obj_personagem.level = 4;
 		with (obj_personagem) {
 			script_execute(scr_levelup);
 		}
+		obj_personagem.xp = 0;
 	}
 }
