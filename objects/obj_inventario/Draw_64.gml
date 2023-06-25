@@ -127,6 +127,14 @@ if inventario == true{
 						curar(i,25,snd_pocao);
 					break;
 					
+					case Itens.PocaoForca: // Poção de força.
+						aplicar_forca(i,3,snd_pocao);
+					break;
+					
+					case Itens.PocaoVelocidade: // Poção de velocidade.
+						aplicar_veloc(i,0.5,snd_pocao);
+					break;
+					
 					case Itens.FavoMel: // Favo de cura.
 						curar(i,50,snd_pocao);
 					break;

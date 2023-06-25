@@ -66,6 +66,8 @@ ds_grid_set_region(grid_items, 0, 0, Infos.Altura - 1, total_slots - 1, -1);
 ds_grid_add_item(Itens.PocaoRegen, 10, spr_items_armas);
 ds_grid_add_item(Itens.ArmaduraMadeira, 1, spr_items_armas);
 ds_grid_add_item(Itens.EspadaMadeira, 1, spr_items_armas);
+ds_grid_add_item(Itens.PocaoForca, 1, spr_items_armas);
+ds_grid_add_item(Itens.PocaoVelocidade, 1, spr_items_armas);
 
 #endregion
 
@@ -96,5 +98,10 @@ ds_grid_add_item(Itens.EspadaMadeira, 1, spr_items_armas);
 #region Timers.
 alarme_cura_delay = 0;
 duracao_cura_delay = 1800;
-
+alarme_forca_duracao = 0;
+duracao_forca = 1800;
+alarme_defesa_duracao = 0;
+duracao_defesa = 1800;
+alarme_velocidade_duracao = 0;
+duracao_velocidade = 1800;
 #endregion

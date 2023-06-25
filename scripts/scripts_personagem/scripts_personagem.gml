@@ -152,7 +152,7 @@ function scr_personagem_combate() {
 	hveloc = 0;
 	vveloc = 0;
 	
-	if image_index >= 3 {
+	if image_index >= 4 {
 		estado = scr_personagem_andando;
 		ataque_alarme = 0;
 	}

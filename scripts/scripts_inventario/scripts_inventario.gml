@@ -82,6 +82,7 @@ function remover_um_item(posicao_inv) {
 }
 
 function curar(inv_posicao, cura, som) {
+	// Cura o personagem, remove o item e reseta o alarme.
 	if alarme_cura_delay <= 0 {
 		obj_personagem.hp += cura;
 		if obj_personagem.hp > obj_personagem.max_hp {
@@ -101,5 +102,50 @@ function curar(inv_posicao, cura, som) {
 		
 		// Resete o alarme de cura.
 		alarme_cura_delay = duracao_cura_delay;
+	}
+}
+
+function aplicar_forca(inv_posicao, forca, som) {
+	// Aplica a força, remove o item e reseta o alarme.
+	if alarme_forca_duracao <= 0 {
+		obj_personagem.dano_pocao = forca;
+		
+		remover_um_item(inv_posicao);
+		
+		// Efeito sonoro.
+		audio_play_sound(som,100,false);
+		
+		// Resete o alarme de força.
+		alarme_forca_duracao = duracao_forca;
+	}
+}
+
+function aplicar_defesa(inv_posicao, defesa, som) {
+	// Aplica a defesa, remove o item e reseta o alarme.
+	if alarme_defesa_duracao <= 0 {
+		obj_personagem.defesa_pocao = defesa;
+		
+		remover_um_item(inv_posicao);
+		
+		// Efeito sonoro.
+		audio_play_sound(som,100,false);
+		
+		// Resete o alarme de força.
+		alarme_defesa_duracao = duracao_defesa;
+	}
+}
+
+function aplicar_veloc(inv_posicao, veloc, som) {
+	// Aplica a velocidade, remove o item e reseta o alarme.
+	if alarme_forca_duracao <= 0 {
+		obj_personagem.veloc_pocao = veloc;
+		
+		remover_um_item(inv_posicao);
+		
+		// Efeito sonoro.
+		audio_play_sound(som,100,false);
+		
+		// Resete o alarme de força.
+		alarme_velocidade_duracao = duracao_velocidade;
 	}
 }

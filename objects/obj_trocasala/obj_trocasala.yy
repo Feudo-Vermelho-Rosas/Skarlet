@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objetos",
-    "path": "folders/Objetos.yy",
+    "name": "hitboxes",
+    "path": "folders/Objetos/hitboxes.yy",
   },
   "parentObjectId": null,
   "persistent": false,

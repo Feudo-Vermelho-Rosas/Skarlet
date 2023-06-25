@@ -1,6 +1,7 @@
 // Att os stats;
-dano = dano_base + dano_equip;
-defesa = defesa_base + defesa_equip;
+dano = dano_base + dano_equip + dano_pocao;
+defesa = defesa_base + defesa_equip + defesa_pocao;
+veloc = veloc_base + veloc_pocao;
 
 // Sistema de pause.
 if (global.pause) {

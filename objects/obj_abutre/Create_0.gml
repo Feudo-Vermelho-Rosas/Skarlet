@@ -16,9 +16,9 @@ xp = 20;
 veloc = 0.6;
 
 // Drop.
-id_drop = -1;
-chance_drop = -1;
-quantidade = -1;
+id_drop = Itens.PocaoForca;
+chance_drop = 0.10;
+quantidade = 1;
 
 // Desenho.
 sprite_andando = spr_abutre_voando;
