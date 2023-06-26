@@ -107,6 +107,8 @@
     {"name":"inst_192F4188","path":"rooms/rm_deserto_andar_4/rm_deserto_andar_4.yy",},
     {"name":"inst_C916674","path":"rooms/rm_deserto_andar_4/rm_deserto_andar_4.yy",},
     {"name":"inst_7FACD2EE","path":"rooms/rm_deserto_andar_4/rm_deserto_andar_4.yy",},
+    {"name":"inst_76512662","path":"rooms/rm_deserto_andar_4/rm_deserto_andar_4.yy",},
+    {"name":"inst_61A2EA9","path":"rooms/rm_deserto_andar_4/rm_deserto_andar_4.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -207,6 +209,8 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_192F4188","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_lagarto","path":"objects/obj_lagarto/obj_lagarto.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":585.0,"y":104.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_C916674","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_escorpiao","path":"objects/obj_escorpiao/obj_escorpiao.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":733.0,"y":78.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7FACD2EE","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_bau","path":"objects/obj_bau/obj_bau.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":703.0,"y":113.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_76512662","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_placa","path":"objects/obj_placa/obj_placa.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":347.0,"y":421.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_61A2EA9","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_placa","path":"objects/obj_placa/obj_placa.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":454.0,"y":69.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Paredes","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1C2CE61D_1_2_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_parede","path":"objects/obj_parede/obj_parede.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":50.0,"x":-8.0,"y":400.0,},

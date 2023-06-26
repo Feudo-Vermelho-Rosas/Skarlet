@@ -1,0 +1,1 @@
+dialogo = "AVISO!!\n A pirâmide abriga um antigo faraó,\nQuem ousou desperta-lo, jamais foi visto novamente!"

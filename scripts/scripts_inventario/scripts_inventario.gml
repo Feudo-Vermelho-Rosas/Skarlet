@@ -137,7 +137,7 @@ function aplicar_defesa(inv_posicao, defesa, som) {
 
 function aplicar_veloc(inv_posicao, veloc, som) {
 	// Aplica a velocidade, remove o item e reseta o alarme.
-	if alarme_forca_duracao <= 0 {
+	if alarme_velocidade_duracao <= 0 {
 		obj_personagem.veloc_pocao = veloc;
 		
 		remover_um_item(inv_posicao);
