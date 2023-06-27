@@ -52,3 +52,6 @@ invulneravel_duracao = 120; // 2 segundos.
 ataque_alarme = 0;
 ataque_duracao = 30; // Adaptar à animação.
 #endregion
+
+//dinheiro do personagem
+global.money = 0;

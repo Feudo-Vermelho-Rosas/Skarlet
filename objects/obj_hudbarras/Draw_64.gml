@@ -154,3 +154,29 @@ if instance_exists(obj_boss_abelha) {
 	draw_set_font(-1);
 }
 #endregion
+#region Moedas
+if instance_exists(obj_personagem) {
+	var _escala = 6;
+	
+	var _y = 140;
+	var _x = 40;
+	
+	var _moedas = global.money;
+	
+	draw_sprite_ext(spr_moeda, 0, _x, _y, _escala, _escala, 0,c_white,1);
+	
+	// Desenhe o texto.
+	var _escala_texto = 0.9;
+	
+	draw_set_halign(fa_left);
+	draw_set_font(ft_menupause);
+	
+	var _string =   "  X " + string(_moedas);
+	draw_text_transformed(_x+30,_y-20,_string,_escala_texto,_escala_texto,0);
+	
+	// Resete o draw.
+	draw_set_halign(-1);
+	draw_set_font(-1);
+
+}
+#endregion
