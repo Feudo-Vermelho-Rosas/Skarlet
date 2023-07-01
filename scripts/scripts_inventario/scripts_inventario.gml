@@ -83,7 +83,7 @@ function remover_um_item(posicao_inv) {
 
 function curar(inv_posicao, cura, som) {
 	// Cura o personagem, remove o item e reseta o alarme.
-	if alarme_cura_delay <= 0 {
+	if global.alarme_cura_delay <= 0 {
 		obj_personagem.hp += cura;
 		if obj_personagem.hp > obj_personagem.max_hp {
 			obj_personagem.hp = obj_personagem.max_hp;
@@ -101,13 +101,13 @@ function curar(inv_posicao, cura, som) {
 		audio_play_sound(som,100,false);
 		
 		// Resete o alarme de cura.
-		alarme_cura_delay = duracao_cura_delay;
+		global.alarme_cura_delay = duracao_cura_delay;
 	}
 }
 
 function aplicar_forca(inv_posicao, forca, som) {
 	// Aplica a força, remove o item e reseta o alarme.
-	if alarme_forca_duracao <= 0 {
+	if global.alarme_forca_duracao <= 0 {
 		obj_personagem.dano_pocao = forca;
 		
 		remover_um_item(inv_posicao);
@@ -116,13 +116,13 @@ function aplicar_forca(inv_posicao, forca, som) {
 		audio_play_sound(som,100,false);
 		
 		// Resete o alarme de força.
-		alarme_forca_duracao = duracao_forca;
+		global.alarme_forca_duracao = duracao_forca;
 	}
 }
 
 function aplicar_defesa(inv_posicao, defesa, som) {
 	// Aplica a defesa, remove o item e reseta o alarme.
-	if alarme_defesa_duracao <= 0 {
+	if global.alarme_defesa_duracao <= 0 {
 		obj_personagem.defesa_pocao = defesa;
 		
 		remover_um_item(inv_posicao);
@@ -131,13 +131,13 @@ function aplicar_defesa(inv_posicao, defesa, som) {
 		audio_play_sound(som,100,false);
 		
 		// Resete o alarme de força.
-		alarme_defesa_duracao = duracao_defesa;
+		global.alarme_defesa_duracao = duracao_defesa;
 	}
 }
 
 function aplicar_veloc(inv_posicao, veloc, som) {
 	// Aplica a velocidade, remove o item e reseta o alarme.
-	if alarme_velocidade_duracao <= 0 {
+	if global.alarme_velocidade_duracao <= 0 {
 		obj_personagem.veloc_pocao = veloc;
 		
 		remover_um_item(inv_posicao);
@@ -146,6 +146,62 @@ function aplicar_veloc(inv_posicao, veloc, som) {
 		audio_play_sound(som,100,false);
 		
 		// Resete o alarme de força.
-		alarme_velocidade_duracao = duracao_velocidade;
+		global.alarme_velocidade_duracao = duracao_velocidade;
 	}
+}
+	
+function scr_draw_nome_item(id_item) {
+	// Escreva no mouse o nome de um item.
+	
+	var _mousex = device_mouse_x_to_gui(0);
+	var _mousey = device_mouse_y_to_gui(0);
+	
+	var _x = _mousex+8;
+	var _y = _mousey-24;
+	
+	draw_set_font(ft_Inv);
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_top);
+	
+	switch (id_item) {
+		case 1:
+			draw_text_outline(_x, _y, "Poção de cura", 4, c_black, 16, 1000, 1000);
+		break;
+		case 2:
+			draw_text_outline(_x, _y, "Poção de força", 4, c_black, 16, 1000, 1000);
+		break;
+		case 3:
+			draw_text_outline(_x, _y, "Poção de defesa", 4, c_black, 16, 1000, 1000);
+		break;
+		case 4:
+			draw_text_outline(_x, _y, "Poção de velocidade", 4, c_black, 16, 1000, 1000);
+		break;
+	}
+	
+	/*
+	var _x = display_get_gui_width()/2;
+	var _y = display_get_gui_height()-48;
+	
+	draw_set_font(ft_Inv);
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_middle);
+	
+	switch (id_item) {
+		case 1:
+			draw_text_outline(_x, _y, "Poção de cura", 4, c_black, 16, 1000, 1000);
+		break;
+		case 2:
+			draw_text_outline(_x, _y, "Poção de força", 4, c_black, 16, 1000, 1000);
+		break;
+		case 3:
+			draw_text_outline(_x, _y, "Poção de defesa", 4, c_black, 16, 1000, 1000);
+		break;
+		case 4:
+			draw_text_outline(_x, _y, "Poção de velocidade", 4, c_black, 16, 1000, 1000);
+		break;
+	}
+	*/
+	
+	draw_set_halign(-1);
+	draw_set_valign(-1);
 }

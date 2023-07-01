@@ -27,7 +27,7 @@ if inventario == true{
 			if keyboard_check_pressed(ord("F")) and grid_items[# Infos.Item, i] != -1{
 				var _inst = instance_create_layer(obj_personagem.x, obj_personagem.y, "Instances", obj_item);
 				_inst.sprite_index = grid_items[# Infos.Sprite, i];
-				_inst.image_index = grid_items[# Infos.Item, i];
+				_inst.image_index = grid_items[# Infos.Item, i]; 
 				_inst.quantidade = grid_items[# Infos.Quantidade, i];
 				
 				// Esvaziando o Slot
@@ -135,6 +135,10 @@ if inventario == true{
 						aplicar_veloc(i,0.5,snd_pocao);
 					break;
 					
+					case Itens.PocaoDefesa: // Poção de velocidade.
+						aplicar_defesa(i,3,snd_pocao);
+					break;
+					
 					case Itens.FavoMel: // Favo de cura.
 						curar(i,50,snd_pocao);
 					break;
@@ -227,10 +231,30 @@ if inventario == true{
 		pos_selecionado = -1;
 	}
 		
-	
+	// Desenha o item selecionado.
 	if item_selecionado != -1{
 		draw_sprite_ext(grid_items[# Infos.Sprite, pos_selecionado], item_selecionado, _mx, _my, escala, escala, 0, c_white, .5);
 	}
+	
+	var ix = 0;
+	var iy = 0;
+	
+	for (var i = 0; i < total_slots; i++) {
+		var _slotsx = _invx + comeco_x + ((tamanho_slot + bufferx) * ix);
+		var _slotsy = _invy + comeco_y + ((tamanho_slot + buffery) * iy);
+		
+		if point_in_rectangle(_mx, _my, _slotsx, _slotsy, _slotsx + tamanho_slot, _slotsy + tamanho_slot){
+			// Desenhe o nome do item que o mouse está em cima.
+			scr_draw_nome_item(grid_items[# Infos.Item, i]+1);
+		}
+		
+		ix++;
+		if ix >= slots_h{
+			ix = 0;
+			iy++;
+		}
+	}
+	
 	#endregion
 	
 	#region Equips.

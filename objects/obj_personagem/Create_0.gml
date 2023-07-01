@@ -39,6 +39,9 @@ level = 1;
 max_xp = 100;
 xp = 0;
 
+// Dinheiro do personagem
+global.money = 0;
+
 // Desenho;
 image_alpha = 1;
 alpha_add = 0;
@@ -52,6 +55,3 @@ invulneravel_duracao = 120; // 2 segundos.
 ataque_alarme = 0;
 ataque_duracao = 30; // Adaptar à animação.
 #endregion
-
-//dinheiro do personagem
-global.money = 0;

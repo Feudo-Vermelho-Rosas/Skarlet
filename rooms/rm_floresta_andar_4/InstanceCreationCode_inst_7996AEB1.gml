@@ -1,3 +1,3 @@
 // Setar o drop.
-id_drop = 11;
+id_drop = Itens.ArmaduraMadeira;
 quantidade = 1;
