@@ -2,7 +2,9 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_cogumelo_grande",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -29,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_cogumelo_grande",
-    "path": "sprites/spr_cogumelo_grande/spr_cogumelo_grande.yy",
+    "name": "spr_cogumelo_grande_1",
+    "path": "sprites/spr_cogumelo_grande_1/spr_cogumelo_grande_1.yy",
   },
   "spriteMaskId": null,
   "tags": [

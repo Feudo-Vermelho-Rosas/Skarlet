@@ -176,31 +176,49 @@ function scr_draw_nome_item(id_item) {
 		case 4:
 			draw_text_outline(_x, _y, "Poção de velocidade", 4, c_black, 16, 1000, 1000);
 		break;
+		case 5:
+			draw_text_outline(_x, _y, "Favô de mel", 4, c_black, 16, 1000, 1000);
+		break;
+		case 6:
+			draw_text_outline(_x, _y, "Rosa laranja", 4, c_black, 16, 1000, 1000);
+		break;
+		case 7:
+			draw_text_outline(_x, _y, "Ankh", 4, c_black, 16, 1000, 1000);
+		break;
+		case 8:
+			draw_text_outline(_x, _y, "Rosa vermelha", 4, c_black, 16, 1000, 1000);
+		break;
+		case 9:
+			draw_text_outline(_x, _y, "Espada padrão", 4, c_black, 16, 1000, 1000);
+		break;
+		case 10:
+			draw_text_outline(_x, _y, "Espada encantada", 4, c_black, 16, 1000, 1000);
+		break;
+		case 11:
+			draw_text_outline(_x, _y, "Espada de favô", 4, c_black, 16, 1000, 1000);
+		break;
+		case 12:
+			draw_text_outline(_x, _y, "Espada de osso", 4, c_black, 16, 1000, 1000);
+		break;
+		case 13:
+			draw_text_outline(_x, _y, "Khopesh", 4, c_black, 16, 1000, 1000);
+		break;
+		case 14:
+			draw_text_outline(_x, _y, "Armadura padrão", 4, c_black, 16, 1000, 1000);
+		break;
+		case 15:
+			draw_text_outline(_x, _y, "Armadura de favô", 4, c_black, 16, 1000, 1000);
+		break;
+		case 16:
+			draw_text_outline(_x, _y, "Armadura encantada", 4, c_black, 16, 1000, 1000);
+		break;
+		case 17:
+			draw_text_outline(_x, _y, "Armadura de osso", 4, c_black, 16, 1000, 1000);
+		break;
+		case 18:
+			draw_text_outline(_x, _y, "Armadura do faraó", 4, c_black, 16, 1000, 1000);
+		break;
 	}
-	
-	/*
-	var _x = display_get_gui_width()/2;
-	var _y = display_get_gui_height()-48;
-	
-	draw_set_font(ft_Inv);
-	draw_set_halign(fa_center);
-	draw_set_valign(fa_middle);
-	
-	switch (id_item) {
-		case 1:
-			draw_text_outline(_x, _y, "Poção de cura", 4, c_black, 16, 1000, 1000);
-		break;
-		case 2:
-			draw_text_outline(_x, _y, "Poção de força", 4, c_black, 16, 1000, 1000);
-		break;
-		case 3:
-			draw_text_outline(_x, _y, "Poção de defesa", 4, c_black, 16, 1000, 1000);
-		break;
-		case 4:
-			draw_text_outline(_x, _y, "Poção de velocidade", 4, c_black, 16, 1000, 1000);
-		break;
-	}
-	*/
 	
 	draw_set_halign(-1);
 	draw_set_valign(-1);

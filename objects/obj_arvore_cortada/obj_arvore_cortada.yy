@@ -2,7 +2,9 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_arvore_cortada",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -29,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_arvore_cortada",
-    "path": "sprites/spr_arvore_cortada/spr_arvore_cortada.yy",
+    "name": "spr_tronco_cortado_1",
+    "path": "sprites/spr_tronco_cortado_1/spr_tronco_cortado_1.yy",
   },
   "spriteMaskId": null,
   "tags": [
