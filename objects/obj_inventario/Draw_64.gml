@@ -53,7 +53,7 @@ if inventario == true{
 					// 1- Caso o item selecionado seja igual do slot que iremos colocar.
 					if item_selecionado == grid_items[# Infos.Item, i] and pos_selecionado != i and grid_items[# Infos.Sprite, i] == grid_items[# Infos.Sprite, pos_selecionado]{
 						// Itens agrupáveis
-						if grid_items[# Infos.Item, pos_selecionado] <= id_nao_agrupaveis-1{
+						if grid_items[# Infos.Item, pos_selecionado] <= global.id_nao_agrupaveis-1{
 							grid_items[# Infos.Quantidade, i] += grid_items[# Infos.Quantidade , pos_selecionado];
 						
 							grid_items[# Infos.Item, pos_selecionado] = -1;
@@ -210,7 +210,7 @@ if inventario == true{
 							_slotsx, _slotsy, escala, escala, 0, c_white, 1);
 			
 			// Quantidade
-			if grid_items[# Infos.Item, i] <= id_nao_agrupaveis-1 { // Itens agrupáveis
+			if grid_items[# Infos.Item, i] <= global.id_nao_agrupaveis-1 { // Itens agrupáveis
 				draw_set_font(ft_Inv);
 				draw_set_halign(fa_center);
 				draw_text_outline(_slotsx + tamanho_slot, _slotsy + tamanho_slot - 8,
@@ -238,22 +238,6 @@ if inventario == true{
 	
 	var ix = 0;
 	var iy = 0;
-	
-	for (var i = 0; i < total_slots; i++) {
-		var _slotsx = _invx + comeco_x + ((tamanho_slot + bufferx) * ix);
-		var _slotsy = _invy + comeco_y + ((tamanho_slot + buffery) * iy);
-		
-		if point_in_rectangle(_mx, _my, _slotsx, _slotsy, _slotsx + tamanho_slot, _slotsy + tamanho_slot){
-			// Desenhe o nome do item que o mouse está em cima.
-			scr_draw_nome_item(grid_items[# Infos.Item, i]+1);
-		}
-		
-		ix++;
-		if ix >= slots_h{
-			ix = 0;
-			iy++;
-		}
-	}
 	
 	#endregion
 	
@@ -314,5 +298,21 @@ if inventario == true{
 	draw_sprite_ext(spr_personagem_baixo,0,_x,_y,escala+1,escala+1,0,c_white,1);
 	
 	#endregion
+	
+	for (var i = 0; i < total_slots; i++) {
+		var _slotsx = _invx + comeco_x + ((tamanho_slot + bufferx) * ix);
+		var _slotsy = _invy + comeco_y + ((tamanho_slot + buffery) * iy);
+		
+		if point_in_rectangle(_mx, _my, _slotsx, _slotsy, _slotsx + tamanho_slot, _slotsy + tamanho_slot){
+			// Desenhe o nome do item que o mouse está em cima.
+			scr_draw_nome_item(grid_items[# Infos.Item, i]+1);
+		}
+		
+		ix++;
+		if ix >= slots_h{
+			ix = 0;
+			iy++;
+		}
+	}
 }
 

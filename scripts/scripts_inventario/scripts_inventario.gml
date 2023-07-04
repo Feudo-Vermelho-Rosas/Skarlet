@@ -1,18 +1,38 @@
-function ds_grid_add_item() {
-	///@arg Item
-	///@arg Quantidade
-	///@arg Sprite
+function ds_grid_add_item(id_item, qtnd, sprite) {
+	// Este método adiciona um item ao inventário.
 	
+	// Pegue a data grid do inventário.
 	var _grid = obj_inventario.grid_items;
+	var _adicionado = false;
 	
+	// Neste primeiro loop, procure por itens iguais no inventário.
 	var _checagem = 0;
-	while _grid[# Infos.Item, _checagem] != -1{
+	do {
+		if (_grid[# Infos.Item, _checagem] == id_item) {
+			if (id_item < global.id_nao_agrupaveis) { // Verifique se o item é agrupável.
+				// Adicione na quantidade.
+				_grid[# 1, _checagem] += qtnd;
+				_adicionado = true;
+				break;
+			}
+		}
 		_checagem++;
-	}
+	} until (_checagem > obj_inventario.total_slots);
 	
-	_grid[# 0, _checagem] = argument[0];
-	_grid[# 1, _checagem] = argument[1];
-	_grid[# 2, _checagem] = argument[2];
+	// Neste segundo loop, caso o primeiro falhe, procure por slots vazios.
+	if !_adicionado {
+		_checagem = 0;
+		do {
+			if (_grid[# Infos.Item, _checagem] == -1) { // Veja se o slot está vazio.
+				// Adicione o item novo.
+				_grid[# 0, _checagem] = id_item;
+				_grid[# 1, _checagem] = qtnd;
+				_grid[# 2, _checagem] = sprite;
+				break;
+			}
+			_checagem++;
+		} until (_grid[# Infos.Item, _checagem] != -1);
+	}
 }
 
 function ds_grid_add_equip() {

@@ -26,7 +26,7 @@ item_selecionado = -1;
 pos_selecionado = -1;
 
 // Começo não agrupáveis.
-id_nao_agrupaveis = 6; 
+global.id_nao_agrupaveis = 6; 
 
 //Tudo que está aqui vai enumerar.
 enum Itens{
@@ -63,12 +63,7 @@ enum Infos{
 grid_items = ds_grid_create(Infos.Altura, total_slots);
 ds_grid_set_region(grid_items, 0, 0, Infos.Altura - 1, total_slots - 1, -1);
 
-ds_grid_add_item(Itens.PocaoRegen, 10, spr_items_armas);
-ds_grid_add_item(Itens.ArmaduraMadeira, 1, spr_items_armas);
-ds_grid_add_item(Itens.EspadaMadeira, 1, spr_items_armas);
-ds_grid_add_item(Itens.PocaoForca, 1, spr_items_armas);
-ds_grid_add_item(Itens.PocaoVelocidade, 1, spr_items_armas);
-ds_grid_add_item(Itens.PocaoDefesa, 1, spr_items_armas);
+ds_grid_add_item(Itens.PocaoRegen, 5, spr_items_armas);
 
 #endregion
 
