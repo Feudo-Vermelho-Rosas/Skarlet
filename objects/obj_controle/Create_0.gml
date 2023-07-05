@@ -1,3 +1,10 @@
-/// @description Implementar depois.
+/// @description Classe de controle geral.
 
-// Lorem Ipsum.
+#region Música.
+
+#endregion
+
+#region Ajuda.
+	global.ajuda = true;
+#endregion
+

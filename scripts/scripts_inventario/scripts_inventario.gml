@@ -1,4 +1,4 @@
-function ds_grid_add_item(id_item, qtnd, sprite) {
+function ds_grid_add_item(_id_item, _qtnd, _sprite) {
 	// Este método adiciona um item ao inventário.
 	
 	// Pegue a data grid do inventário.
@@ -8,10 +8,10 @@ function ds_grid_add_item(id_item, qtnd, sprite) {
 	// Neste primeiro loop, procure por itens iguais no inventário.
 	var _checagem = 0;
 	do {
-		if (_grid[# Infos.Item, _checagem] == id_item) {
-			if (id_item < global.id_nao_agrupaveis) { // Verifique se o item é agrupável.
+		if (_grid[# Infos.Item, _checagem] == _id_item) {
+			if (_id_item < global.id_nao_agrupaveis) { // Verifique se o item é agrupável.
 				// Adicione na quantidade.
-				_grid[# 1, _checagem] += qtnd;
+				_grid[# 1, _checagem] += _qtnd;
 				_adicionado = true;
 				break;
 			}
@@ -25,9 +25,9 @@ function ds_grid_add_item(id_item, qtnd, sprite) {
 		do {
 			if (_grid[# Infos.Item, _checagem] == -1) { // Veja se o slot está vazio.
 				// Adicione o item novo.
-				_grid[# 0, _checagem] = id_item;
-				_grid[# 1, _checagem] = qtnd;
-				_grid[# 2, _checagem] = sprite;
+				_grid[# 0, _checagem] = _id_item;
+				_grid[# 1, _checagem] = _qtnd;
+				_grid[# 2, _checagem] = _sprite;
 				break;
 			}
 			_checagem++;
@@ -168,78 +168,4 @@ function aplicar_veloc(inv_posicao, veloc, som) {
 		// Resete o alarme de força.
 		global.alarme_velocidade_duracao = duracao_velocidade;
 	}
-}
-	
-function scr_draw_nome_item(id_item) {
-	// Escreva no mouse o nome de um item.
-	
-	var _mousex = device_mouse_x_to_gui(0);
-	var _mousey = device_mouse_y_to_gui(0);
-	
-	var _x = _mousex+8;
-	var _y = _mousey-24;
-	
-	draw_set_font(ft_Inv);
-	draw_set_halign(fa_left);
-	draw_set_valign(fa_top);
-	
-	switch (id_item) {
-		case 1:
-			draw_text_outline(_x, _y, "Poção de cura", 4, c_black, 16, 1000, 1000);
-		break;
-		case 2:
-			draw_text_outline(_x, _y, "Poção de força", 4, c_black, 16, 1000, 1000);
-		break;
-		case 3:
-			draw_text_outline(_x, _y, "Poção de defesa", 4, c_black, 16, 1000, 1000);
-		break;
-		case 4:
-			draw_text_outline(_x, _y, "Poção de velocidade", 4, c_black, 16, 1000, 1000);
-		break;
-		case 5:
-			draw_text_outline(_x, _y, "Favô de mel", 4, c_black, 16, 1000, 1000);
-		break;
-		case 6:
-			draw_text_outline(_x, _y, "Rosa laranja", 4, c_black, 16, 1000, 1000);
-		break;
-		case 7:
-			draw_text_outline(_x, _y, "Ankh", 4, c_black, 16, 1000, 1000);
-		break;
-		case 8:
-			draw_text_outline(_x, _y, "Rosa vermelha", 4, c_black, 16, 1000, 1000);
-		break;
-		case 9:
-			draw_text_outline(_x, _y, "Espada padrão", 4, c_black, 16, 1000, 1000);
-		break;
-		case 10:
-			draw_text_outline(_x, _y, "Espada encantada", 4, c_black, 16, 1000, 1000);
-		break;
-		case 11:
-			draw_text_outline(_x, _y, "Espada de favô", 4, c_black, 16, 1000, 1000);
-		break;
-		case 12:
-			draw_text_outline(_x, _y, "Espada de osso", 4, c_black, 16, 1000, 1000);
-		break;
-		case 13:
-			draw_text_outline(_x, _y, "Khopesh", 4, c_black, 16, 1000, 1000);
-		break;
-		case 14:
-			draw_text_outline(_x, _y, "Armadura padrão", 4, c_black, 16, 1000, 1000);
-		break;
-		case 15:
-			draw_text_outline(_x, _y, "Armadura de favô", 4, c_black, 16, 1000, 1000);
-		break;
-		case 16:
-			draw_text_outline(_x, _y, "Armadura encantada", 4, c_black, 16, 1000, 1000);
-		break;
-		case 17:
-			draw_text_outline(_x, _y, "Armadura de osso", 4, c_black, 16, 1000, 1000);
-		break;
-		case 18:
-			draw_text_outline(_x, _y, "Armadura do faraó", 4, c_black, 16, 1000, 1000);
-		break;
-	}
-	
-	draw_set_halign(-1);
-	draw_set_valign(-1);
 }

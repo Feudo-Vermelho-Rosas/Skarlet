@@ -81,7 +81,7 @@ if _select or (is_array(menu[sub_menu][index]) and (_hmove != 0)){
 				break;
 				case 2:
 					//Controles
-					change_menu(_hmove, "controles");
+					change_menu(_hmove, "ajuda");
 				break;
 				case 3:
 					//Voltar

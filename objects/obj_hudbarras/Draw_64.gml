@@ -18,7 +18,7 @@ if instance_exists(obj_personagem) {
 	var _escala_texto = 0.7;
 
 	draw_set_halign(fa_left);
-	draw_set_font(ft_menupause);
+	draw_set_font(fnt_menupause);
 	
 	var _string = string(_hp) + "/" + string(_max_hp) + " HP";
 	draw_text_transformed(_x+100,_y-17,_string,_escala_texto,_escala_texto,0);
@@ -47,7 +47,7 @@ if instance_exists(obj_personagem) {
 	// Desenhe o texto
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
-	draw_set_font(ft_menupause);
+	draw_set_font(fnt_menupause);
 	var _cor = #7AFFB6;
 	
 	var _string = string(obj_personagem.level);
@@ -100,7 +100,7 @@ if instance_exists(obj_boss_abelha) {
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
 	
-	draw_set_font(ft_menupause);
+	draw_set_font(fnt_menupause);
 	var _string = string(_boss_hp) + "/" + string(_maxboss_hp);
 	draw_text_transformed(_x_texto,_y_texto,_string,_escala_texto,_escala_texto,0);
 
@@ -146,7 +146,7 @@ if instance_exists(obj_boss_abelha) {
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
 	
-	draw_set_font(ft_menupause);
+	draw_set_font(fnt_menupause);
 	var _string = string(_boss_hp) + "/" + string(_maxboss_hp);
 	draw_text_transformed(_x_texto,_y_texto,_string,_escala_texto,_escala_texto,0);
 
@@ -172,7 +172,7 @@ if instance_exists(obj_personagem) {
 	var _escala_texto = 0.9;
 	
 	draw_set_halign(fa_left);
-	draw_set_font(ft_menupause);
+	draw_set_font(fnt_menupause);
 	
 	var _string =   "  X " + string(_moedas);
 	draw_text_transformed(_x+30,_y-20,_string,_escala_texto,_escala_texto,0);

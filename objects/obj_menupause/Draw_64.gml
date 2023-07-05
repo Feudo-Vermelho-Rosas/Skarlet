@@ -9,7 +9,7 @@ draw_set_valign(fa_middle);
 
 draw_sprite_ext(spr_menupause, 0, _x/2, _y/2, _escala, _escala, 0, c_white, 1);
 
-draw_set_font(ft_menu);
+draw_set_font(fnt_menu);
 
 
 // linha de espaços

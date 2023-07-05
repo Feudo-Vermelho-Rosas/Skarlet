@@ -12,7 +12,7 @@
  var _x = _x - _sprite_comp*_escala/2 + 80;
  var _y = _y - _sprite_lar*_escala/2 + 36;
  
-draw_set_font(ft_menu);
+draw_set_font(fnt_menu);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_color(c_black);

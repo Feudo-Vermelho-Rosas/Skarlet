@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "spr_nuvens",
   "bbox_bottom": 611,
-  "bbox_left": 8,
-  "bbox_right": 4059,
+  "bbox_left": 0,
+  "bbox_right": 4050,
   "bbox_top": 396,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 4080,
+  "width": 4051,
 }

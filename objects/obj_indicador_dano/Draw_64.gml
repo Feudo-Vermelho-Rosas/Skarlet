@@ -7,7 +7,7 @@ var _y = (y1 - _cy) * escala_y;
 
 draw_set_color(c_red);
 draw_set_alpha(alpha);
-draw_set_font(ft_menupause);
+draw_set_font(fnt_menupause);
 draw_text(_x,_y-40,string(dano));
 
 // Resete as configurações de draw.

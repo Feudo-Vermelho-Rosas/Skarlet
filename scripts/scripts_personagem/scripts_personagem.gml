@@ -77,7 +77,7 @@ function scr_personagem_andando() {
 	scr_controle_direcao();
 	
 	#region Combate.
-	ataque = keyboard_check_pressed(vk_space);
+	ataque = keyboard_check_pressed(vk_space) or mouse_check_button_pressed(mb_left);
 	
 	if ataque {
 		//audio_play_sound(snd_sword,100,false);
@@ -180,4 +180,3 @@ function scr_levelup() {
 	defesa_base = level_defesa_base[level-1];
 	
 }
-	
