@@ -2,7 +2,9 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_cerejeira",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -29,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_cerejeira",
-    "path": "sprites/spr_cerejeira/spr_cerejeira.yy",
+    "name": "spr_cerejeira_1",
+    "path": "sprites/spr_cerejeira_1/spr_cerejeira_1.yy",
   },
   "spriteMaskId": null,
   "tags": [

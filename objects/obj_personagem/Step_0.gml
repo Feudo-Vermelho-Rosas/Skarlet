@@ -1,6 +1,7 @@
 // Att os stats;
-dano = dano_base + dano_equip;
-defesa = defesa_base + defesa_equip;
+dano = dano_base + dano_equip + dano_pocao;
+defesa = defesa_base + defesa_equip + defesa_pocao;
+veloc = veloc_base + veloc_pocao;
 
 // Sistema de pause.
 if (global.pause) {
@@ -28,7 +29,7 @@ if instance_exists(obj_item) and obj_inventario.inventario == false{
 	var _inst = instance_nearest(x, y, obj_item);
 	if distance_to_point(_inst.x, _inst.y) <= 20 {
 		if keyboard_check_pressed(ord("F")){
-			ds_grid_add_item(_inst.image_index, _inst.quantidade, _inst.sprite_index);
+			obj_inventario.add_item(_inst.image_index, _inst.quantidade, _inst.sprite_index);
 			
 			instance_destroy(_inst);
 		}

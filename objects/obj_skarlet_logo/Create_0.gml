@@ -1,3 +1,5 @@
+///@description Logo da tela inicial.
+
 // Configurações
 add_escala = 0.0001;
 escala = 1;

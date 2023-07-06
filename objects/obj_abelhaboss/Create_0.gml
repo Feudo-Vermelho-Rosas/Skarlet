@@ -29,9 +29,9 @@ drop = -1;
 xp = 1;
 
 // Drop.
-id_drop = -1;
-chance_drop = -1;
-quantidade = -1;
+id_drop = Itens.PocaoRegen;
+chance_drop = 0.05;
+quantidade = 1;
 
 // Desenho.
 sprite_andando = spr_abelha_normal;

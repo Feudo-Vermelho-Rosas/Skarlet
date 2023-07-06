@@ -27,6 +27,10 @@ dano_base = 1;
 defesa_base = 1;
 dano_equip = 4;
 defesa_equip = 2;
+dano_pocao = 0;
+defesa_pocao = 0;
+veloc_base = 1.5;
+veloc_pocao = 0;
 defesa = 3;
 dano = 5;
 kb = 3;
@@ -34,6 +38,9 @@ kb = 3;
 level = 1;
 max_xp = 100;
 xp = 0;
+
+// Dinheiro do personagem
+global.money = 0;
 
 // Desenho;
 image_alpha = 1;

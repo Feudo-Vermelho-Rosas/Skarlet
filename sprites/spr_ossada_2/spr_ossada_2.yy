@@ -17,16 +17,16 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 8,
+  "height": 20,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5e333635-4430-49f1-a32b-ed7dd4ffc9c9","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5a9881d7-1079-4719-82b7-4e0ce82fdd8c","blendMode":0,"displayName":"Layer 1","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "decorações",
-    "path": "folders/Sprites/decorações.yy",
+    "name": "deserto",
+    "path": "folders/Sprites/deserto.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -59,8 +59,8 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 10,
-    "yorigin": 4,
+    "xorigin": 12,
+    "yorigin": 10,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 21,
+  "width": 25,
 }

@@ -1,18 +1,38 @@
-function ds_grid_add_item() {
-	///@arg Item
-	///@arg Quantidade
-	///@arg Sprite
+function ds_grid_add_item(_id_item, _qtnd, _sprite) {
+	// Este método adiciona um item ao inventário.
 	
+	// Pegue a data grid do inventário.
 	var _grid = obj_inventario.grid_items;
+	var _adicionado = false;
 	
+	// Neste primeiro loop, procure por itens iguais no inventário.
 	var _checagem = 0;
-	while _grid[# Infos.Item, _checagem] != -1{
+	do {
+		if (_grid[# Infos.Item, _checagem] == _id_item) {
+			if (_id_item < global.id_nao_agrupaveis) { // Verifique se o item é agrupável.
+				// Adicione na quantidade.
+				_grid[# 1, _checagem] += _qtnd;
+				_adicionado = true;
+				break;
+			}
+		}
 		_checagem++;
-	}
+	} until (_checagem > obj_inventario.total_slots);
 	
-	_grid[# 0, _checagem] = argument[0];
-	_grid[# 1, _checagem] = argument[1];
-	_grid[# 2, _checagem] = argument[2];
+	// Neste segundo loop, caso o primeiro falhe, procure por slots vazios.
+	if !_adicionado {
+		_checagem = 0;
+		do {
+			if (_grid[# Infos.Item, _checagem] == -1) { // Veja se o slot está vazio.
+				// Adicione o item novo.
+				_grid[# 0, _checagem] = _id_item;
+				_grid[# 1, _checagem] = _qtnd;
+				_grid[# 2, _checagem] = _sprite;
+				break;
+			}
+			_checagem++;
+		} until (_grid[# Infos.Item, _checagem] != -1);
+	}
 }
 
 function ds_grid_add_equip() {
@@ -82,7 +102,8 @@ function remover_um_item(posicao_inv) {
 }
 
 function curar(inv_posicao, cura, som) {
-	if alarme_cura_delay <= 0 {
+	// Cura o personagem, remove o item e reseta o alarme.
+	if global.alarme_cura_delay <= 0 {
 		obj_personagem.hp += cura;
 		if obj_personagem.hp > obj_personagem.max_hp {
 			obj_personagem.hp = obj_personagem.max_hp;
@@ -100,6 +121,51 @@ function curar(inv_posicao, cura, som) {
 		audio_play_sound(som,100,false);
 		
 		// Resete o alarme de cura.
-		alarme_cura_delay = duracao_cura_delay;
+		global.alarme_cura_delay = duracao_cura_delay;
+	}
+}
+
+function aplicar_forca(inv_posicao, forca, som) {
+	// Aplica a força, remove o item e reseta o alarme.
+	if global.alarme_forca_duracao <= 0 {
+		obj_personagem.dano_pocao = forca;
+		
+		remover_um_item(inv_posicao);
+		
+		// Efeito sonoro.
+		audio_play_sound(som,100,false);
+		
+		// Resete o alarme de força.
+		global.alarme_forca_duracao = duracao_forca;
+	}
+}
+
+function aplicar_defesa(inv_posicao, defesa, som) {
+	// Aplica a defesa, remove o item e reseta o alarme.
+	if global.alarme_defesa_duracao <= 0 {
+		obj_personagem.defesa_pocao = defesa;
+		
+		remover_um_item(inv_posicao);
+		
+		// Efeito sonoro.
+		audio_play_sound(som,100,false);
+		
+		// Resete o alarme de força.
+		global.alarme_defesa_duracao = duracao_defesa;
+	}
+}
+
+function aplicar_veloc(inv_posicao, veloc, som) {
+	// Aplica a velocidade, remove o item e reseta o alarme.
+	if global.alarme_velocidade_duracao <= 0 {
+		obj_personagem.veloc_pocao = veloc;
+		
+		remover_um_item(inv_posicao);
+		
+		// Efeito sonoro.
+		audio_play_sound(som,100,false);
+		
+		// Resete o alarme de força.
+		global.alarme_velocidade_duracao = duracao_velocidade;
 	}
 }

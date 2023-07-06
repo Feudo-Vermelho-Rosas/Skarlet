@@ -22,7 +22,7 @@ y2_retangulo = lerp(y2_retangulo,(_telaheight-1)/2,0.005);
 // Desenhe o gameover.
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-draw_set_font(ft_menu);
+draw_set_font(fnt_menu);
 draw_text_transformed_color(_telawidth/2,_telaheight/2,"Game Over",escala,escala,0,
 							c_white,c_white,c_white,c_white,alpha);
 
@@ -35,7 +35,7 @@ var _y = _telaheight - _telaheight/15;
 
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-draw_set_font(ft_menu);
+draw_set_font(fnt_menu);
 draw_text_transformed_color(_telawidth/2,_y,"Pressione Z para continuar",
 							0.7,0.7,0,c_white,c_white,c_white,c_white,alpha_mensagem);
 

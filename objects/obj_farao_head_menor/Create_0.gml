@@ -13,4 +13,4 @@ if veloc_dir > 90 and veloc_dir < 270 {
 image_yscale = 0.5;
 
 // Alarmes.
-vida_tempo = 60; // 1 segundos.
+vida_tempo = 90; // 1.5 segundos.

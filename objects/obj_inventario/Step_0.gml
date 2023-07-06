@@ -11,7 +11,26 @@ if (_abrir and global.pause == false) or (_abrir and inventario == true){
 
 // Alarmes.
 if !global.pause {
-	if alarme_cura_delay > 0 {
-		alarme_cura_delay -= 1;
+	// Faça o controle de alarmes das poções.
+	if global.alarme_cura_delay > 0 {
+		global.alarme_cura_delay -= 1;
+	}
+	
+	if global.alarme_forca_duracao > 0 {
+		global.alarme_forca_duracao -= 1;
+	} else {
+		obj_personagem.dano_pocao = 0;
+	}
+	
+	if global.alarme_defesa_duracao > 0 {
+		global.alarme_defesa_duracao -= 1;
+	} else {
+		obj_personagem.defesa_pocao = 0;
+	}
+	
+	if global.alarme_velocidade_duracao > 0 {
+		global.alarme_velocidade_duracao -= 1;
+	} else {
+		obj_personagem.veloc_pocao = 0;
 	}
 }

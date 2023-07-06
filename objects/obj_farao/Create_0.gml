@@ -23,8 +23,18 @@ max_hp = 600;
 hp = 180;
 defesa = 0;
 dano = 30;
+dano_head = 25
+dano_plataformas = 30; 
 kb = 6;
-xp = 100;
+xp = 200;
+
+// Drops.
+id_drop_1 = Itens.CruzFarao;
+id_drop_2 = choose(Itens.ArmaduraFarao,Itens.Khopesh);
+id_drop_3 = Itens.RosaLaranja
+quantidade_1 = 1;
+quantidade_2 = 1;
+quantidade_3 = 1;
 
 // Desenho.
 sprite_parado_frente = spr_boss_farao_parado_frente;

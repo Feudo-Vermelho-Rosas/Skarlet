@@ -1,6 +1,9 @@
 // Adicione o xp ao jogador.
 obj_personagem.xp += xp;
 
+//Adicione dinheiro ao jogador.
+global.money += 1;
+
 // Crie o efeito de partícula.
 instance_create_layer(x,y,"Instances",obj_particula_morte);
 

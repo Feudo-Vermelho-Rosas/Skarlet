@@ -1,7 +1,10 @@
-if x >= 0 {
-	veloc = -veloc_inicial;
-} else if x <= -3000 {
-	veloc = veloc_inicial;
+// Mude de direção quando alguma das bordas do sprite atingir o canto da tela.
+if bbox_right < room_width {
+	veloc = -veloc;
+} else if bbox_left > 0 {
+	veloc = -veloc;
 }
 
+// Adicione a velocidade à posição.
 x += veloc;
+

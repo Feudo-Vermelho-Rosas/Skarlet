@@ -5,4 +5,4 @@ event_inherited();
 veloc = 3;
 
 // Alarmes.
-vida_tempo = 60; // 1 segundos.
+vida_tempo = 90; // 1.5 segundos.

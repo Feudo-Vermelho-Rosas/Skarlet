@@ -1,4 +1,4 @@
-/*draw_set_font(ft_menu);
+/*draw_set_font(fnt_menu);
 
 var dist = 50;
 var gui_largura = display_get_gui_width();

@@ -8,7 +8,7 @@ global.dsm_settings = ds_map_create();
 
 ds_map_add(set, "som", [global.volume_geral, [0, 10]]);
 ds_map_add(set, "musica", [global.volume_musica, [0, 10]]);
-ds_map_add(set, "controles", [0, ["Teclado", "Joystick"]]);
+ds_map_add(set, "ajuda", [0, ["Ativa", "Desativada"]]);
 
 time_held_right = 0;
 time_held_left = 0;
@@ -20,7 +20,7 @@ menu[MAIN][2] = "Sair";
 //options submenu 1
 menu[SETTINGS][0] = ["Som: ", "som"];
 menu[SETTINGS][1] = ["Musica: ", "musica"];
-menu[SETTINGS][2] = ["Controle: ", "controles"];
+menu[SETTINGS][2] = ["Ajuda: ", "ajuda"];
 menu[SETTINGS][3] = "Voltar";
 
 index = 0;    //Menu index position

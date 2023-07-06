@@ -1,4 +1,5 @@
 /// @description Projétil tijolo.
+
 // Movimento.
 x = obj_personagem.x;
 y = obj_personagem.y-40;

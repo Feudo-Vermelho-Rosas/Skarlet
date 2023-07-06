@@ -1,3 +1,3 @@
 // Setar o drop.
-id_drop = 7;
+id_drop = Itens.EspadaMadeira;
 quantidade = 1;
