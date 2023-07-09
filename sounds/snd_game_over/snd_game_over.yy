@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 24.06515,
   "parent": {
-    "name": "efeitos sonoros",
-    "path": "folders/Sons/efeitos sonoros.yy",
+    "name": "Sons",
+    "path": "folders/Sons.yy",
   },
   "preload": false,
   "sampleRate": 44100,

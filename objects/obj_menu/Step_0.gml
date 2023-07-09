@@ -82,6 +82,12 @@ if _select or (is_array(menu[sub_menu][index]) and (_hmove != 0)){
 				case 2:
 					//Controles
 					change_menu(_hmove, "ajuda");
+					var _ajuda = ds_map_find_value(set, "ajuda")[0];
+					if _ajuda = "Ativada" {
+						global.ajuda = true;
+					} else {
+						global.ajuda = false;
+					}
 				break;
 				case 3:
 					//Voltar

@@ -166,7 +166,24 @@ if instance_exists(obj_personagem) {
 	
 	var _moedas = global.money;
 	
-	draw_sprite_ext(spr_moeda, 0, _x, _y, _escala, _escala, 0,c_white,1);
+	// Animação e desenho da moeda.
+	if random_range(0,1) < 0.001 {
+		animacao_moeda = true;	
+	} 
+	
+	if animacao_moeda {
+		// Anime a moeda.
+		moeda_subimg += sprite_get_speed(spr_moeda)/60;
+		draw_sprite_ext(spr_moeda, moeda_subimg, _x, _y, _escala, _escala, 0,c_white,1);
+		if moeda_subimg > sprite_get_number(spr_moeda) {
+			// Se o index for maior que o da animação, pare de animar.
+			moeda_subimg = 0;
+			animacao_moeda = false;
+		}
+	} else {
+		// Desenhe a moeda parada.
+		draw_sprite_ext(spr_moeda, 0, _x, _y, _escala, _escala, 0,c_white,1);
+	}
 	
 	// Desenhe o texto.
 	var _escala_texto = 0.9;
@@ -216,4 +233,96 @@ if instance_exists(obj_personagem) {
 	
 }
 
+#endregion
+
+#region Indicadores de ajuda.
+if global.ajuda == true and instance_exists(obj_personagem){
+	var _pers = obj_personagem;
+	var _ativo = false;
+	
+	var _x = display_get_gui_width()/2;
+	var _y = display_get_gui_height()-90;
+	
+	draw_set_font(fnt_inv);
+	draw_set_color(c_white);
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_middle);
+	
+	#region Indicador de item.
+	// Cheque se não existe indicador ativo e se um item existe.
+	if !_ativo and instance_exists(obj_item) { 
+		// Pegue o item mais próximo.
+		var _item = instance_nearest(_pers.x,_pers.y,obj_item);
+		
+		with (_pers) {
+			// Cheque a distância para o item.
+			if distance_to_object(_item) < _pers.distancia_item {
+				_ativo = true;
+			}
+		}
+		
+		// Desenhe o indicativo na tela.
+		if _ativo {
+			draw_text_outline(_x, _y, "Aperte 'F' para pegar", 4, c_black, 16, 25, 400);
+		}
+	}
+	
+	#endregion
+	
+	#region Indicador de placa.
+	// Cheque se não existe indicador ativo e se uma placa existe.
+	if !_ativo and instance_exists(obj_placa){
+		// Pegue a placa mais próxima.
+		var _placa = instance_nearest(_pers.x,_pers.y,obj_placa);
+	
+		with (_pers) {
+			// Cheque a distância para a placa.
+			if distance_to_object(_placa) < _placa.distancia_ativar {
+				_ativo = true;
+			}
+		}
+	
+		// Desenhe o indicativo na tela.
+		if _ativo and !instance_exists(obj_dialogo) {
+			draw_text_outline(_x, _y, "Aperte o botão direito para ler", 4, c_black, 16, 25, 400);
+		}
+	}
+	#endregion
+	
+	#region Indicador do inventário.
+	#endregion
+	
+	#region Indicador de loja.
+	// Cheque se não existe indicador ativo e se uma loja existe.
+	if !_ativo and instance_exists(obj_shop) { 
+		// Pegue o item mais próximo.
+		var _loja = instance_nearest(_pers.x,_pers.y,obj_shop);
+		
+		with (_pers) {
+			// Cheque a distância para o item.
+			if distance_to_object(_loja) < _loja.distancia_ativar {
+				_ativo = true;
+			}
+		}
+		
+		// Desenhe o indicativo na tela.
+		if _ativo {
+			draw_text_outline(_x, _y, "Aperte 'C' para comprar", 4, c_black, 16, 25, 400);
+		}
+	}
+	#endregion
+	
+	#region Indicador de diálogo.
+	
+	if instance_exists(obj_dialogo) {
+		draw_text_outline(_x, _y, "Aperte 'ESC' para sair", 4, c_black, 16, 25, 400);
+	}
+	
+	#endregion
+	
+	draw_set_font(-1);
+	draw_set_color(-1);
+	draw_set_halign(-1);
+	draw_set_valign(-1);
+}
 #endregion

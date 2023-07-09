@@ -2,14 +2,17 @@
 
 var _esc = keyboard_check_pressed(vk_escape);
 var _gameover = instance_exists(obj_gameover);
+var _diagolo = instance_exists(obj_dialogo);
+var _inventario;
 
 if instance_exists(obj_inventario) {
-	var _inventario = obj_inventario.inventario;
+	_inventario = obj_inventario.inventario;
 } else {
-	var _inventario = false;
+	_inventario = false;
 }
 
-if _esc and !_inventario and !_gameover {
+// Abrir menu de pause.
+if _esc and !_inventario and !_gameover and !_diagolo {
 	global.pause = !global.pause;
 	
 	// Crie uma instância do menu de pause caso uma já não exista.

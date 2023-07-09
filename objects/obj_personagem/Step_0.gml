@@ -27,7 +27,7 @@ if xp >= max_xp {
 // Pegar um item.
 if instance_exists(obj_item) and obj_inventario.inventario == false{
 	var _inst = instance_nearest(x, y, obj_item);
-	if distance_to_point(_inst.x, _inst.y) <= 20 {
+	if distance_to_point(_inst.x, _inst.y) <= distancia_item {
 		if keyboard_check_pressed(ord("F")){
 			obj_inventario.add_item(_inst.image_index, _inst.quantidade, _inst.sprite_index);
 			

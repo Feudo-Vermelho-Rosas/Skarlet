@@ -17,7 +17,7 @@ var _gap = 70;
 
 //draw items
 for (var i = 0; i < array_length(menu[sub_menu]); ++i) {
-	draw_set_color(c_white);
+	draw_set_color(c_black);
 	if i == index draw_set_color(c_red)
 	
 	//is this a selectable menu item, or just plain tet?
@@ -45,8 +45,8 @@ for (var i = 0; i < array_length(menu[sub_menu]); ++i) {
 		var _str = menu[sub_menu][i];
 	}
 		
-	
-    draw_text_outline(_x/2, ((_y/2)- 70) + _gap *i, _str, 4, c_black, 16, 1000, 1000);
+	draw_text(_x/2, ((_y/2)-70) + _gap*i, _str);
+    //draw_text_outline(_x/2, ((_y/2)- 70) + _gap *i, _str, 4, c_black, 16, 1000, 1000);
 
 }
 

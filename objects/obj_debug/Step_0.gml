@@ -25,11 +25,17 @@ if active {
 		}
 	}
 	
+	// Mudar o level do personagem.
 	if keyboard_check_pressed(ord("L")) {
 		obj_personagem.level = 4;
 		with (obj_personagem) {
 			script_execute(scr_levelup);
 		}
 		obj_personagem.xp = 0;
+	}
+	
+	// Ir pra próxima room.
+	if keyboard_check_pressed(ord("R")) {
+		room_goto_next();
 	}
 }

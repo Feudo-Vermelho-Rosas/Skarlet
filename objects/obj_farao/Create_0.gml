@@ -20,7 +20,7 @@ dest_y = 0;
 
 // Stats
 max_hp = 600;
-hp = 180;
+hp = max_hp;
 defesa = 0;
 dano = 30;
 dano_head = 25
