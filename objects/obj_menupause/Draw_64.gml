@@ -1,6 +1,6 @@
 // Desenhe a sprite do menu de pause. 
 var _x = display_get_gui_width();
-var _y = display_get_gui_height(); 
+var _y = display_get_gui_height();
 var _escala = 4;
 var _cor = #683E0E;
 
@@ -13,11 +13,11 @@ draw_set_font(fnt_menu);
 
 
 // linha de espaços
-var _gap = 70;
+var _gap = 62;
 
 //draw items
 for (var i = 0; i < array_length(menu[sub_menu]); ++i) {
-	draw_set_color(c_black);
+	draw_set_color(c_white);
 	if i == index draw_set_color(c_red)
 	
 	//is this a selectable menu item, or just plain tet?
@@ -44,9 +44,9 @@ for (var i = 0; i < array_length(menu[sub_menu]); ++i) {
 		//draw string
 		var _str = menu[sub_menu][i];
 	}
-		
-	draw_text(_x/2, ((_y/2)-70) + _gap*i, _str);
-    //draw_text_outline(_x/2, ((_y/2)- 70) + _gap *i, _str, 4, c_black, 16, 1000, 1000);
+
+	draw_text(_x/2, ((_y/2)-75) + _gap*i, _str);
+    draw_text_outline(_x/2, ((_y/2)- 75) + _gap *i, _str, 4, c_black, 16, 1000, 1000);
 
 }
 

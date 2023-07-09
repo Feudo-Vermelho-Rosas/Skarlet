@@ -303,7 +303,9 @@
     {"id":{"name":"snd_spiderhit","path":"sounds/snd_spiderhit/snd_spiderhit.yy",},},
     {"id":{"name":"spr_cobra_atacando","path":"sprites/spr_cobra_atacando/spr_cobra_atacando.yy",},},
     {"id":{"name":"spr_placa_5","path":"sprites/spr_placa_5/spr_placa_5.yy",},},
+    {"id":{"name":"obj_creditos","path":"objects/obj_creditos/obj_creditos.yy",},},
     {"id":{"name":"rm_deserto_andar_2","path":"rooms/rm_deserto_andar_2/rm_deserto_andar_2.yy",},},
+    {"id":{"name":"rm_creditos","path":"rooms/rm_creditos/rm_creditos.yy",},},
     {"id":{"name":"spr_cacto_flor_3","path":"sprites/spr_cacto_flor_3/spr_cacto_flor_3.yy",},},
     {"id":{"name":"obj_casa_5","path":"objects/obj_casa_5/obj_casa_5.yy",},},
     {"id":{"name":"snd_floresta","path":"sounds/snd_floresta/snd_floresta.yy",},},
@@ -395,6 +397,7 @@
     {"roomId":{"name":"rm_deserto_andar_3","path":"rooms/rm_deserto_andar_3/rm_deserto_andar_3.yy",},},
     {"roomId":{"name":"rm_deserto_andar_4","path":"rooms/rm_deserto_andar_4/rm_deserto_andar_4.yy",},},
     {"roomId":{"name":"rm_deserto_andar_boss","path":"rooms/rm_deserto_andar_boss/rm_deserto_andar_boss.yy",},},
+    {"roomId":{"name":"rm_creditos","path":"rooms/rm_creditos/rm_creditos.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},

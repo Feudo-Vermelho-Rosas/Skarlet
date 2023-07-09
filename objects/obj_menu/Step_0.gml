@@ -80,7 +80,12 @@ if _select or (is_array(menu[sub_menu][index]) and (_hmove != 0)){
 					global.volume_musica = _musica;
 				break;
 				case 2:
-					//Controles
+					//Controle
+					sub_menu = CONTROLES;
+					index = 0;
+				break;
+				case 3:
+					//Ajuda
 					change_menu(_hmove, "ajuda");
 					var _ajuda = ds_map_find_value(set, "ajuda")[0];
 					if _ajuda = "Ativada" {
@@ -89,13 +94,21 @@ if _select or (is_array(menu[sub_menu][index]) and (_hmove != 0)){
 						global.ajuda = false;
 					}
 				break;
-				case 3:
+				case 4:
 					//Voltar
 					sub_menu = MAIN;
 					index = 1;
 				break;
-		
 			}
+		break;
+		case CONTROLES: //opções dos controles
+		switch(index) {
+			case 0:
+			//Voltar
+				sub_menu = SETTINGS;
+				index = 2;
+			break;
+		}
 		break;
 	}
 }
