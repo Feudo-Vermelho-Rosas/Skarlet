@@ -225,6 +225,7 @@
     {"name":"spr_bau_floresta","order":27,"path":"sprites/spr_bau_floresta/spr_bau_floresta.yy",},
     {"name":"spr_muro","order":17,"path":"sprites/spr_muro/spr_muro.yy",},
     {"name":"obj_poco","order":15,"path":"objects/obj_poco/obj_poco.yy",},
+    {"name":"fnt_creditos","order":4,"path":"fonts/fnt_creditos/fnt_creditos.yy",},
     {"name":"snd_abririnv","order":7,"path":"sounds/snd_abririnv/snd_abririnv.yy",},
     {"name":"spr_aranha_andando","order":5,"path":"sprites/spr_aranha_andando/spr_aranha_andando.yy",},
     {"name":"spr_personagem_ataque_cima","order":10,"path":"sprites/spr_personagem_ataque_cima/spr_personagem_ataque_cima.yy",},

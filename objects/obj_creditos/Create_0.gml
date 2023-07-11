@@ -2,15 +2,16 @@
 global.credito = false;
 
 creditos = [
-	"SKARLET",
-	"JOGO PRODUZIDO POR",
-	"ARTISTA: ANA VICTORIA",
-	"ARTISTA: JOÃO VICTOR",
-	"ARTISTA: KAROL",
-    "DESENVOLVEDOR: FELIPE",
-    "POGGERS: JOÃO MARCOS",
-    "DIRETOR: WICTOR",
-    "COMPOSITOR: LUCAS"
+	"",
+	"JOGO PRODUZIDO POR:",
+	"ART DEV: . . . ANA VICTORIA",
+	"ART DEV: . . . JOÃO VITOR",
+	"ART DEV: . . . KAROL LUZ",
+    "GAME DEV: . . FELIPE",
+    "GAME DEV: . . JOÃO MARCOS",
+    "COMPOSER: . . LUCAS",
+    "COUNSELOR: .  WICTOR",
+    "OBRIGADO POR JOGAR."
 ];
 y_pos = room_height;
 scroll_speed = 1;

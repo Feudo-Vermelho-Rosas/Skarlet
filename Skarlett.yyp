@@ -267,6 +267,7 @@
     {"id":{"name":"spr_muro","path":"sprites/spr_muro/spr_muro.yy",},},
     {"id":{"name":"obj_poco","path":"objects/obj_poco/obj_poco.yy",},},
     {"id":{"name":"spr_skarlet_logo","path":"sprites/spr_skarlet_logo/spr_skarlet_logo.yy",},},
+    {"id":{"name":"fnt_creditos","path":"fonts/fnt_creditos/fnt_creditos.yy",},},
     {"id":{"name":"snd_abririnv","path":"sounds/snd_abririnv/snd_abririnv.yy",},},
     {"id":{"name":"spr_aranha_andando","path":"sprites/spr_aranha_andando/spr_aranha_andando.yy",},},
     {"id":{"name":"spr_personagem_ataque_cima","path":"sprites/spr_personagem_ataque_cima/spr_personagem_ataque_cima.yy",},},

@@ -293,7 +293,7 @@ controle_uso = function(_i) {
 		break;
 			
 		case Itens.FavoMel: // Favo de cura.
-			curar(i,50,snd_pocao);
+			curar(_i,50,snd_pocao);
 		break;
 			
 		case Itens.ArmaduraPadrao: // Armadura Padrão.

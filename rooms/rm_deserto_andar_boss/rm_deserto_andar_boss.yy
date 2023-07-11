@@ -26,6 +26,7 @@
     {"name":"inst_5A089763","path":"rooms/rm_deserto_andar_boss/rm_deserto_andar_boss.yy",},
     {"name":"inst_1F57E980","path":"rooms/rm_deserto_andar_boss/rm_deserto_andar_boss.yy",},
     {"name":"inst_6729E890","path":"rooms/rm_deserto_andar_boss/rm_deserto_andar_boss.yy",},
+    {"name":"inst_36197940","path":"rooms/rm_deserto_andar_boss/rm_deserto_andar_boss.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -38,6 +39,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_63C7028F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_pilar","path":"objects/obj_pilar/obj_pilar.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":368.0,"y":70.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_74AD5761","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_pilar","path":"objects/obj_pilar/obj_pilar.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":272.0,"y":70.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_58CFE798","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_pilar","path":"objects/obj_pilar/obj_pilar.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":272.0,"y":5.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_36197940","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_trocasala","path":"objects/obj_trocasala/obj_trocasala.yy",},"properties":[],"rotation":0.0,"scaleX":4.5,"scaleY":1.0,"x":284.0,"y":-8.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Decoracoes","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[

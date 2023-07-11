@@ -8,7 +8,7 @@ global.dsm_settings = ds_map_create();
 
 ds_map_add(setpause, "som", [global.volume_geral, [0, 10]]);
 ds_map_add(setpause, "musica", [global.volume_musica, [0, 10]]);
-ds_map_add(set, "ajuda", [0, ["Ativada", "Desativada"]]);
+ds_map_add(set, "ajuda", [global.ajuda, ["Ativada", "Desativada"]]);
 
 time_held_right = 0;
 time_held_left = 0;

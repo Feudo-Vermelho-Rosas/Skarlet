@@ -25,9 +25,9 @@ dest_y = 0;
 tempo = 0;
 
 // Drops.
-id_drop_1 = 4;
-id_drop_2 = choose(8,10);
-id_drop_3 = 5
+id_drop_1 = Itens.FavoMel;
+id_drop_2 = choose(Itens.EspadaFavo,Itens.ArmaduraFavo);
+id_drop_3 = Itens.RosaLaranja;
 quantidade_1 = irandom_range(3,5);
 quantidade_2 = 1;
 quantidade_3 = 1;

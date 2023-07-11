@@ -9,7 +9,7 @@ for (var i = 0; i < array_length(menu[sub_menu]); ++i) {
 	draw_set_color(c_white);
 	if i == index draw_set_color(c_red)
 	
-	//is this a selectable menu item, or just plain tet?
+	//is this a selectable menu item, or just plain text?
 	if is_array(menu[sub_menu][i]){
 		//store menu array
 		var _menu_arr = menu[sub_menu][i];
