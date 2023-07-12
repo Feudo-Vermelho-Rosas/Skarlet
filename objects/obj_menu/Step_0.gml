@@ -1,3 +1,5 @@
+
+
 //get input
 var _up = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
 var _down = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
@@ -82,6 +84,7 @@ if _select or (is_array(menu[sub_menu][index]) and (_hmove != 0)){
 				case 2:
 					//Controle
 					sub_menu = CONTROLES;
+					global.controles = true;
 					index = 0;
 				break;
 				case 3:
@@ -107,6 +110,7 @@ if _select or (is_array(menu[sub_menu][index]) and (_hmove != 0)){
 			//Voltar
 				sub_menu = SETTINGS;
 				index = 2;
+				global.controles = false;
 			break;
 		}
 		break;
