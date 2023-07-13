@@ -1,12 +1,12 @@
 instance_deactivate_all(obj_creditos);	
 draw_set_font(fnt_creditos);
 draw_set_color(c_white);
-draw_set_halign(fa_left);
+draw_set_halign(fa_center);
 var _esc = 1;
 
 for (var i = 0; i < array_length_1d(creditos); i++) {
     var _credit = creditos[i];
-    draw_text(room_width /3, y_pos + (i * 140), _credit);
+    draw_text(room_width/2, y_pos + (i * 140), _credit);
 	draw_sprite_ext(spr_skarlet_logo, 0, room_width / 2, y_pos, _esc, _esc, 0, c_white, 1);
 }
 

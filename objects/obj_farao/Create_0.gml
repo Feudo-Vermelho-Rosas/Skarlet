@@ -21,9 +21,9 @@ dest_y = 0;
 // Stats
 max_hp = 600;
 hp = max_hp;
-defesa = 0;
-dano = 30;
-dano_head = 25
+defesa = 5;
+dano = 35;
+dano_head = 35;
 dano_plataformas = 30; 
 kb = 6;
 xp = 200;

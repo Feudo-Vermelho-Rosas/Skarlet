@@ -27,7 +27,7 @@ tempo = 0;
 // Drops.
 id_drop_1 = Itens.FavoMel;
 id_drop_2 = choose(Itens.EspadaFavo,Itens.ArmaduraFavo);
-id_drop_3 = Itens.RosaLaranja;
+id_drop_3 = Itens.RosaVermelha;
 quantidade_1 = irandom_range(3,5);
 quantidade_2 = 1;
 quantidade_3 = 1;

@@ -4,13 +4,14 @@
 event_inherited();
 
 // Stats
-max_hp = 35;
+max_hp = 30;
 hp = max_hp;
-defesa = 5;
+defesa = 3;
 dano = 15;
 kb = 3;
 drop = -1;
 xp = 14;
+reward = 2;
 
 // Drop.
 id_drop = -1;

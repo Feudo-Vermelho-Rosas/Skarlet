@@ -1,5 +1,8 @@
 #macro TAG_DEPTHSORT "depthsort"
 
+// Configurações.
+depth = DEPTHS.GAMEDEPTH;
+
 // Array dos objetos que estão com a tag de depthsort.
 depth_array = tag_get_asset_ids(TAG_DEPTHSORT,asset_object);
 

@@ -4,7 +4,6 @@ event_inherited();
 // Distância de ativação.
 if distance_to_object(obj_personagem) < distancia_ativar {
 	// Indicador "!"
-	var _escala = 0.5;
 	draw_set_font(fnt_ajuda);
 	draw_set_color(c_white);
 	draw_set_halign(fa_center);

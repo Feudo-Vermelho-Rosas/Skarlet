@@ -18,6 +18,7 @@ if instance_exists(obj_personagem) {
 	var _escala_texto = 0.7;
 
 	draw_set_halign(fa_left);
+	draw_set_valign(fa_top);
 	draw_set_font(fnt_menupause);
 	
 	var _string = string(_hp) + "/" + string(_max_hp) + " HP";
@@ -25,6 +26,7 @@ if instance_exists(obj_personagem) {
 
 	// Resete o draw.
 	draw_set_halign(-1);
+	draw_set_valign(-1);
 	draw_set_font(-1);
 	#endregion
 	
@@ -241,12 +243,25 @@ if global.ajuda == true and instance_exists(obj_personagem){
 	var _ativo = false;
 	
 	var _x = display_get_gui_width()/2;
-	var _y = display_get_gui_height()-90;
+	var _y = display_get_gui_height()-80;
 	
 	draw_set_font(fnt_inv);
 	draw_set_color(c_white);
 	draw_set_halign(fa_center);
-	draw_set_valign(fa_middle);
+	draw_set_valign(fa_bottom);
+	
+	#region Indicador do inventário.
+	// Cheque se o inventário está aberto
+	if obj_inventario.inventario {
+		var _ativo = true;
+		var _invx = 100;
+		var _invy = display_get_gui_height()/2;
+		draw_text_outline(_x,_y,"'F' para dropar item\n" + 
+						  "'Botão direito' para usar item\n" +
+						  "'Botão esquerdo' para selecionar item", 4, c_black, 16, 25, 400);
+	}
+	
+	#endregion
 	
 	#region Indicador de item.
 	// Cheque se não existe indicador ativo e se um item existe.
@@ -256,7 +271,7 @@ if global.ajuda == true and instance_exists(obj_personagem){
 		
 		with (_pers) {
 			// Cheque a distância para o item.
-			if distance_to_object(_item) < _pers.distancia_item {
+			if distance_to_point(_item.x,_item.y) < _item.distancia_item {
 				_ativo = true;
 			}
 		}
@@ -272,24 +287,67 @@ if global.ajuda == true and instance_exists(obj_personagem){
 	#region Indicador de placa.
 	// Cheque se não existe indicador ativo e se uma placa existe.
 	if !_ativo and instance_exists(obj_placa){
-		// Pegue a placa mais próxima.
-		var _placa = instance_nearest(_pers.x,_pers.y,obj_placa);
 	
 		with (_pers) {
+			// Pegue a placa mais próxima.
+			var _placa = instance_nearest(_pers.x,_pers.y,obj_placa);
+			
 			// Cheque a distância para a placa.
-			if distance_to_object(_placa) < _placa.distancia_ativar {
+			if distance_to_point(_placa.x,_placa.y) < _placa.distancia_ativar {
 				_ativo = true;
 			}
 		}
 	
 		// Desenhe o indicativo na tela.
 		if _ativo and !instance_exists(obj_dialogo) {
-			draw_text_outline(_x, _y, "Aperte o botão direito para ler", 4, c_black, 16, 25, 400);
+			draw_text_outline(_x, _y, "Aperte o 'Z' para ler", 4, c_black, 16, 25, 400);
 		}
 	}
 	#endregion
 	
-	#region Indicador do inventário.
+	#region Indicador de baú.
+	if !_ativo and instance_exists(obj_bau){
+		// Baú comum.
+		
+		var _bau;
+		
+		with (_pers) {
+			// Pegue o baú mais próximo.
+			_bau = instance_nearest(_pers.x,_pers.y,obj_bau);
+			
+			// Cheque a distância para o baú.
+			if distance_to_point(_bau.x,_bau.y) < _bau.distancia_ativar {
+				_ativo = true;
+			}
+		}
+	
+		// Desenhe o indicativo na tela.
+		if _ativo and !instance_exists(obj_dialogo) and !_bau.looteado {
+			draw_text_outline(_x, _y, "Aperte o 'Z' para abrir", 4, c_black, 16, 25, 400);
+		}
+		
+	}
+	
+	if !_ativo and instance_exists(obj_bau_mimico) {
+		// Baú mimico.
+		
+		var _bau_mimico;
+		
+		with (_pers) {
+			// Pegue o baú mais próximo.
+			_bau_mimico = instance_nearest(_pers.x,_pers.y,obj_bau_mimico);
+			
+			// Cheque a distância para o baú.
+			if distance_to_point(_bau_mimico.x,_bau_mimico.y) < _bau_mimico.distancia_ativar {
+				_ativo = true;
+			}
+		}
+	
+		// Desenhe o indicativo na tela.
+		if _ativo and !instance_exists(obj_dialogo) {
+			draw_text_outline(_x, _y, "Aperte o 'Z' para abrir", 4, c_black, 16, 25, 400);
+		}
+	}
 	#endregion
 	
 	#region Indicador de loja.
@@ -300,7 +358,7 @@ if global.ajuda == true and instance_exists(obj_personagem){
 		
 		with (_pers) {
 			// Cheque a distância para o item.
-			if distance_to_object(_loja) < _loja.distancia_ativar {
+			if distance_to_point(_loja.x,_loja.y) < _loja.distancia_ativar {
 				_ativo = true;
 			}
 		}

@@ -26,6 +26,7 @@ defesa = 0;
 dano = 5;
 kb = 3;
 xp = 5;
+reward = 1;
 
 // Drop.
 id_drop = -1;
@@ -47,7 +48,7 @@ alarme_estado = 0;
 hit_alarme = 0;
 hit_duracao = 10;
 invulneravel_alarme = 0;
-invulneravel_duracao = 120; // 1 segundos.
+invulneravel_duracao = 30; // 0.5 segundos.
 alarme_barra_vida = 0;
 duracao_barra_vida = 180; // 3 segundos.
 #endregion

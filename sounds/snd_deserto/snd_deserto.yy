@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 98.40036,
+  "duration": 72.07183,
   "parent": {
     "name": "Sons",
     "path": "folders/Sons.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "snd_deserto.ogg",
+  "soundFile": "snd_deserto.mp3",
   "type": 0,
   "volume": 1.0,
 }

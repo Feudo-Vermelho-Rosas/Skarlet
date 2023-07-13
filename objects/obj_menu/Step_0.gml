@@ -91,7 +91,7 @@ if _select or (is_array(menu[sub_menu][index]) and (_hmove != 0)){
 					//Ajuda
 					change_menu(_hmove, "ajuda");
 					var _ajuda = ds_map_find_value(set, "ajuda")[0];
-					if _ajuda = "Ativada" {
+					if _ajuda == 0 {
 						global.ajuda = true;
 					} else {
 						global.ajuda = false;

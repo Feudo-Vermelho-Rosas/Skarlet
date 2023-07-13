@@ -1,5 +1,4 @@
-var _fechar = keyboard_check_pressed(ord("Z")) or keyboard_check_pressed(vk_escape)
-			  or mouse_check_button_pressed(mb_right);
+var _fechar = keyboard_check_pressed(vk_escape);
 
 // Feche o diálogo.
 if _fechar {

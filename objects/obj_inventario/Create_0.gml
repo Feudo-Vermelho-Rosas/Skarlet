@@ -2,7 +2,7 @@
 #region Inventário.
 
 // Profundidade.
-depth = -5000;
+depth = DEPTHS.INVENTARIO;
 
 //Verificar se o inventario esta ativo
 inventario = false;
@@ -92,13 +92,13 @@ ds_grid_set_region(grid_items, 0, 0, Infos.Altura - 1, total_slots - 1, -1);
 
 #region Timers.
 global.alarme_cura_delay = 0;
-duracao_cura_delay = 1800;
+duracao_cura_delay = 20*60;
 global.alarme_forca_duracao = 0;
-duracao_forca = 1800;
+duracao_forca = 30*60;
 global.alarme_defesa_duracao = 0;
-duracao_defesa = 1800;
+duracao_defesa = 30*60;
 global.alarme_velocidade_duracao = 0;
-duracao_velocidade = 1800;
+duracao_velocidade = 30*60;
 #endregion
 
 #region Métodos.
@@ -161,7 +161,6 @@ controle_selecao = function(_i,_mx,_my,_slotsx,_slotsy) {
 		// Drop de item.
 		if keyboard_check_pressed(ord("F")) and grid_items[# Infos.Item, _i] != -1{
 			var _inst = instance_create_layer(obj_personagem.x, obj_personagem.y, "Instances", obj_item);
-			_inst.sprite_index = grid_items[# Infos.Sprite, _i];
 			_inst.image_index = grid_items[# Infos.Item, _i]; 
 			_inst.quantidade = grid_items[# Infos.Quantidade, _i];
 		
@@ -281,19 +280,19 @@ controle_uso = function(_i) {
 		break;
 		
 		case Itens.PocaoForca: // Poção de força.
-			aplicar_forca(_i,3,snd_pocao);
+			aplicar_forca(_i,4,snd_pocao);
 		break;
 			
 		case Itens.PocaoVelocidade: // Poção de velocidade.
 			aplicar_veloc(_i,0.5,snd_pocao);
 		break;
 			
-		case Itens.PocaoDefesa: // Poção de velocidade.
-			aplicar_defesa(_i,3,snd_pocao);
+		case Itens.PocaoDefesa: // Poção de defesa.
+			aplicar_defesa(_i,5,snd_pocao);
 		break;
 			
 		case Itens.FavoMel: // Favo de cura.
-			curar(_i,50,snd_pocao);
+			curar(_i,50,snd_comendo);
 		break;
 			
 		case Itens.ArmaduraPadrao: // Armadura Padrão.

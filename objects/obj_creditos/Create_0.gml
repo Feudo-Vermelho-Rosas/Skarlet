@@ -4,14 +4,27 @@ global.credito = false;
 creditos = [
 	"",
 	"JOGO PRODUZIDO POR:",
-	"ART DEV: . . . ANA VICTORIA",
-	"ART DEV: . . . JOÃO VITOR",
-	"ART DEV: . . . KAROL LUZ",
-    "GAME DEV: . . FELIPE",
-    "GAME DEV: . . JOÃO MARCOS",
-    "COMPOSER: . . LUCAS",
-    "COUNSELOR: .  WICTOR",
+	"",
+	"FEUDO VERMELHO ROSAS",
+	"",
+	"",
+	"ART DEVELOPMENT:",
+	"ART DEV: ANA VICTÓRIA",
+	"ART DEV: JOÃO VITOR",
+	"ART DEV: KAROL LUZ",
+	"",
+	"GAME DEVELOPMENT:",
+    "GAME DEV: FELIPE AMORIM",
+    "GAME DEV: JOÃO MARCOS",
+	"",
+	"MUSIC PRODUCTION:",
+    "COMPOSER: LUCAS EMANUEL",
+	"",
+	"DOCUMENTATION:",
+    "COUNSELOR: WICTOR GIRARDI",
+	"",
+	"",
     "OBRIGADO POR JOGAR."
 ];
 y_pos = room_height;
-scroll_speed = 1;
+scroll_speed = 0.75;
