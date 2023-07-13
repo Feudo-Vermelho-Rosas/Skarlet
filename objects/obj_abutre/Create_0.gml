@@ -18,7 +18,7 @@ veloc = 0.6;
 
 // Drop.
 id_drop = Itens.PocaoForca;
-chance_drop = 0.10;
+chance_drop = 0.20;
 quantidade = 1;
 
 // Desenho.

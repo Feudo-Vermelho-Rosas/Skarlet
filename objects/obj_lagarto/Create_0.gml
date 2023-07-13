@@ -15,7 +15,7 @@ reward = 2;
 
 // Drop.
 id_drop = Itens.PocaoVelocidade;
-chance_drop = 0.10;
+chance_drop = 0.20;
 quantidade = 1;
 
 // Desenho.

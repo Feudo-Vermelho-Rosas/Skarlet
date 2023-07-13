@@ -22,9 +22,9 @@ dest_y = 0;
 max_hp = 600;
 hp = max_hp;
 defesa = 5;
-dano = 35;
-dano_head = 35;
-dano_plataformas = 30; 
+dano = 25;
+dano_head = 40;
+dano_plataformas = 30;
 kb = 6;
 xp = 200;
 

@@ -1,7 +1,7 @@
 // Adicione o xp ao jogador.
 obj_personagem.xp += xp;
 
-audio_sound_gain(global.musica_bg,0,2000);
+audio_group_set_gain(audiogroup_music,0,2000);
 
 // Crie as partículas.
 repeat(30) {

@@ -158,6 +158,7 @@
     {"name":"inst_75942626","path":"rooms/rm_deserto_andar_1/rm_deserto_andar_1.yy",},
     {"name":"inst_1FAE06C4","path":"rooms/rm_deserto_andar_1/rm_deserto_andar_1.yy",},
     {"name":"inst_12085315","path":"rooms/rm_deserto_andar_1/rm_deserto_andar_1.yy",},
+    {"name":"inst_667A7F9F","path":"rooms/rm_deserto_andar_1/rm_deserto_andar_1.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -212,6 +213,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_75942626","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_pedra_8","path":"objects/obj_pedra_8/obj_pedra_8.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":562.0,"y":242.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1FAE06C4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_pedra_7","path":"objects/obj_pedra_7/obj_pedra_7.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":579.0,"y":232.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_12085315","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_ossada_3","path":"objects/obj_ossada_3/obj_ossada_3.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":32.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_667A7F9F","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_placa","path":"objects/obj_placa/obj_placa.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":472.0,"y":756.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Decoracoes","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2AF73CC6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_arbusto_morto","path":"objects/obj_arbusto_morto/obj_arbusto_morto.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":231.0,"y":779.0,},

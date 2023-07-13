@@ -73,13 +73,15 @@ if _select or (is_array(menu[sub_menu][index]) and (_hmove != 0)){
 					//Som
 					change_menu(_hmove, "som");
 					var _som = ds_map_find_value(set, "som")[0];
-					global.volume_geral = _som;
+					global.volume_geral = _som/10;
+					audio_group_set_gain(audiogroup_default, global.volume_geral, 1);
 				break;
 				case 1:
 					//Musica
 					change_menu(_hmove, "musica");
 					var _musica = ds_map_find_value(set, "musica")[0];
-					global.volume_musica = _musica;
+					global.volume_musica = _musica/10;
+					audio_group_set_gain(audiogroup_music, global.volume_musica, 1);
 				break;
 				case 2:
 					//Controle

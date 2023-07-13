@@ -373,7 +373,7 @@ if global.ajuda == true and instance_exists(obj_personagem){
 	#region Indicador de diálogo.
 	
 	if instance_exists(obj_dialogo) {
-		draw_text_outline(_x, _y, "Aperte 'ESC' para sair", 4, c_black, 16, 25, 400);
+		draw_text_outline(_x, _y, "Aperte 'ESC' ou 'Z' para sair", 4, c_black, 16, 25, 400);
 	}
 	
 	#endregion

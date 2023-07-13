@@ -10,8 +10,8 @@ global.dsm_settings = ds_map_create();
 var _ajuda;
 if (global.ajuda == true) _ajuda = 0 else _ajuda = 1;
 
-ds_map_add(set, "som", [global.volume_geral, [0, 10]]);
-ds_map_add(set, "musica", [global.volume_musica, [0, 10]]);
+ds_map_add(set, "som", [global.volume_geral*10, [0, 10]]);
+ds_map_add(set, "musica", [global.volume_musica*10, [0, 10]]);
 ds_map_add(set, "ajuda", [_ajuda, ["Ligada", "Desligada"]]);
 
 time_held_right = 0;

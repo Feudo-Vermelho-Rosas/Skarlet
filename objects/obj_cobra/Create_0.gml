@@ -14,9 +14,9 @@ xp = 18;
 reward = 3;
 
 // Drop.
-id_drop = -1;
-chance_drop = -1;
-quantidade = -1;
+id_drop = Itens.PocaoDefesa;
+chance_drop = 0.20;
+quantidade = 1;
 
 // Desenho.
 sprite_andando = spr_cobra_andando;
