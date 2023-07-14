@@ -10,10 +10,10 @@ controle_direcao = scr_controlar_direcao_4_lados;
 veloc = 0.3;
 
 // Stats
-max_hp = 40;
-hp = 40;
-defesa = 10;
-dano = 24;
+max_hp = 35;
+hp = max_hp;
+defesa = 7;
+dano = 30;
 kb = 3;
 xp = 5;
 
@@ -33,4 +33,6 @@ sprite_perseguindo_lado = spr_mumia_andando_lado;
 sprite_perseguindo_frente = spr_mumia_andando_frente;
 sprite_perseguindo_costas = spr_mumia_andando_costas;
 
-y_sombra = 8; 
+y_sombra = 8;
+
+som_hit = snd_mumia_hit;

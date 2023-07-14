@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "decorações",
-    "path": "folders/Objetos/decorações.yy",
+    "name": "huds e menu",
+    "path": "folders/Objetos/huds e menu.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_items_armas",
-    "path": "sprites/spr_items_armas/spr_items_armas.yy",
+    "name": "spr_items_loja",
+    "path": "sprites/spr_items_loja/spr_items_loja.yy",
   },
   "spriteMaskId": null,
   "tags": [

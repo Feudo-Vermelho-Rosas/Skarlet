@@ -3,14 +3,20 @@ if global.pause {
 	exit;
 }
 
-// Ativar o diálogo.
-if distance_to_object(obj_personagem) < distancia_ativar {
-	if keyboard_check_pressed(ord("Z")) {
+var _abrir = keyboard_check_pressed(ord("Z"));
+
+// Distância de ativação.
+if distance_to_point(obj_personagem.x,obj_personagem.y) < distancia_ativar {
+		
+	// Ativar o diálogo.	
+	if _abrir {
 		var _inst = instance_create_depth(0,0,-5000,obj_dialogo);
 		if placa_de_report {
 			var _num_enemies = instance_number(obj_inimigo)
-			_inst._string = "Derrote todos os inimigos para prosseguir!\n\nFaltando: " +
-							string(_num_enemies);
+			var _num_eliminar = _num_enemies-5;
+			if (_num_eliminar < 0) _num_eliminar = 0;
+			_inst._string = "Elimine os inimigos para prosseguir!\n\n\nFaltando: " +
+							string(_num_eliminar);
 		} else {
 			_inst._string = dialogo;
 		}

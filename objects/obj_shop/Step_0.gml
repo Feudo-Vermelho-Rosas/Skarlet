@@ -1,11 +1,9 @@
-/// Abrir o báu
-if distance_to_object(obj_personagem) < distancia_ativar {
-	if instance_exists(obj_shop){
-		var _inst = instance_nearest(x, y, obj_shop);
-		if keyboard_check_pressed(ord("Z")) && global.money >= price{
-			obj_inventario.add_item(_inst.image_index, _inst.quantidade, _inst.sprite_index);
-			instance_destroy();
-			global.money -= price;
-		}
+if distance_to_point(obj_personagem.x,obj_personagem.y) < distancia_ativar {
+	if keyboard_check_pressed(ord("C")) and global.money >= price{
+		// Comprar o item.
+		obj_inventario.add_item(image_index, quantidade, spr_items_armas);
+		global.money -= price;
+		audio_play_sound(snd_loja,100,false);
+		instance_destroy();
 	}
 }

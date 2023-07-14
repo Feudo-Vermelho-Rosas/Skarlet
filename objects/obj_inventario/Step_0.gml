@@ -1,10 +1,11 @@
 var _abrir = keyboard_check_pressed(ord("E"));
+var _fechar = keyboard_check_pressed(ord("E")) or keyboard_check_pressed(vk_escape);
 
 // O inventário só pode ser aberto quando o jogo não estiver pausado,
 // e só pode ser fechado quando se o mesmo estiver aberto.
-if (_abrir and global.pause == false) or (_abrir and inventario == true){
+if (_abrir and global.pause == false) or (_fechar and inventario == true){
 	inventario = !inventario;
-	global.pause = !global.pause 
+	global.pause = !global.pause;
 	// Som de abrir ou fechar inventário.
 	audio_play_sound(snd_abririnv,100,false);
 }

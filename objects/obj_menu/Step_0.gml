@@ -1,3 +1,5 @@
+
+
 //get input
 var _up = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
 var _down = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
@@ -71,25 +73,48 @@ if _select or (is_array(menu[sub_menu][index]) and (_hmove != 0)){
 					//Som
 					change_menu(_hmove, "som");
 					var _som = ds_map_find_value(set, "som")[0];
-					global.volume_geral = _som;
+					global.volume_geral = _som/10;
+					audio_group_set_gain(audiogroup_default, global.volume_geral, 1);
 				break;
 				case 1:
 					//Musica
 					change_menu(_hmove, "musica");
 					var _musica = ds_map_find_value(set, "musica")[0];
-					global.volume_musica = _musica;
+					global.volume_musica = _musica/10;
+					audio_group_set_gain(audiogroup_music, global.volume_musica, 1);
 				break;
 				case 2:
-					//Controles
-					change_menu(_hmove, "ajuda");
+					//Controle
+					sub_menu = CONTROLES;
+					global.controles = true;
+					index = 0;
 				break;
 				case 3:
+					//Ajuda
+					change_menu(_hmove, "ajuda");
+					var _ajuda = ds_map_find_value(set, "ajuda")[0];
+					if _ajuda == 0 {
+						global.ajuda = true;
+					} else {
+						global.ajuda = false;
+					}
+				break;
+				case 4:
 					//Voltar
 					sub_menu = MAIN;
 					index = 1;
 				break;
-		
 			}
+		break;
+		case CONTROLES: //opções dos controles
+		switch(index) {
+			case 0:
+			//Voltar
+				sub_menu = SETTINGS;
+				index = 2;
+				global.controles = false;
+			break;
+		}
 		break;
 	}
 }

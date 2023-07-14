@@ -270,8 +270,8 @@ function scr_boss_farao_escolha() {
 					
 					// Evite o spawn em hitbox e fora da tela.
 					var _colisao = place_meeting(_x-8,_y-8,obj_parede) or place_meeting(_x+8,_y+8,obj_parede);
-					var _na_tela_x = ((_x > 74) and (_x < room_width-74));
-					var _na_tela_y = ((_y > 74) and (_y < room_height-74));
+					var _na_tela_x = ((_x > 32) and (_x < room_width-32));
+					var _na_tela_y = ((_y > 32) and (_y < room_height-32));
 					
 					if (!_colisao and _na_tela_x and _na_tela_y) break;
 					

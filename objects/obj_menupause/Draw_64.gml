@@ -1,19 +1,18 @@
 // Desenhe a sprite do menu de pause. 
 var _x = display_get_gui_width();
-var _y = display_get_gui_height(); 
+var _y = display_get_gui_height();
 var _escala = 4;
 var _cor = #683E0E;
 
 draw_set_halign(fa_center);
-draw_set_valign(fa_middle);
+draw_set_valign(fa_top);
 
-draw_sprite_ext(spr_menupause, 0, _x/2, _y/2, _escala, _escala, 0, c_white, 1);
+draw_sprite_ext(spr_menupause, 0, _x/2+4, _y/2, _escala, _escala, 0, c_white, 1);
 
 draw_set_font(fnt_menu);
 
-
 // linha de espaços
-var _gap = 70;
+var _gap = 80;
 
 //draw items
 for (var i = 0; i < array_length(menu[sub_menu]); ++i) {
@@ -44,9 +43,10 @@ for (var i = 0; i < array_length(menu[sub_menu]); ++i) {
 		//draw string
 		var _str = menu[sub_menu][i];
 	}
-		
-	
-    draw_text_outline(_x/2, ((_y/2)- 70) + _gap *i, _str, 4, c_black, 16, 1000, 1000);
+
+	//draw_text(_x/2, ((_y/2)-90) + _gap*i, _str);
+    draw_text_outline(_x/2, (_y/2 - ((_gap*array_length(menu[sub_menu]))/2)) + _gap*i,
+					  _str, 4, c_black, 16, 1000, 1000);
 
 }
 

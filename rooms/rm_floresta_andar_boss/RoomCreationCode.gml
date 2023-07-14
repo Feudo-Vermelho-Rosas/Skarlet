@@ -1,4 +1,4 @@
-global.musica_bg = snd_boss_temporario;
+global.musica_bg = snd_boss;
 
 obj_personagem.x = 336;
-obj_personagem.y = 506;
+obj_personagem.y = 652;

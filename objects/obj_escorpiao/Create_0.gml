@@ -4,18 +4,19 @@
 event_inherited();
 
 // Stats
-max_hp = 35;
+max_hp = 30;
 hp = max_hp;
-defesa = 5;
-dano = 15;
+defesa = 3;
+dano = 13;
 kb = 3;
 drop = -1;
 xp = 14;
+reward = 2;
 
 // Drop.
-id_drop = -1;
-chance_drop = -1;
-quantidade = -1;
+id_drop = Itens.PocaoRegen;
+chance_drop = 0.50;
+quantidade = 1;
 
 // Desenho.
 sprite_andando = spr_escorpiao_parado;
