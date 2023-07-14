@@ -47,9 +47,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"sombras","folderPath":"folders/Sprites/sombras.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"tiles","folderPath":"folders/Sprites/tiles.yy",},
   ],
-  "IncludedFiles": [
-    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"676426__leongameryt__open-chest.m4a","CopyToMask":-1,"filePath":"datafiles",},
-  ],
+  "IncludedFiles": [],
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {

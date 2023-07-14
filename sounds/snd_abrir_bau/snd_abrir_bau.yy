@@ -17,7 +17,7 @@
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "snd_abrir_bau.mp3",
+  "soundFile": "snd_abrir_bau.ogg",
   "type": 0,
   "volume": 1.0,
 }
